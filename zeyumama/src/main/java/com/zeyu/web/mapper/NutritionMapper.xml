@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zeyu.web.mapper.NutritionMapper" >
+  <resultMap id="BaseResultMap" type="com.zeyu.web.model.Nutrition" >
+    <id column="nid" property="nid" jdbcType="BIGINT" />
+    <result column="eid" property="eid" jdbcType="BIGINT" />
+    <result column="component" property="component" jdbcType="VARCHAR" />
+    <result column="content" property="content" jdbcType="VARCHAR" />
+    <result column="effect" property="effect" jdbcType="VARCHAR" />
+    <result column="img" property="img" jdbcType="VARCHAR" />
+    <result column="alt" property="alt" jdbcType="VARCHAR" />
+    <result column="createtime" property="createtime" jdbcType="TIMESTAMP" />
+    <result column="createuser" property="createuser" jdbcType="BIGINT" />
+    <result column="auditor" property="auditor" jdbcType="BIGINT" />
+    <result column="status" property="status" jdbcType="TINYINT" />
+    <result column="audittime" property="audittime" jdbcType="TIMESTAMP" />
+    <result column="isdel" property="isdel" jdbcType="BIT" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    nid, eid, component, content, effect, img, alt, createtime, createuser, auditor, 
+    status, audittime, isdel
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select 
+    <include refid="Base_Column_List" />
+    from nutrition
+    where nid = #{nid,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from nutrition
+    where nid = #{nid,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.zeyu.web.model.Nutrition" >
+    insert into nutrition (nid, eid, component, 
+      content, effect, img, 
+      alt, createtime, createuser, 
+      auditor, status, audittime, 
+      isdel)
+    values (#{nid,jdbcType=BIGINT}, #{eid,jdbcType=BIGINT}, #{component,jdbcType=VARCHAR}, 
+      #{content,jdbcType=VARCHAR}, #{effect,jdbcType=VARCHAR}, #{img,jdbcType=VARCHAR}, 
+      #{alt,jdbcType=VARCHAR}, #{createtime,jdbcType=TIMESTAMP}, #{createuser,jdbcType=BIGINT}, 
+      #{auditor,jdbcType=BIGINT}, #{status,jdbcType=TINYINT}, #{audittime,jdbcType=TIMESTAMP}, 
+      #{isdel,jdbcType=BIT})
+  </insert>
+  <insert id="insertSelective" parameterType="com.zeyu.web.model.Nutrition" >
+    insert into nutrition
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="nid != null" >
+        nid,
+      </if>
+      <if test="eid != null" >
+        eid,
+      </if>
+      <if test="component != null" >
+        component,
+      </if>
+      <if test="content != null" >
+        content,
+      </if>
+      <if test="effect != null" >
+        effect,
+      </if>
+      <if test="img != null" >
+        img,
+      </if>
+      <if test="alt != null" >
+        alt,
+      </if>
+      <if test="createtime != null" >
+        createtime,
+      </if>
+      <if test="createuser != null" >
+        createuser,
+      </if>
+      <if test="auditor != null" >
+        auditor,
+      </if>
+      <if test="status != null" >
+        status,
+      </if>
+      <if test="audittime != null" >
+        audittime,
+      </if>
+      <if test="isdel != null" >
+        isdel,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="nid != null" >
+        #{nid,jdbcType=BIGINT},
+      </if>
+      <if test="eid != null" >
+        #{eid,jdbcType=BIGINT},
+      </if>
+      <if test="component != null" >
+        #{component,jdbcType=VARCHAR},
+      </if>
+      <if test="content != null" >
+        #{content,jdbcType=VARCHAR},
+      </if>
+      <if test="effect != null" >
+        #{effect,jdbcType=VARCHAR},
+      </if>
+      <if test="img != null" >
+        #{img,jdbcType=VARCHAR},
+      </if>
+      <if test="alt != null" >
+        #{alt,jdbcType=VARCHAR},
+      </if>
+      <if test="createtime != null" >
+        #{createtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createuser != null" >
+        #{createuser,jdbcType=BIGINT},
+      </if>
+      <if test="auditor != null" >
+        #{auditor,jdbcType=BIGINT},
+      </if>
+      <if test="status != null" >
+        #{status,jdbcType=TINYINT},
+      </if>
+      <if test="audittime != null" >
+        #{audittime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="isdel != null" >
+        #{isdel,jdbcType=BIT},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.zeyu.web.model.Nutrition" >
+    update nutrition
+    <set >
+      <if test="eid != null" >
+        eid = #{eid,jdbcType=BIGINT},
+      </if>
+      <if test="component != null" >
+        component = #{component,jdbcType=VARCHAR},
+      </if>
+      <if test="content != null" >
+        content = #{content,jdbcType=VARCHAR},
+      </if>
+      <if test="effect != null" >
+        effect = #{effect,jdbcType=VARCHAR},
+      </if>
+      <if test="img != null" >
+        img = #{img,jdbcType=VARCHAR},
+      </if>
+      <if test="alt != null" >
+        alt = #{alt,jdbcType=VARCHAR},
+      </if>
+      <if test="createtime != null" >
+        createtime = #{createtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createuser != null" >
+        createuser = #{createuser,jdbcType=BIGINT},
+      </if>
+      <if test="auditor != null" >
+        auditor = #{auditor,jdbcType=BIGINT},
+      </if>
+      <if test="status != null" >
+        status = #{status,jdbcType=TINYINT},
+      </if>
+      <if test="audittime != null" >
+        audittime = #{audittime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="isdel != null" >
+        isdel = #{isdel,jdbcType=BIT},
+      </if>
+    </set>
+    where nid = #{nid,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.zeyu.web.model.Nutrition" >
+    update nutrition
+    set eid = #{eid,jdbcType=BIGINT},
+      component = #{component,jdbcType=VARCHAR},
+      content = #{content,jdbcType=VARCHAR},
+      effect = #{effect,jdbcType=VARCHAR},
+      img = #{img,jdbcType=VARCHAR},
+      alt = #{alt,jdbcType=VARCHAR},
+      createtime = #{createtime,jdbcType=TIMESTAMP},
+      createuser = #{createuser,jdbcType=BIGINT},
+      auditor = #{auditor,jdbcType=BIGINT},
+      status = #{status,jdbcType=TINYINT},
+      audittime = #{audittime,jdbcType=TIMESTAMP},
+      isdel = #{isdel,jdbcType=BIT}
+    where nid = #{nid,jdbcType=BIGINT}
+  </update>
+</mapper>

@@ -1,0 +1,1038 @@
+em{
+	font-style:normal
+}
+ul, ol {
+    list-style: outside none none;
+	padding:0;
+	margin:0;
+}
+input {
+    background: none;
+}
+
+.cf, .clearfix {
+    zoom: 1;
+}
+
+.cf:after, .clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.clearboth {
+    font-size: 0;
+    height: 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+input, textarea {
+    outline: none;
+}
+
+.pcyl-head {
+    width: 100%;
+    height: 2px;
+    background: url(http://f.yaolanimage.cn/assets/images/global/caitiaobg.gif) repeat-x center center;
+    font-size: 0;
+}
+
+.pcyl-headerbox {
+    width: 100%;
+    border-bottom: solid 1px #ddd;
+    background: #fff;
+    height: 48px;
+    font-family: "微软雅黑", "宋体";
+    font-size: 14px;
+}
+
+.pcyl-headerbox .pcyl-sys {
+    width: 960px;
+    margin: auto;
+}
+
+.pcyl-headerbox .pcyl-useraction {
+    float: right;
+
+}
+
+.pcyl-useraction li {
+
+}
+
+.pcyl-nav li {
+    height: 48px;
+    position: relative;
+    width: 76px;
+    text-align: center;
+
+}
+
+.pcyl-nav li div {
+    position: absolute;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-top: none;
+    left: -1px;
+    top: 49px;
+    display: none;
+    padding: 0 10px;
+    zoom:1;
+    z-index: 999;
+}
+
+.pcyl-nav li.hoveron div {
+    display: inline;
+}
+
+.pcyl-headerbox ul li.hoveron div {
+
+    z-index: 99;
+}
+
+ul.pcyl-nav li div a {
+    line-height: 35px;
+    height: 35px;
+    padding: 0 10px;
+    color: #333;
+    height: 26px;
+    line-height: 26px;
+    display: inline-block;
+    font-size:14px;
+
+}
+
+ul.pcyl-nav li div a:hover {
+    background: #f26748;
+    color: #fff;
+    text-decoration: none;
+}
+
+.pcyl-headerbox .pcyl-four {
+
+}
+
+.pcyl-useraction {
+    border-left: 1px solid #ddd;
+}
+
+.pcyl-useraction li {
+    border-right: 1px solid #ddd;
+    font-size: 14px;
+    height: 48px;
+    position: relative;
+    z-index: 1000;
+    line-height: 48px;
+    float: left;
+}
+
+.pcyl-useraction li.pcyl-enter {
+    width: 106px;
+    text-align: center;
+}
+
+.pcyl-useraction li.pcyl-regenter {
+    padding: 0 16px;
+    text-align: center;
+}
+
+.pcyl-regenter a {
+    display: inline-block;
+    color: #f26749;
+}
+
+
+.pcyl-regenter em{
+    float: left;
+
+}
+.pcyl-regenter em a{
+    float: none;
+}
+.pcyl-regenter a{
+    float: left;
+}
+li.pcyl-loginenter em a {
+    background: url(http://f.yaolanimage.cn/assets/images/array/global_array_1.png) no-repeat left -294px;
+    padding-left: 30px;
+    line-height: 27px;
+    display: inline-block;
+    margin-top: 10px;
+    color:#333;
+}
+li.pcyl-loginenter  a:visited{
+    color:#333;
+}
+.pcyl-loginenter li em a:hover, .pcyl-useraction li.pcyl-hoveraddon em a {
+    background: url(http://f.yaolanimage.cn/assets/images/array/global_array_1.png) no-repeat left -204px;
+    text-decoration: none;
+    color: #f26749;
+}
+
+.pcyl-nav li {
+    text-align: center;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    float: left;
+}
+
+.pcyl-useraction li em {
+    padding: 0 16px 0 10px;
+    display: block;
+    height: 33px;
+}
+
+.pcyl-useraction li.pcyl-regenter em {
+    padding: 0;
+    line-height: 22px;
+}
+
+.pcyl-useraction li.hoveron em {
+    height: 49px;
+    _float: left;
+}
+
+.pcyl-useraction li.hoveron em {
+    height: 49px;
+    background: #fff;
+    display: block;
+}
+
+.pcyl-nav li em, .pcyl-useraction li em.on {
+    background: #fff;
+    display: block;
+    margin-top: 15px;
+    line-height: 22px;
+}
+
+.pcyl-nav li.hoveron em, .pcyl-useraction li.hoveron em.on {
+    height: 49px;
+    _height: 50px;
+    _position: absolute;
+    _width: 76px;
+    _left: 0;
+}
+
+.pcyl-loginenter .pcyl-loginrecod {
+    _top: 51px;
+}
+
+.pcyl-nav li.hoveron em a {
+
+}
+
+.pcyl-nav {
+    line-height: 48px;
+    height: 48px;
+}
+
+.pcyl-nav em a, .pcyl-enter em a {
+    background: url(http://f.yaolanimage.cn/assets/images/array/point_off.gif) no-repeat right 5px;
+    padding-right: 16px;
+    display: inline-block;
+    line-height: 1.2;
+    color:#333;
+    font-size: 14px;
+}
+
+
+.pcyl-nav  a:visited{
+    color:#333
+}
+.pcyl-nav .pcyl-first em a, .pcyl-nav .pcyl-last em a {
+    background: none;
+    padding-right: 0;
+
+}
+
+.pcyl-nav .pcyl-first em a, .pcyl-nav .pcyl-last em a, {
+    background: none;
+    padding-right: 0;
+}
+
+.pcyl-headerbox ul li.pcyl-first {
+    width: 54px;
+}
+
+.pcyl-headerbox ul li.pcyl-last {
+    width: 80px;
+}
+
+.pcyl-nav .hoveron em a, .pcyl-useraction .hoveron em a {
+    background: url(http://f.yaolanimage.cn/assets/images/array/point_on.gif) no-repeat right 5px;
+    text-decoration: none;
+    color: #f26749;
+}
+
+.pcyl-useraction li.pcyl-enter em.on {
+
+    _width: 106px;
+}
+
+.pcyl-nav a:hover {
+    color: #f26749;
+    text-decoration: none;
+}
+
+.pcyl-headerbox .pcyl-regenter a {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    margin: 12px 3px 0 3px;
+    color:#333;
+}
+.pcyl-headerbox .pcyl-regenter a:hover{
+    color: #f26749;
+}
+
+.pcyl-headerbox  a:visited{
+    color:#333;
+}
+.pcyl-headerbox .pcyl-regenter a.pcyl-reg {
+    width: auto;
+    vertical-align: super;
+    _vertical-align: auto;
+    text-align: left;
+    width: 35px;
+
+}
+
+.pcyl-headerbox .pcyl-sina {
+
+    background: url(http://f.yaolanimage.cn/assets/images/global/indexbg.gif) no-repeat -108px -17px;
+}
+
+.pcyl-headerbox .pcyl-sina:hover {
+    background: url(http://f.yaolanimage.cn/assets/images/global/indexbg.gif) no-repeat -105px -80px;
+}
+
+.pcyl-headerbox .pcyl-qq {
+    background: url(http://f.yaolanimage.cn/assets/images/global/indexbg.gif) no-repeat -70px -16px;
+}
+
+.pcyl-headerbox .pcyl-qq:hover {
+    background: url(http://f.yaolanimage.cn/assets/images/global/indexbg.gif) no-repeat -69px -79px;
+}
+
+.pcyl-login a {
+    display: inline-block;
+}
+
+.pcyl-enterdir {
+    width: 340px;
+    border: 1px solid #ddd;
+    right: -1px;
+    position: absolute;
+    background: #fff;
+    top: 49px;
+    border-top: none;
+    display: none;
+    z-index: 999;
+    zoom:1
+}
+
+.pcyl-enterdir dd, .pcyl-enterdir dt {
+    text-align: left;
+    line-height: 100%;
+}
+
+.ylHdIframe {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: none;
+    height: 180px;
+    left: 0;
+    position: absolute;
+    top: 42px;
+    width: 230px;
+    z-index: 1;
+}
+
+.pcyl-forgut {
+    color: #999;
+    font-size: 12px;
+}
+
+.forgetbox a {
+    float: right;
+    line-height: 45px;
+    font-size: 12px;
+    color: #f26749;
+    line-height: 100%;
+}
+
+.forgetbox input {
+
+}
+
+.pcyl-logintxt {
+    width: 204px;
+    height: 36px;
+    border: #DADADA solid 1px;
+    margin-bottom: 10px;
+
+}
+
+.yldlbtn {
+    background: url("http://f.yaolanimage.cn/assets/images/global/indexbg.gif") no-repeat 0 -147px;
+    display: block;
+    height: 45px;
+    position: relative;
+    width: 206px;
+    z-index: 888;
+}
+
+.pcyl-forgetbox {
+    line-height: 100%;
+    font-size: 12px;
+    padding-bottom: 12px;
+    padding-top: 6px;
+    text-align: left;
+}
+
+.pcyl-forgetbox a {
+    float: right;
+    display: inline-block;
+    line-height: 1;
+    _line-height: 1.5;
+    color:#999;
+
+}
+.pcyl-forgetbox a:hover{
+    color: #f26749;
+}
+.pcyl-forgetbox input {
+    vertical-align: top;
+    margin: 0;
+}
+
+.pcyl-setting {
+    padding: 0 10px;
+}
+
+.pcyl-setting a {
+    width: 18px;
+    height: 18px;
+    background: url(http://f.yaolanimage.cn/assets/images/global/indexbg.gif) no-repeat -130px -46px;
+    display: inline-block;
+    margin-top: 16px;
+}
+
+#jquery-givermsg .pcyl-usermsg {
+    width: 20px;
+    height: 18px;
+    background: url(http://f.yaolanimage.cn/assets/images/global/indexbg.gif) no-repeat -156px -47px;
+    display: inline-block;
+    margin-top: 16px;
+}
+#jquery-givermsg .truemsg{
+    background: url(http://f.yaolanimage.cn/assets/images/global/indexbg.gif) no-repeat -104px -47px;
+}
+#jquery-givermsg em {
+    padding: 0 14px 0 14px;
+
+}
+
+.pcyl-useraction li.pcyl-hoveraddon  em {
+    height: 44px;
+    background: #fff;
+    display: block;
+}
+.pcyl-useraction li.pcyl-hoveraddon  em.pcyl-loginenterbox{
+    height: 49px;
+}
+.pcyl-useraction li.pcyl-hoveraddon .ylSiteMapItem em{
+    height: 25px;
+    line-height: 25px;
+}
+.pcyl-ylyonghubox {
+    width: 207px;
+    overflow: hidden;
+    border: #DBDBDB solid 1px;
+    border-top: none;
+    position: absolute;
+    right: -1px;
+    top: 49px;
+    z-index: 9999991;
+    background: #fff;
+    color: #999;
+    font-size: 12px;
+    line-height: 1.5;
+    padding: 20px;
+    display: none;
+}
+
+.pcyl-userhead {
+    float: left;
+}
+
+.pcyl-userhead img {
+    border:none;
+    width: 70px;
+    height: 70px;
+}
+
+.pcyl-userinfo {
+    padding-left: 80px;
+}
+
+.pcyl-userinfo h6.pcyl-username {
+    color: #f26748;
+    font-size: 18px;
+    font-weight: normal;
+    height: 30px;
+    overflow: hidden;
+    text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 90px;
+    margin:0;
+}
+
+.pcyl-gerenbtn {
+    float: right;
+    background: url(http://f.yaolanimage.cn/assets/images/global/indexbg.gif) no-repeat -33px -106px;
+    width: 70px;
+    height: 25px;
+}
+
+.pcyl-bbinfo {
+    padding: 4px 0;
+}
+
+.pcyl-fansinfo span {
+    color: #f26749;
+}
+
+.pcyl-ylexit {
+    float: right;
+    font-size: 14px;
+    color: #999;
+}
+
+.pcyl-fansinfo {
+    word-spacing: 4px;
+}
+
+.pcyl-fansinfo a {
+    color: #999;
+}
+
+.ylpc-ylmailbox {
+    width: 105px;
+    overflow: hidden;
+    padding: 7px 0 7px 13px;
+    border: #DBDBDB solid 1px;
+    border-top: none;
+    position: absolute;
+    right: -1px;
+    top: 49px;
+    _top: 49px;
+    background: #fff;
+    z-index: 998;
+    display: none;
+}
+
+.ylpc-ylmailbox p {
+    height: 30px;
+    line-height: 30px;
+    color: #FC6343;
+    margin: 0;
+}
+
+.ylpc-ylmailbox p a {
+    color: #000;
+    margin-right: 8px;
+}
+
+.ylpc-ylmailbox p a:hover {
+    color: #f26749;
+
+}
+
+.ylpc-ylmailbox p a:hover {
+    text-decoration: none;
+}
+
+.pcyl-loginafter {
+
+}
+
+.foot-copyright {
+    background-image: url("http://h.yaolanimage.cn/home/images/index.2013.bg.png?ver=2013112902");
+    background-repeat: no-repeat;
+    background-position: -191px -245px;
+    display: block;
+    height: 46px;
+    position: absolute;
+    top: 25px;
+    width: 34px;
+    right: 130px;
+}
+
+#new_footer {
+    width: 940px;
+    height: 67px;
+    position: relative;
+    padding: 15px 0 25px 20px;
+    margin: 0 auto;
+    color: #4b4b4b;
+    text-align: center;
+    font: 12px/22px "微软雅黑",宋体;
+    clear: both;
+}
+#new_footer div , #new_footer p{
+    text-align: center;
+}
+
+#fb_area{
+    clear: both;
+}
+#new_footer p {
+    display: block;
+    height: 20px;
+    font-weight: normal
+}
+
+#new_footer .ylSzfw {
+    margin: 0;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 35px;
+    width: 90px;
+    height: 32px;
+    line-height: 999em;
+    overflow: hidden;
+    background: url(http://h.yaolanimage.cn/www/images/szfw_logo.png?ver=2014021301) no-repeat;
+}
+
+#new_footer a {
+    margin: 0 7px 0 6px;
+    color: #4b4b4b;
+    text-decoration: none
+}
+
+#new_footer a:hover {
+    color: #f60;
+    text-decoration: underline
+}
+
+.crumbs-nava {
+    width: 960px;
+    margin: auto;
+    font-family: "微软雅黑", "宋体";
+    padding: 16px 0 8px 0;
+    text-align: left;
+}
+
+.crumbs-nava .gather {
+    background-image: url(http://f.yaolanimage.cn/assets/images/array/global_array_1.png?v=5);
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.crumbs-nava .yl-logo {
+    background-position: left top;
+    width: 131px;
+    overflow: hidden;
+    text-indent: -99999px;
+}
+
+.crumbs-nava a.yl-record {
+    background-position: -131px top;
+    line-height: 46px;
+    font-size: 17px;
+    color: #fff;
+    font-weight: bold;
+    width: 100px;
+    text-align: center;
+
+    word-spacing: -2px;
+
+}
+
+
+.crumbs-nava .default-page {
+    font-size: 18px;
+    display: inline-block;
+    margin-top: 13px;
+    background-position: 2px -38px;
+    line-height: 1.3;
+    color:#333;
+}
+
+.global-search {
+    float: right;
+    height: 28px;
+    margin-top: 10px;
+    position: relative;
+    width: 368px;
+
+}
+.dsp_box{
+    width:180px; 
+    position: absolute;
+    left: 0px;
+    text-align: center;
+    }
+.dsp_box em{background: url(http://g.yaolanimage.cn/assets/images/icon/bugle.png) no-repeat; display: block; width: 14px; height: 14px; position: absolute; left: 5px; top: 5px;}
+.search-box{
+    background: none repeat scroll 0 0 #fff;
+    border: 1px solid #ccc;
+    float: right; 
+    height: 28px; 
+    width: 189px; 
+    margin-top: -1px;
+    margin-right: -1px;
+    position: relative;
+    }
+
+.crumbs-nava .yl-logo, .crumbs-nava a.yl-record {
+    height: 36px;
+}
+
+.crumbs-nava .ylnext-txt {
+    background-position: -177px -59px;
+    font-size: 18px;
+    padding-right: 16px;
+    line-height: 1.3;
+    margin-top: 13px;
+}
+
+.ylyonghuspan {
+    display: block;
+    padding: 5px 6px;
+    line-height: 36px;
+}
+.ylyonghuspan a {
+    font-size: 14px;
+    background: url(http://f.yaolanimage.cn/assets/images/array/point_off.gif) no-repeat right 5px;
+    padding-right: 15px;
+    color: #000;
+}
+
+.ylyonghuspan img {
+    display: inline-block;
+    vertical-align: middle;
+    float: left;
+    margin-right: 6px;
+    width: 36px;
+    height: 36px;
+}
+
+.pcyl-hoveraddon .ylyonghu .ylyonghuspan {
+    height: 39px;
+    background: #fff;
+}
+
+.pcyl-hoveraddon .ylyonghuspan a, .pcyl-useraction .pcyl-hoveraddon em.on a {
+    background: url(http://f.yaolanimage.cn/assets/images/array/point_on.gif) no-repeat right 5px;
+    text-decoration: none;
+}
+
+.pcyl-edu {
+    width: 378px;
+}
+
+.pcyl-ask {
+    width: 103px;
+}
+
+.pcyl-bbs {
+    width: 205px;
+}
+
+.pcyl-try {
+    width: 186px;
+}
+
+.pcyl-nav li.hoveron {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+
+}
+
+.pcyl-useraction .pcyl-enterdir dt em, .pcyl-useraction .pcyl-enterdir dt a {
+    font-size: 14px;
+    font-family: "微软雅黑", "宋体";
+    color: #333;
+    display: inline-block;
+    padding-left: 34px;
+    font-weight: bold;
+    background-image: url(http://h.yaolanimage.cn/assets/images/global/nava_bg.gif);
+    background-repeat: no-repeat;
+    height: 25px;
+    line-height: 25px;
+}
+
+.pcyl-enterdir dd {
+    padding-left: 28px;
+    padding-left: 28px;
+}
+
+.pcyl-useraction .pcyl-enterdir .nava-1 em, .pcyl-enterdir .nava-1 a {
+    background-position: left top;
+}
+
+.pcyl-useraction .pcyl-enterdir .nava-2 em, .pcyl-enterdir .nava-2 a {
+    background-position: left -95px;
+}
+
+.pcyl-useraction .pcyl-enterdir .nava-3 em, .pcyl-enterdir .nava-3 a {
+    background-position: left -167px;
+}
+
+.pcyl-useraction .pcyl-enterdir .nava-4 em, .pcyl-enterdir .nava-4 a {
+    background-position: left -263px;
+}
+
+.pcyl-useraction .pcyl-enterdir .nava-5 em, .pcyl-enterdir .nava-5 a {
+    background-position: left -334px;
+}
+
+.pcyl-useraction .pcyl-enterdir .nava-6 em, .pcyl-enterdir .nava-6 a {
+    background-position: left -407px;
+}
+
+.pcyl-useraction .pcyl-enterdir .nava-7 em, .pcyl-enterdir .nava-7 a {
+    background-position: left -481px;
+}
+
+.pcyl-enterdir dt a:hover {
+    color: #f60;
+}
+
+.odd {
+    background: #f6f6f6;
+}
+
+.ylSiteMapBnone {
+    border: 0 none
+}
+
+.ylSiteMapItem dd, .ylSiteMapItem dt {
+    padding: 0;
+    margin: 0
+}
+
+.odd {
+    background: #f6f6f6;
+}
+
+.ylSiteMapBnone {
+    border: 0 none
+}
+
+.ylSiteMapItem dd, .ylSiteMapItem dt {
+    padding: 0;
+    margin: 0
+}
+
+/*快速导航*/
+
+.ylSiteMapItem {
+    padding: 10px 0 8px 12px;
+}
+
+.ylSiteMapItem dd a {
+    color: #333;
+    display: inline-block;
+    font-size: 14px;
+    height: 24px;
+    line-height: 24px;
+    padding: 0 6px;
+    white-space: nowrap;
+}
+
+.ylSiteMapItem dd a, .ylSiteMapItem dt a {
+    color: #4b4b4b;
+    line-height: 22px;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+#ylSiteMap {
+    width: 340px;
+    padding: auto;
+}
+
+.odd {
+    background: #f6f6f6;
+}
+
+.ylSiteMapItem {
+    border: none;
+    margin: 0;
+}
+
+.ylSiteMapItem dd {
+    width: auto;
+}
+
+#ylSiteMap {
+    padding: 6px 0 8px 0;
+}
+
+.ylSiteMapItem dd a:hover {
+    color: #fff;
+    background: #f26749;
+}
+
+.pcyl-enterdir dd {
+    padding-left: 28px;
+}
+
+.pcyl-hoveraddon .pcyl-enterdir {
+    display: block;
+}
+
+.pcyl-hoveraddon .ylpc-ylmailbox {
+    display: inline;
+}
+
+.pcyl-hoveraddon .pcyl-ylyonghubox {
+    display: block;
+}
+
+.pcyl-useraction li.pcyl-getmsg {
+    border-right: 1px solid #fff;
+}
+
+.pcyl-useraction li.pcyl-hoveraddon {
+    border-right: 1px solid #ddd;
+}
+
+.pcyl-hoveraddon .ylSiteMapItem.odd dt em {
+    background-color: #f6f6f6;
+}
+
+.ylmima, .ylduser {
+    float: left;
+    height: 13px;
+    margin: 12px 0 0 11px;
+    width: 22px;
+    border-right: 1px solid #bababa;
+}
+
+.ylduser {
+    background: url("http://f.yaolanimage.cn/assets/images/global/indexbg.gif") no-repeat scroll -129px -112px;
+}
+
+.pcyl-logintxt input {
+    width: 155px;
+    border: none;
+    padding: 0 0 3px 10px;
+    background: #fff;
+    font-size: 12px;
+    margin-top: 11px;
+    height: 15px;
+    line-height: 15px;
+}
+
+.ylmima {
+    background: url(http://f.yaolanimage.cn/assets/images/global/indexbg.gif) no-repeat -152px -112px;
+
+}
+
+.pcyl-reg:hover {
+    text-decoration: none
+}
+
+#head-loading {
+    background: url(http://g.yaolanimage.cn/assets/images/loading/head.gif) no-repeat center;
+    padding-right: 6px;
+    width: 50px;
+}
+
+.ylLoginError {
+    background: #fffbe8;
+    border: 1px solid #dacfb5;
+    color: #f00;
+    height: 28px;
+    line-height: 28px;
+    margin-bottom: 10px;
+    padding-left: 15px;
+}
+.pcyl-userwidth{
+    width:244px;
+}
+#jquery-toolnava-6 em, #jquery-toolnava-0 em{
+    height: 33px;
+}
+#jquery-toolnava-6 em a ,#jquery-toolnava-0 em a{
+    background: none;
+}
+.pcyl-fansinfo a:hover , a.pcyl-ylexit:hover{
+    text-decoration: none;
+    color: #f26749;
+}
+.crumbs-nava a:hover , .c_nav .crumbs-nava a:hover{
+    text-decoration: none;
+    color: #f26749;
+}
+.c_nav .crumbs-nava a.yl-record:hover , .crumbs-nava a.yl-record:hover{
+    color:#fff;
+    text-decoration: none;
+}
+#ylLoginDiv .pcyl-tips{
+    color:#ccc;
+}
+.pcyl-userinfo p{
+    text-align: left;
+    margin: 0;
+}
+
+.pcyl-mask{
+    height: 36px;
+    width: 20px;
+    background: #fff;
+    display: inline-block;
+    margin-left: -10px;
+}
+
+.pcyl-forgetbox  a:hover{
+    text-decoration: none;
+}
+
+#jquery-givermsg.pcyl-hoveraddon em{
+	height:49px;
+}
+
+#main .share #bdshare{
+	z-index:111;
+}
+
+.yl-text{
+	background-position: 0 -341px;
+	color: #fff;
+	font-size: 17px;
+	font-weight: bold;
+	line-height: 46px;
+	word-spacing: -2px;
+	height: 36px;
+	padding-left: 30px;
+}
+.yl-text em{
+	display: inline-block;
+	padding-right: 14px;
+	background: url(http://f.yaolanimage.cn/assets/images/array/global_array_1.png?v=5) right -341px;
+}
+.crumbs-nava a.yl-text:hover{
+	color:#fff;
+}
+
+.a_cb {
+    top: 220px;
+}
+.a_fl {
+    left: 73px;
+}
+.a_fr {
+    right: 63px;
+}

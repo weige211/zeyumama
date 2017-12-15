@@ -1,0 +1,3167 @@
+@charset "UTF-8";
+html {
+	overflow: auto;
+	min-width: 1200px
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	font: 12px/1.5 微软雅黑;
+	color: #474747;
+	text-align: center;
+	background-color: #FFF;
+	overflow-x: hidden;
+	word-break: break-all
+}
+
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+blockquote,
+p,
+buttom {
+	padding: 0;
+	margin: 0;
+	font-weight: 400
+}
+
+ol,
+ul {
+	list-style: none
+}
+
+li {
+	list-style-type: none
+}
+
+img {
+	vertical-align: top;
+	border: 0
+}
+
+input,
+button,
+textarea {
+	font-family: 微软雅黑;
+	outline: 0
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: 400
+}
+
+address,
+cite,
+code,
+em,
+th,
+i {
+	font-weight: 400;
+	font-style: normal
+}
+
+a {
+	color: #474747;
+	text-decoration: none
+}
+
+a:visited {
+	text-decoration: none
+}
+
+a:hover {
+	color: #fb7191;
+	text-decoration: none
+}
+
+a:active {
+	color: #474747
+}
+
+.cBlack,
+.cBlack:visited {
+	color: #3d3d3d
+}
+
+.cRed,
+.cRed:visited {
+	color: #af0101
+}
+
+.cBlue,
+.cBlue:visited {
+	color: #2b81c9
+}
+
+.cGreen,
+.cGreen:visited {
+	color: #17c17b
+}
+
+.cGray,
+.cGray:visited {
+	color: #999
+}
+
+.cDGray,
+.cDGray:visited {
+	color: #989898
+}
+
+.cOrange,
+.cOrange:visited {
+	color: #fc9c6f
+}
+
+.cYellow,
+.cYellow:visited {
+	color: #ffedba
+}
+
+.fB {
+	font-weight: 700
+}
+
+.f12 {
+	font-size: 12px
+}
+
+.f14 {
+	font-size: 14px
+}
+
+.f16 {
+	font-size: 16px
+}
+
+.f18 {
+	font-size: 18px
+}
+
+.f20 {
+	font-size: 20px
+}
+
+.f24 {
+	font-size: 24px
+}
+
+.w {
+	width: 1200px;
+	clear: both;
+	margin: auto;
+	text-align: left
+}
+
+.mt10 {
+	margin-top: 10px
+}
+
+.mb10 {
+	margin-bottom: 10px
+}
+
+.mb15 {
+	margin-bottom: 15px
+}
+
+.ml10 {
+	margin-left: 10px
+}
+
+.mt15 {
+	margin-top: 15px
+}
+
+.mt20 {
+	margin-top: 20px
+}
+
+.mb20 {
+	margin-bottom: 20px
+}
+
+.mt25 {
+	margin-top: 25px
+}
+
+.mt30 {
+	margin-top: 30px
+}
+
+.mb30 {
+	margin-bottom: 30px
+}
+
+.mt40 {
+	margin-top: 40px
+}
+
+.mt50 {
+	margin-top: 50px
+}
+
+.mt60 {
+	margin-top: 60px
+}
+
+.ml15 {
+	margin-left: 15px
+}
+
+.clear {
+	clear: both;
+	font: 0/0 arial;
+	height: 0;
+	width: 0
+}
+
+.poR {
+	position: relative
+}
+
+.fl {
+	float: left
+}
+
+.fr {
+	float: right
+}
+
+.ovH {
+	overflow: hidden
+}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0
+}
+
+.clearfix {
+	display: inline-table
+}
+
+* html .clearfix {
+	height: 1%
+}
+
+.clearfix {
+	display: block
+}
+
+.hide {
+	display: none
+}
+
+.ar {
+	text-align: right
+}
+
+.ac {
+	text-align: center
+}
+
+a.btn {
+	display: inline-block;
+	text-align: center;
+	cursor: pointer;
+	border-radius: 5px;
+	*display: inline;
+	*zoom: 1
+}
+
+.inline-block {
+	display: inline-block
+}
+
+.pointer {
+	cursor: pointer
+}
+
+.appQRCode {
+	width: 100px;
+	text-align: center
+}
+
+.cRed {
+	color: #fb7191
+}
+
+.LMB_main .expertBtn,
+.LMB_main .footer .footNavMap .contL .attention dd i,
+.LMB_main .header .menuBox .menu .box .loginBox .userInfo em,
+.LMB_main .topAd {
+	position: relative;
+	width: 100%;
+	max-width: 1920px;
+	margin: 0 auto
+}
+
+.LMB_main .expertBtn img,
+.LMB_main .footer .footNavMap .contL .attention dd i img,
+.LMB_main .header .menuBox .menu .box .loginBox .userInfo em img,
+.LMB_main .topAd img {
+	width: 100%;
+	max-height: 100px
+}
+
+.LMB_main .expertBtn .close,
+.LMB_main .footer .footNavMap .contL .attention dd i .close,
+.LMB_main .header .menuBox .menu .box .loginBox .userInfo em .close,
+.LMB_main .topAd .close {
+	display: block;
+	width: 24px;
+	height: 24px;
+	background: url(http://www.lamabang.com/static/v2/images/closeIco.png) center no-repeat;
+	position: absolute;
+	top: 5px;
+	right: 10px
+}
+
+.bindPhone {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, .5);
+	z-index: 999
+}
+
+.bindPhone .box {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	top: 0;
+	background-color: #FFF;
+	width: 800px;
+	height: 450px;
+	margin: auto;
+	box-shadow: 0 0 10px rgba(0, 0, 0, .5)
+}
+
+.bindPhone .box h2 {
+	font-size: 20px;
+	line-height: 48px;
+	border-bottom: 1px solid #e6e6e6;
+	padding: 0 48px
+}
+
+.bindPhone .box h2 .close {
+	float: right;
+	width: 48px;
+	height: 48px;
+	margin-right: -48px;
+	background: url(http://www.lamabang.com/static/v2/images/bindPhone_close.jpg) center no-repeat;
+	cursor: pointer
+}
+
+.bindPhone .box .cont {
+	font-size: 14px
+}
+
+.bindPhone .box .cont .text {
+	display: block;
+	color: #999;
+	line-height: 56px;
+	padding-left: 47px;
+	text-align: left
+}
+
+.bindPhone .box .cont .step {
+	color: #000
+}
+
+.bindPhone .box .cont .step dd {
+	display: inline-block;
+	width: 220px;
+	margin: auto 15px
+}
+
+.bindPhone .box .cont .step dd em {
+	display: block;
+	width: 24px;
+	height: 24px;
+	background-color: #fc6496;
+	border-radius: 50%;
+	font-size: 16px;
+	color: #FFF;
+	margin: auto
+}
+
+.bindPhone .box .cont .step dd p {
+	margin-top: 10px;
+	line-height: 1.5;
+	height: 3em
+}
+
+.bindPhone .box .cont .step dd:nth-child(3) p {
+	text-align: left
+}
+
+.bindPhone .box .cont .step dd img {
+	margin-top: 10px
+}
+
+.LMB_main .pageTurning {
+	text-align: center;
+	font-size: 0
+}
+
+.LMB_main .pageTurning a {
+	display: inline-block;
+	font-size: 14px;
+	vertical-align: top;
+	text-align: center
+}
+
+.LMB_main .pageTurning .btn a {
+	margin: 0 10px;
+	background-color: #666;
+	line-height: 30px;
+	width: 40px;
+	color: #FFF;
+	font-family: 宋体;
+	font-weight: 700
+}
+
+.LMB_main .pageTurning .btn01 a {
+	margin: 0 10px;
+	height: 28px;
+	line-height: 28px;
+	border: #999 1px solid;
+	width: 48px;
+	color: #999
+}
+
+.LMB_main .pageTurning .btn01 a:hover {
+	margin: 0 10px;
+	height: 28px;
+	line-height: 28px;
+	border: #999 1px solid;
+	background-color: #999;
+	width: 48px;
+	color: #fff
+}
+
+.LMB_main .pageTurning span a {
+	color: #999;
+	line-height: 28px;
+	padding: 0 10px;
+	border: 1px solid #DDD;
+	margin-left: -1px
+}
+
+.LMB_main .pageTurning span a:hover {
+	color: #fb7191;
+	position: relative;
+	z-index: 2;
+	border: 1px solid #fb7191
+}
+
+.LMB_main .pageTurning span.curr a {
+	border-color: #fb7191;
+	background-color: #fb7191;
+	color: #FFF
+}
+
+.LMB_main .pageTurning span input {
+	display: inline-block;
+	height: 28px;
+	border: #ddd 1px solid;
+	text-align: center;
+	width: 40px;
+	line-height: 28px \9;
+	margin: 0 5px;
+	color: #999
+}
+
+.LMB_main .pageTurning .dot {
+	line-height: 30px;
+	padding: 0 5px;
+	color: #999;
+	display: inline-block;
+	font-size: 14px
+}
+
+.LMB_main h2.barTitle .bar {
+	background-color: #52dcd3;
+	height: 30px;
+	width: 5px;
+	vertical-align: middle;
+	margin-right: 20px;
+	display: inline-block
+}
+
+.LMB_main .floorElevator {
+	background-color: #FFF;
+	width: 100px;
+	position: fixed;
+	top: 205px;
+	left: 50%;
+	margin-left: -750px;
+	text-align: center;
+	z-index: 10000
+}
+
+.LMB_main .floorElevator .top,
+.LMB_main .floorElevator .foot {
+	left: 0;
+	position: absolute;
+	width: 98px;
+	height: 5px;
+	font-size: 0;
+	border: 1px solid #DDD;
+	pointer-events: none
+}
+
+.LMB_main .floorElevator .top.top,
+.LMB_main .floorElevator .foot.top {
+	border-bottom: 0;
+	top: 0
+}
+
+.LMB_main .floorElevator .top.foot,
+.LMB_main .floorElevator .foot.foot {
+	border-top: 0;
+	bottom: 0
+}
+
+.LMB_main .floorElevator .list {
+	padding: 0 10px;
+	position: relative
+}
+
+.LMB_main .floorElevator .list .line {
+	left: 5px;
+	position: absolute;
+	width: 2px;
+	height: 10px;
+	background-color: #52dcd3;
+	top: 12px
+}
+
+.LMB_main .floorElevator .list h2 {
+	line-height: 32px;
+	height: 32px;
+	overflow: hidden;
+	border-bottom: 1px dashed #EEE;
+	color: #999;
+	font-size: 14px;
+	cursor: pointer
+}
+
+.LMB_main .floorElevator .list h2.curr {
+	color: #52dcd3
+}
+
+.LMB_main .floorElevator .list h2.out {
+	color: #CCC
+}
+
+.LMB_main .floorElevator .list h2.second {
+	line-height: 22px;
+	font-size: 12px;
+	border: 0
+}
+
+.LMB_main .floorElevator .list h2.second.end {
+	border-bottom: 1px dashed #EEE
+}
+
+.LMB_main .jp-audio {
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	border: 0
+}
+
+.LMB_main .jp-audio .jp-interface {
+	height: 60px
+}
+
+.LMB_main .jp-audio .jp-type-single .jp-controls {
+	width: 100px;
+	padding: 0;
+	margin: 10px 0 0 50px;
+	position: relative;
+	float: left
+}
+
+.LMB_main .jp-audio .jp-type-single .jp-volume-controls {
+	position: relative;
+	width: 200px;
+	left: 0;
+	top: 0;
+	height: 20px;
+	margin: 15px 50px 0 0;
+	float: right
+}
+
+.LMB_main .jp-audio .jp-type-single .jp-volume-controls .jp-volume-bar {
+	left: 22px;
+	width: 142px
+}
+
+.LMB_main .jp-audio .jp-type-single .jp-volume-controls .jp-volume-max {
+	left: 172px
+}
+
+.LMB_main .jp-audio .jp-type-single .jp-progress {
+	width: 200px;
+	position: relative;
+	height: 8px;
+	float: left;
+	left: 0;
+	top: 0;
+	margin: 15px 0 0 20px
+}
+
+.LMB_main .jp-audio .jp-type-single .jp-details {
+	position: absolute;
+	width: 200px;
+	right: 275px;
+	text-align: right;
+	top: 30px;
+	background-color: transparent;
+	line-height: 20px
+}
+
+.LMB_main .jp-audio .jp-type-single .jp-details .jp-title {
+	padding: 0
+}
+
+.LMB_main .jp-audio .jp-type-single .jp-time-holder {
+	position: absolute;
+	width: 200px;
+	float: left;
+	left: 155px;
+	top: 30px
+}
+
+.LMB_main .jp-audio .jp-type-single .jpExit {
+	position: absolute;
+	right: 5px;
+	top: 5px
+}
+
+.LMB_main .jp-audio .jp-type-single .jpExit .exitBtn {
+	color: #fff;
+	background-color: #019be1;
+	height: 20px;
+	line-height: 20px;
+	width: 20px;
+	border-radius: 10px
+}
+
+.LMB_main .jiathis_style .centerBottom {
+	display: none
+}
+
+.LMB_main .jiathis_style .ckepopBottom {
+	display: none
+}
+
+.LMB_main .header .logoAndSearchApp {
+	height: 102px;
+	background-color: #FFF
+}
+
+.LMB_main .header .logoAndSearchApp .LOGO,
+.LMB_main .header .logoAndSearchApp .LOGONew {
+	width: 470px;
+	height: 75px;
+	margin: 13px 0 0 14px;
+	position: relative
+}
+
+.LMB_main .header .logoAndSearchApp .searchAppBox {
+	margin-top: 31px
+}
+
+.LMB_main .header .logoAndSearchApp .searchAppBox .searchBox {
+	padding-right: 37px;
+	border-right: 1px solid #DDD
+}
+
+.LMB_main .header .logoAndSearchApp .searchAppBox .searchBox .search {
+	width: 410px;
+	height: 32px;
+	border: 1px solid #fb7191;
+	overflow: hidden;
+	background-color: #FFF;
+	border-radius: 6px
+}
+
+.LMB_main .header .logoAndSearchApp .searchAppBox .searchBox .search .text,
+.LMB_main .header .logoAndSearchApp .searchAppBox .searchBox .search .btn {
+	height: 32px;
+	border: 0;
+	float: left;
+	vertical-align: top;
+	background-color: transparent
+}
+
+.LMB_main .header .logoAndSearchApp .searchAppBox .searchBox .search .text {
+	width: 360px;
+	text-indent: 10px
+}
+
+.LMB_main .header .logoAndSearchApp .searchAppBox .searchBox .search .btn {
+	text-align: center;
+	width: 50px;
+	color: #fff;
+	cursor: pointer;
+	background-color: #fb7191;
+	float: right
+}
+
+.LMB_main .header .logoAndSearchApp .searchAppBox .searchBox .expertBtn {
+	width: 110px;
+	height: 32px;
+	line-height: 32px;
+	text-align: center;
+	color: #FFF;
+	font-weight: 700;
+	font-size: 14px;
+	background-color: #fb7191;
+	border-radius: 6px;
+	font-family: 宋体;
+	background-image: url(http://www.lamabang.com/static/v2/images/searchBtnBg.png);
+	background-repeat: no-repeat
+}
+
+.LMB_main .header .logoAndSearchApp .searchAppBox .searchBox .keyword {
+	clear: both;
+	padding-top: 8px;
+	width: 480px;
+	overflow: hidden;
+	white-space: nowrap
+}
+
+.LMB_main .header .logoAndSearchApp .searchAppBox .searchBox .keyword a {
+	margin-right: 12px;
+	color: #AAA
+}
+
+.LMB_main .header .logoAndSearchApp .searchAppBox span.pipe {
+	height: 34px
+}
+
+.LMB_main .header .logoAndSearchApp .searchAppBox .appBox {
+	width: 74px;
+	text-align: center;
+	padding-left: 21px;
+	position: relative
+}
+
+.LMB_main .header .logoAndSearchApp .searchAppBox .appBox .appQRCode {
+	position: absolute;
+	left: -80px;
+	top: 0;
+	z-index: 99;
+	display: none
+}
+
+.LMB_main .header .logoAndSearchApp .searchAppBox .appBox:hover .appQRCode {
+	display: block
+}
+
+.LMB_main .header .logoAndSearchApp .searchAppBox .appBox a {
+	color: #fff;
+	display: block;
+	background-color: #fb7191;
+	border-radius: 10px;
+	width: 70px;
+	height: 70px
+}
+
+.LMB_main .header .logoAndSearchApp .searchAppBox .appBox a .appIco {
+	width: 45px;
+	height: 45px;
+	overflow: hidden;
+	line-height: 45px;
+	display: block;
+	margin: auto;
+	color: #FFF;
+	font-size: 30px
+}
+
+.LMB_main .header .logoAndSearchApp .searchAppBox .appBox a p {
+	text-align: center;
+	color: #fff
+}
+
+.LMB_main .header .menuBox {
+	height: 59px;
+	position: relative;
+	z-index: 9
+}
+
+.LMB_main .header .menuBox .menu {
+	height: 59px;
+	width: 100%;
+	background-image: none;
+	border-bottom: 1px solid #e2e2e2;
+	background-color: #fff
+}
+
+.LMB_main .header .menuBox .menu .box {
+	height: 50px;
+	background-color: #FFF
+}
+
+.LMB_main .header .menuBox .menu .box ul {
+	float: left;
+	border-right: 1px solid #EEE;
+	height: 16px;
+	line-height: 16px;
+	padding-left: 14px;
+	margin: 17px 0 0
+}
+
+.LMB_main .header .menuBox .menu .box ul h2,
+.LMB_main .header .menuBox .menu .box ul li {
+	float: left
+}
+
+.LMB_main .header .menuBox .menu .box ul h2 a,
+.LMB_main .header .menuBox .menu .box ul li a {
+	color: #666
+}
+
+.LMB_main .header .menuBox .menu .box ul .strong {
+	font-size: 18px;
+	margin-right: 34px
+}
+
+.LMB_main .header .menuBox .menu .box ul .strong.cR a {
+	color: #fb7191
+}
+
+.LMB_main .header .menuBox .menu .box ul .strong.cB a {
+	color: #73cddd
+}
+
+.LMB_main .header .menuBox .menu .box ul .strong.cR2 a {
+	color: #fb717b
+}
+
+.LMB_main .header .menuBox .menu .box ul li {
+	margin-right: 21px;
+	font-size: 14px
+}
+
+.LMB_main .header .menuBox .menu .box ul.tabList {
+	border: 0
+}
+
+.LMB_main .header .menuBox .menu .box ul.tabList.oldWeb>li .sec-menu .menuList>li>a {
+	display: block;
+	line-height: 90px
+}
+
+.LMB_main .header .menuBox .menu .box ul.tabList.oldWeb>li .sec-menu em.arrow {
+	top: 8px
+}
+
+.LMB_main .header .menuBox .menu .box ul.tabList.oldWeb>li .sec-menu em.arrow.arrowTop {
+	top: 9px;
+	border-bottom-color: #fff
+}
+
+.LMB_main .header .menuBox .menu .box ul.tabList>li {
+	font-size: 18px;
+	line-height: 25px;
+	height: 25px;
+	cursor: pointer;
+	margin-right: 0
+}
+
+.LMB_main .header .menuBox .menu .box ul.tabList>li .menuCont {
+	position: relative
+}
+
+.LMB_main .header .menuBox .menu .box ul.tabList>li .secMenuBt {
+	background-color: #fff;
+	height: 54px;
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	margin-bottom: -54px;
+	z-index: 1;
+	display: none;
+	border-bottom: 1px solid #e2e2e2;
+	margin-bottom: -56px
+}
+
+.LMB_main .header .menuBox .menu .box ul.tabList>li span.pipe {
+	height: 18px;
+	background-color: #e2e2e2;
+	vertical-align: middle;
+	margin-right: 0
+}
+
+.LMB_main .header .menuBox .menu .box ul.tabList>li span.text {
+	display: inline-block;
+	line-height: 22px;
+	height: 22px;
+	vertical-align: middle
+}
+
+.LMB_main .header .menuBox .menu .box ul.tabList>li .sec-menu {
+	position: absolute;
+	width: 500px;
+	margin-left: -105px;
+	display: none;
+	z-index: 3
+}
+
+.LMB_main .header .menuBox .menu .box ul.tabList>li .sec-menu .menuList {
+	width: 100%;
+	border: 0;
+	margin: 0;
+	padding: 0
+}
+
+.LMB_main .header .menuBox .menu .box ul.tabList>li .sec-menu .menuList>li {
+	display: inline-block;
+	padding: 0 10px;
+	margin: 0;
+	line-height: 90px;
+	float: none
+}
+
+.LMB_main .header .menuBox .menu .box ul.tabList>li .sec-menu .menuList>li.on a,
+.LMB_main .header .menuBox .menu .box ul.tabList>li .sec-menu .menuList>li:hover a {
+	color: #fa6f93
+}
+
+.LMB_main .header .menuBox .menu .box ul.tabList>li .sec-menu .menuList>li>a {
+	color: #666;
+	font-size: 14px
+}
+
+.LMB_main .header .menuBox .menu .box ul.tabList>li .sec-menu em.arrow {
+	position: absolute;
+	display: inline-block;
+	height: 0;
+	width: 0;
+	border: 6px solid transparent;
+	border-bottom-color: #e2e2e2;
+	left: 140px;
+	top: 5px
+}
+
+.LMB_main .header .menuBox .menu .box ul.tabList>li .sec-menu em.arrow.arrowTop {
+	top: 6px;
+	border-bottom-color: #fff
+}
+
+.LMB_main .header .menuBox .menu .box ul.tabList>li .common-icon {
+	margin-right: 4px
+}
+
+.LMB_main .header .menuBox .menu .box ul.tabList>li>a {
+	color: #333
+}
+
+.LMB_main .header .menuBox .menu .box ul.tabList>li>a .icoF {
+	color: #333
+}
+
+.LMB_main .header .menuBox .menu .box ul.tabList>li .icoF {
+	font-size: 18px;
+	color: #333;
+	vertical-align: middle;
+	margin-right: 5px
+}
+
+.LMB_main .header .menuBox .menu .box ul.tabList>li.noIndex {
+	padding-left: 15px
+}
+
+.LMB_main .header .menuBox .menu .box ul.tabList>li.noIndex .downToggle {
+	position: absolute;
+	right: 15px;
+	top: 12px
+}
+
+.LMB_main .header .menuBox .menu .box ul.tabList>li.noIndex span.pipe {
+	margin-left: 30px
+}
+
+.LMB_main .header .menuBox .menu .box ul.tabList>li.on .common-icon.headCart,
+.LMB_main .header .menuBox .menu .box ul.tabList>li:hover .common-icon.headCart {
+	background-image: url(http://www.lamabang.com/static/v2/images/icons/head-cart-hover.png)
+}
+
+.LMB_main .header .menuBox .menu .box ul.tabList>li.on .common-icon.home,
+.LMB_main .header .menuBox .menu .box ul.tabList>li:hover .common-icon.home {
+	background-image: url(http://www.lamabang.com/static/v2/images/icons/head-home-hover.png)
+}
+
+.LMB_main .header .menuBox .menu .box ul.tabList>li.on .common-icon.live,
+.LMB_main .header .menuBox .menu .box ul.tabList>li:hover .common-icon.live {
+	background-image: url(../images/icons/head-live-hover.png)
+}
+
+.LMB_main .header .menuBox .menu .box ul.tabList>li.on .common-icon.communicate,
+.LMB_main .header .menuBox .menu .box ul.tabList>li:hover .common-icon.communicate {
+	background-image: url(http://www.lamabang.com/static/v2/images/icons/head-comunity-hover.png)
+}
+
+.LMB_main .header .menuBox .menu .box ul.tabList>li.on .common-icon.knowledgeIco,
+.LMB_main .header .menuBox .menu .box ul.tabList>li:hover .common-icon.knowledgeIco {
+	background-image: url(http://www.lamabang.com/static/v2/images/icons/head-knowledge-hover.png)
+}
+
+.LMB_main .header .menuBox .menu .box ul.tabList>li:hover .secMenuBt {
+	display: block
+}
+
+.LMB_main .header .menuBox .menu .box ul.tabList>li:hover .sec-menu {
+	display: block
+}
+
+.LMB_main .header .menuBox .menu .box ul.tabList>li:hover b.downToggle {
+	border: 5px solid transparent;
+	border-bottom-color: #fa6f93;
+	border-top: 0
+}
+
+.LMB_main .header .menuBox .menu .box ul.tabList>li.on b.downToggle {
+	border: 5px solid transparent;
+	border-top-color: #fa6f93;
+	border-bottom: 0
+}
+
+.LMB_main .header .menuBox .menu .box ul.tabList>li.on:hover b.downToggle {
+	border: 5px solid transparent;
+	border-bottom-color: #fa6f93;
+	border-top: 0
+}
+
+.LMB_main .header .menuBox .menu .box ul.tabList>li.on .menuCont>a,
+.LMB_main .header .menuBox .menu .box ul.tabList>li:hover .menuCont>a {
+	color: #fa6e92
+}
+
+.LMB_main .header .menuBox .menu .box ul.tabList>li.on .menuCont>a .icoF,
+.LMB_main .header .menuBox .menu .box ul.tabList>li:hover .menuCont>a .icoF {
+	color: #fa6e92
+}
+
+.LMB_main .header .menuBox .menu .box .stageBox {
+	position: relative;
+	margin-top: 30px;
+	border-top: 1px solid #e2e2e2;
+	margin-left: 30px
+}
+
+.LMB_main .header .menuBox .menu .box .stageBox .dotLeft,
+.LMB_main .header .menuBox .menu .box .stageBox .dotRight {
+	position: absolute;
+	display: block;
+	width: 3px;
+	height: 3px;
+	border-radius: 1.5px;
+	background-color: #ccc;
+	top: -2px
+}
+
+.LMB_main .header .menuBox .menu .box .stageBox .dotLeft {
+	left: 0
+}
+
+.LMB_main .header .menuBox .menu .box .stageBox .dotRight {
+	right: 0
+}
+
+.LMB_main .header .menuBox .menu .box .stageBox .tagList {
+	overflow: hidden;
+	padding: 0 23px;
+	margin-top: -13px
+}
+
+.LMB_main .header .menuBox .menu .box .stageBox .tagList>a {
+	display: inline-block;
+	float: left;
+	line-height: 24px;
+	border-radius: 12px;
+	padding: 0 8px;
+	border: 1px solid #999;
+	margin: 1px 7px;
+	cursor: pointer;
+	background-color: #fbfbfb;
+	font-size: 14px;
+	color: #333;
+	vertical-align: middle
+}
+
+.LMB_main .header .menuBox .menu .box .stageBox .tagList>a.on,
+.LMB_main .header .menuBox .menu .box .stageBox .tagList>a:hover {
+	border: 1px solid #52dcd3;
+	color: #52dcd3;
+	background-color: #f8fdfd
+}
+
+.LMB_main .header .menuBox .menu .box .stageBox .tagList>a.on {
+	padding: 0 12px;
+	line-height: 26px;
+	font-size: 15px;
+	margin-top: 0;
+	margin-bottom: 0
+}
+
+.LMB_main .header .menuBox .menu .box .loginBox {
+	margin-top: 14px;
+	line-height: 32px;
+	position: relative
+}
+
+.LMB_main .header .menuBox .menu .box .loginBox:hover .userInfo {
+	display: block
+}
+
+.LMB_main .header .menuBox .menu .box .loginBox .user {
+	line-height: 32px;
+	height: 41px
+}
+
+.LMB_main .header .menuBox .menu .box .loginBox .user>span {
+	display: inline-block;
+	vertical-align: middle
+}
+
+.LMB_main .header .menuBox .menu .box .loginBox .user .name {
+	display: inline-block;
+	width: 110px;
+	text-align: right;
+	margin: 0 5px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	vertical-align: middle;
+	height: 32px;
+	line-height: 32px
+}
+
+.LMB_main .header .menuBox .menu .box .loginBox .user .portrait {
+	background-color: #EEE;
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	margin-left: 16px;
+	border-radius: 50%;
+	vertical-align: -10px;
+	overflow: hidden
+}
+
+.LMB_main .header .menuBox .menu .box .loginBox .user .portrait img {
+	width: 100%;
+	height: 100%
+}
+
+.LMB_main .header .menuBox .menu .box .loginBox .login a {
+	margin: 0 14px;
+	color: #999
+}
+
+.LMB_main .header .menuBox .menu .box .loginBox .login a.icoF {
+	margin: 0 5px;
+	color: #CCC;
+	font-size: 19px
+}
+
+.LMB_main .header .menuBox .menu .box .loginBox .login a.wbIco:hover {
+	color: #ff9173
+}
+
+.LMB_main .header .menuBox .menu .box .loginBox .login a.qqIco:hover {
+	color: #73acdd
+}
+
+.LMB_main .header .menuBox .menu .box .loginBox .userInfo {
+	display: none;
+	position: absolute;
+	background-color: #FFF;
+	border: 1px solid #efefef;
+	width: 168px;
+	padding: 10px 0;
+	right: 0;
+	top: 41px;
+	display: none
+}
+
+.LMB_main .header .menuBox .menu .box .loginBox .userInfo em {
+	width: 11px;
+	height: 6px;
+	position: absolute;
+	top: -6px;
+	right: 8px
+}
+
+.LMB_main .header .menuBox .menu .box .loginBox .userInfo dd {
+	line-height: 40px
+}
+
+.LMB_main .header .menuBox .menu .box .loginBox .userInfo dd a {
+	display: block;
+	overflow: hidden;
+	padding: 0 20px;
+	color: #999;
+	font-size: 14px
+}
+
+.LMB_main .header .menuBox .menu .box .loginBox .userInfo dd a .icoF {
+	color: #CCC;
+	font-size: 18px
+}
+
+.LMB_main .header .menuBox .menu .box .loginBox .userInfo dd a:hover {
+	background-color: #f8f8f8;
+	color: #fb7191
+}
+
+.LMB_main .header .menuBox .menu .box .loginBox .userInfo dd a:hover .icoF {
+	color: #fb7191
+}
+
+.LMB_main .header .menuBox .menu .secMenuBg {
+	height: 54px;
+	border-bottom: 1px solid #e2e2e2;
+	background-color: #fff;
+	margin-top: 10px
+}
+
+.LMB_main .topBanner {
+	height: 80px;
+	background-color: #ff679f
+}
+
+.LMB_main .topBanner .topLogo {
+	width: 491px;
+	height: 80px;
+	background: url(http://www.lamabang.com/static/v2/images/topBanner.jpg) center no-repeat;
+	margin: 0 auto
+}
+
+.LMB_main .webMapNav {
+	line-height: 50px;
+	color: #d1d1d1;
+	font-size: 12px;
+	height: 50px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis
+}
+
+.LMB_main .webMapNav .arrows {
+	font-family: 宋体;
+	margin: 0 10px
+}
+
+.LMB_main .webMapNav a {
+	color: #999;
+	font-size: 14px
+}
+
+.LMB_main .webMapNav a h1 {
+	display: inline;
+	font-weight: 700
+}
+
+.LMB_main .footer .footNavMap {
+	background-color: #fbfbfb;
+	padding-top: 27px
+}
+
+.LMB_main .footer .footNavMap .contL,
+.LMB_main .footer .footNavMap .contR,
+.LMB_main .footer .footNavMap .contC {
+	height: 175px
+}
+
+.LMB_main .footer .footNavMap .contL .title,
+.LMB_main .footer .footNavMap .contR .title,
+.LMB_main .footer .footNavMap .contC .title {
+	height: 44px;
+	line-height: 36px;
+	color: #666;
+	font-size: 14px
+}
+
+.LMB_main .footer .footNavMap .contL {
+	width: 308px;
+	margin-right: 20px;
+	border-right: 1px solid #DDD
+}
+
+.LMB_main .footer .footNavMap .contL .attention dd {
+	float: left;
+	line-height: 38px;
+	border: 1px solid #DDD;
+	color: #999;
+	margin-right: 12px;
+	margin-bottom: 10px;
+	border-radius: 4px;
+	text-align: center;
+	cursor: pointer;
+	font-size: 14px;
+	position: relative
+}
+
+.LMB_main .footer .footNavMap .contL .attention dd img {
+	position: absolute;
+	right: -84px;
+	bottom: 50%;
+	z-index: 2;
+	display: none;
+	margin-bottom: -36px
+}
+
+.LMB_main .footer .footNavMap .contL .attention dd:hover img {
+	display: inline-block
+}
+
+.LMB_main .footer .footNavMap .contL .attention dd i {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+	vertical-align: middle
+}
+
+.LMB_main .footer .footNavMap .contL .attention dd:hover {
+	border-color: #fb7191;
+	color: #fb7191
+}
+
+.LMB_main .footer .footNavMap .contL .attention dd.dd1 {
+	width: 178px
+}
+
+.LMB_main .footer .footNavMap .contL .attention dd.dd2 {
+	width: 88px;
+	height: 88px;
+	margin-right: 20px;
+	float: right
+}
+
+.LMB_main .footer .footNavMap .contL .attention dd.dd2 .icon {
+	line-height: 30px;
+	margin-top: 10px
+}
+
+.LMB_main .footer .footNavMap .contL .attention dd.dd2 .text {
+	margin-top: 5px
+}
+
+.LMB_main .footer .footNavMap .contL .attention dd.dd2 .icon-weibo {
+	width: 31px;
+	height: 25px;
+	margin: 0
+}
+
+.LMB_main .footer .footNavMap .contL .attention dd.dd3 {
+	width: 178px
+}
+
+.LMB_main .footer .footNavMap .contL .attention dd.dd4 {
+	width: 65px
+}
+
+.LMB_main .footer .footNavMap .contC {
+	width: 379px;
+	margin-right: 20px;
+	border-right: 1px solid #DDD
+}
+
+.LMB_main .footer .footNavMap .contC .appDownlaod dd {
+	width: 97px;
+	margin-right: 20px;
+	float: left;
+	color: #999;
+	text-align: center
+}
+
+.LMB_main .footer .footNavMap .contC .appDownlaod dd .QRCode {
+	background-color: #EEE;
+	height: 97px
+}
+
+.LMB_main .footer .footNavMap .contC .appDownlaod dd p {
+	line-height: 32px
+}
+
+.LMB_main .footer .footNavMap .contR {
+	width: 471px
+}
+
+.LMB_main .footer .footNavMap .contR .navBtn {
+	font-size: 14px;
+	padding-bottom: 18px;
+	border-bottom: 1px solid #DDD;
+	overflow: hidden
+}
+
+.LMB_main .footer .footNavMap .contR .navBtn ul {
+	width: 120%
+}
+
+.LMB_main .footer .footNavMap .contR .navBtn ul li {
+	float: left;
+	margin-right: 46px
+}
+
+.LMB_main .footer .footNavMap .contR .navBtn ul li a {
+	color: #999
+}
+
+.LMB_main .footer .footNavMap .contR .feedback {
+	line-height: 28px
+}
+
+.LMB_main .footer .footNavMap .contR dd {
+	float: left;
+	margin-right: 10px;
+	font-size: 14px
+}
+
+.LMB_main .footer .footNavMap .contR dd a {
+	display: block;
+	padding: 0 16px;
+	color: #999;
+	border: 1px solid #DDD;
+	border-radius: 4px
+}
+
+.LMB_main .footer .footNavMap .contR dd a:hover {
+	border-color: #fb7191;
+	color: #fb7191
+}
+
+.LMB_main .footer .footNavMap .blogroll {
+	border-top: 1px solid #DDD;
+	line-height: 24px;
+	overflow: hidden;
+	margin-top: 27px;
+	clear: both;
+	padding: 15px 0;
+	padding-left: 100px
+}
+
+.LMB_main .footer .footNavMap .blogroll .title {
+	margin-left: -100px;
+	font-size: 14px;
+	float: left
+}
+
+.LMB_main .footer .footNavMap .blogroll a {
+	color: #999;
+	margin-right: 44px;
+	float: left
+}
+
+.LMB_main .footer .copyright {
+	line-height: 22px;
+	color: #999;
+	padding: 15px 0 60px
+}
+
+.LMB_main .footer .copyright .info {
+	text-align: center
+}
+
+.LMB_main .footer .copyright .safeguard {
+	font-size: 0;
+	margin-top: 6px;
+	text-align: center
+}
+
+.LMB_main .footer .copyright .safeguard a {
+	display: inline-block;
+	width: 122px;
+	height: 57px;
+	background-color: #EEE;
+	margin: 0 7px
+}
+
+.LMB_main .popWindow {
+	background-color: rgba(0, 0, 0, .5);
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 10001
+}
+
+.LMB_main .popWindow .modal-main {
+	left: 50%;
+	top: 50%;
+	position: absolute;
+	border-top: 5px #ffcfcd solid;
+	background-color: #fff
+}
+
+.LMB_main .popWindow .modal-main .mainTitle {
+	margin: 0 30px;
+	line-height: 85px;
+	border-bottom: 1px solid #EEE;
+	position: relative
+}
+
+.LMB_main .popWindow .modal-main .mainTitle h2 {
+	font-size: 26px;
+	color: #333;
+	line-height: 85px;
+	text-align: left
+}
+
+.LMB_main .popWindow .modal-main .mainTitle h2 em {
+	font-size: 14px;
+	margin-left: 10px;
+	width: 176px;
+	height: 12px;
+	font: 0/0 arial;
+	text-indent: -9999em;
+	display: inline-block;
+	vertical-align: 8px
+}
+
+.LMB_main .popWindow .modal-main .mainTitle .close {
+	position: absolute;
+	line-height: 24px;
+	width: 24px;
+	text-align: center;
+	cursor: pointer;
+	right: 0;
+	top: 20px;
+	font-size: 26px;
+	color: #eb7280
+}
+
+.LMB_main .popWindow .modal-main.linkMainShow {
+	width: 680px;
+	margin-left: -340px;
+	margin-top: -100px;
+	text-align: left
+}
+
+.LMB_main .popWindow .modal-main.linkMainShow .cont {
+	margin: 0 30px 30px
+}
+
+.LMB_main .popWindow .modal-main.linkMainShow .cont .tip {
+	margin-top: 12px;
+	font-size: 14px;
+	color: #aaa;
+	line-height: 30px
+}
+
+.LMB_main .popWindow .modal-main.linkMainShow .cont .linkInput {
+	width: 508px;
+	padding: 0 10px;
+	border: 1px solid #eee;
+	height: 32px;
+	border-radius: 1px
+}
+
+.LMB_main .popWindow .modal-main.linkMainShow .cont .btn {
+	background-color: #fb7191;
+	line-height: 34px;
+	padding: 0 20px;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 14px;
+	margin-left: 20px
+}
+
+.LMB_main .popWindow .modal-main.loginMainShow {
+	width: 530px;
+	border-top: 5px #ffcfcd solid;
+	background-color: #FFF;
+	left: 50%;
+	top: 50%;
+	margin: -200px 0 0 -295px;
+	position: absolute;
+	padding: 0 30px 20px;
+	text-align: left
+}
+
+.LMB_main .popWindow .modal-main.loginMainShow .mainTitle {
+	margin: 0
+}
+
+.LMB_main .popWindow .modal-main.loginMainShow .cont {
+	padding-right: 240px;
+	margin-top: 20px;
+	font-size: 16px;
+	color: #555;
+	text-align: center
+}
+
+.LMB_main .popWindow .modal-main.loginMainShow .cont .appDownload {
+	width: 200px;
+	height: 260px;
+	float: right;
+	margin-right: -240px
+}
+
+.LMB_main .popWindow .modal-main.loginMainShow .cont .appDownload h3 {
+	margin-top: 20px
+}
+
+.LMB_main .popWindow .modal-main.loginMainShow .cont .appDownload .icoF {
+	color: #d3d3d3
+}
+
+.LMB_main .popWindow .modal-main.loginMainShow .cont .appDownload .key {
+	background-color: #FFF;
+	width: 138px;
+	height: 138px;
+	border: 1px solid #EEE;
+	margin: auto
+}
+
+.LMB_main .popWindow .modal-main.loginMainShow .cont .appDownload .key img {
+	height: 100%
+}
+
+.LMB_main .popWindow .modal-main.loginMainShow .cont .appDownload p {
+	line-height: 50px;
+	text-align: center
+}
+
+.LMB_main .popWindow .modal-main.loginMainShow .cont .form {
+	text-align: left;
+	overflow: hidden
+}
+
+.LMB_main .popWindow .modal-main.loginMainShow .cont .form li {
+	overflow: hidden;
+	margin-bottom: 10px;
+	position: relative
+}
+
+.LMB_main .popWindow .modal-main.loginMainShow .cont .form li .icoF {
+	line-height: 34px;
+	position: absolute;
+	right: 10px;
+	top: 0;
+	color: #CCC;
+	font-size: 16px
+}
+
+.LMB_main .popWindow .modal-main.loginMainShow .cont .form li .formHint {
+	width: 288px;
+	height: 32px;
+	border: 1px solid #ea6b7a;
+	border-radius: 3px;
+	text-indent: 14px;
+	font-size: 14px;
+	line-height: 32px;
+	color: #ea6b7a;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: #FFF;
+	display: none
+}
+
+.LMB_main .popWindow .modal-main.loginMainShow .cont .form li .formHint .close {
+	line-height: 12px;
+	height: 14px;
+	width: 14px;
+	color: #ea6b7a;
+	border: 1px solid #ea6b7a;
+	border-radius: 2px;
+	font-size: 20px;
+	text-indent: 0;
+	margin: 8px 9px;
+	cursor: pointer
+}
+
+.LMB_main .popWindow .modal-main.loginMainShow .cont .form li .textInput {
+	width: 288px;
+	height: 32px;
+	border: 1px solid #EEE;
+	border-radius: 3px;
+	text-indent: 14px
+}
+
+.LMB_main .popWindow .modal-main.loginMainShow .cont .form li .btnInput {
+	width: 290px;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 5px;
+	color: #FFF;
+	text-align: center;
+	border: 0;
+	color: #FFF;
+	background-color: #fb7191;
+	cursor: pointer
+}
+
+.LMB_main .popWindow .modal-main.loginMainShow .cont .form li.find {
+	padding-top: 8px;
+	padding-bottom: 18px
+}
+
+.LMB_main .popWindow .modal-main.loginMainShow .cont .form li.find,
+.LMB_main .popWindow .modal-main.loginMainShow .cont .form li.find .fr {
+	color: #999;
+	font-size: 14px;
+	line-height: 1
+}
+
+.LMB_main .popWindow .modal-main.loginMainShow .cont .uniteLogin {
+	margin-top: 8px
+}
+
+.LMB_main .popWindow .modal-main.loginMainShow .cont .uniteLogin .title {
+	font-size: 14px;
+	color: #999;
+	line-height: 1;
+	text-align: center
+}
+
+.LMB_main .popWindow .modal-main.loginMainShow .cont .uniteLogin .title em {
+	width: 80px;
+	height: 1px;
+	background-color: #EEE;
+	font: 0/0 arial;
+	margin-top: 5px;
+	display: inline-block;
+	*display: inline;
+	*zoom: 1
+}
+
+.LMB_main .popWindow .modal-main.loginMainShow .cont .uniteLogin .list {
+	font-size: 0;
+	text-align: center;
+	margin-top: 10px
+}
+
+.LMB_main .popWindow .modal-main.loginMainShow .cont .uniteLogin .list dd {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	border: 0;
+	line-height: 30px;
+	color: #CCC;
+	border-radius: 50%;
+	border: 1px solid #EEE;
+	margin: 0 5px;
+	cursor: pointer;
+	text-align: center;
+	*display: inline;
+	*zoom: 1
+}
+
+.LMB_main .popWindow .modal-main.loginMainShow .cont .uniteLogin .list dd.wbIco:hover {
+	background-color: #ff9173;
+	border-color: #ff9173
+}
+
+.LMB_main .popWindow .modal-main.loginMainShow .cont .uniteLogin .list dd.qqIco:hover {
+	background-color: #73acdd;
+	border-color: #73acdd
+}
+
+.LMB_main .popWindow .modal-main.loginMainShow .cont .uniteLogin .list dd.txwbIco:hover {
+	background-color: #73d9ff;
+	border-color: #73d9ff
+}
+
+.LMB_main .popWindow .modal-main.loginMainShow .cont .uniteLogin .list dd a {
+	color: #ccc;
+	vertical-align: middle
+}
+
+.LMB_main .popWindow .modal-main.loginMainShow .cont .uniteLogin .list dd:hover a {
+	color: #fff
+}
+
+.LMB_main .popWindow .affirmHintShow {
+	width: 340px;
+	background-color: #FFF;
+	border-top: 5px solid #ffcfcd;
+	position: fixed;
+	left: 50%;
+	margin-left: -200px;
+	top: 30%;
+	padding: 0 30px;
+	text-align: left;
+	color: #333
+}
+
+.LMB_main .popWindow .affirmHintShow .close {
+	position: absolute;
+	line-height: 24px;
+	width: 24px;
+	text-align: center;
+	cursor: pointer;
+	right: 20px;
+	top: 15px;
+	font-size: 26px;
+	color: #eb7280
+}
+
+.LMB_main .popWindow .affirmHintShow .cont {
+	overflow: hidden;
+	border-bottom: 1px solid #EEE;
+	padding: 30px 0;
+	padding-left: 50px;
+	font-size: 14px
+}
+
+.LMB_main .popWindow .affirmHintShow .cont .icoF {
+	float: left;
+	margin-left: -50px;
+	font-size: 34px;
+	line-height: 32px;
+	color: #CCC
+}
+
+.LMB_main .popWindow .affirmHintShow .cont .text {
+	margin-top: 6px
+}
+
+.LMB_main .popWindow .affirmHintShow .btnBox {
+	padding: 20px 0;
+	text-align: right;
+	font-size: 0
+}
+
+.LMB_main .popWindow .affirmHintShow .btnBox .btnStyle {
+	font-size: 14px;
+	margin-left: 10px;
+	width: 66px;
+	height: 32px;
+	background-color: #FFF;
+	border: 1px solid #DDD;
+	color: #999;
+	border-radius: 3px;
+	cursor: pointer
+}
+
+.LMB_main .popWindow .affirmHintShow .btnBox .btnStyle.bs01 {
+	background-color: #fb7191;
+	border-color: #fb7191;
+	color: #FFF
+}
+
+.LMB_main .hintMainShow {
+	position: fixed;
+	top: 45%;
+	width: 100%;
+	z-index: 10002;
+	line-height: 50px;
+	font-size: 14px;
+	color: #ea6b7a;
+	text-align: center
+}
+
+.LMB_main .hintMainShow .box {
+	display: inline-block;
+	border-left: 5px solid #ffcfcd;
+	background-color: #fff5f3;
+	padding-left: 30px;
+	padding-right: 10px
+}
+
+.LMB_main .hintMainShow .box .close {
+	width: 30px;
+	cursor: pointer;
+	text-align: center;
+	font-size: 20px;
+	margin-left: 20px
+}
+
+.LMB_main .lmb_notice {
+	z-index: 20000;
+	line-height: 50px;
+	font-size: 14px;
+	color: #ea6b7a;
+	text-align: center
+}
+
+.LMB_main .lmb_notice.box {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	display: inline-block;
+	border-left: 5px solid #ffcfcd;
+	background-color: #fff5f3;
+	padding-left: 30px;
+	padding-right: 10px;
+	*max-width: 320px
+}
+
+.LMB_main .lmb_notice.box .close {
+	width: 30px;
+	cursor: pointer;
+	text-align: center;
+	font-size: 20px;
+	margin-left: 20px
+}
+
+.LMB_main .expertsWindow {
+	position: absolute;
+	left: 50%;
+	top: 40%;
+	margin-left: -319px;
+	width: 638px;
+	height: 238px;
+	z-index: 1000;
+	background-color: #FFF;
+	border: 1px solid #DDD;
+	border-radius: 6px
+}
+
+.LMB_main .expertsWindow .close {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	background-color: #000;
+	font-size: 40px;
+	color: #FFF;
+	border-radius: 50%;
+	line-height: 32px;
+	cursor: pointer;
+	right: -21px;
+	top: -21px
+}
+
+.LMB_main .expertsWindow .list {
+	margin: 0 20px;
+	margin-top: 84px;
+	overflow: hidden
+}
+
+.LMB_main .expertsWindow .list ul {
+	width: 110%
+}
+
+.LMB_main .expertsWindow .list li {
+	width: 299px;
+	float: left;
+	border-right: 1px solid #f1f1f1
+}
+
+.LMB_main .expertsWindow .list li .btnStyle {
+	height: 50px;
+	width: 162px;
+	background-color: #fb7191;
+	color: #FFF;
+	font-size: 16px;
+	border: 0;
+	border-radius: 6px;
+	cursor: pointer
+}
+
+.LMB_main .expertsWindow .list li .btnStyle:hover {
+	background-color: #f75b7f
+}
+
+.LMB_main .expertsWindow .list li p {
+	margin-top: 15px;
+	font-size: 14px
+}
+
+.LMB_main span.pipe {
+	display: inline-block;
+	width: 1px;
+	height: 20px;
+	margin: 0 20px;
+	background-color: #ccc
+}
+
+.LMB_main .selectBtnBox {
+	position: relative;
+	height: 30px
+}
+
+.LMB_main .selectBtnBox .selectBtn {
+	border: 1px solid #EEE;
+	padding: 0;
+	margin-top: -1px;
+	line-height: 28px;
+	padding: 1px;
+	width: 133px;
+	text\-align: center;
+	color: #999;
+	background-color: #FFF;
+	position: absolute;
+	right: 0;
+	top: 0
+}
+
+.LMB_main .selectBtnBox .selectBtn i {
+	width: 8px;
+	height: 4px;
+	position: absolute;
+	right: 10px;
+	top: 13px;
+	font-size: 0;
+	background-image: url(http://www.lamabang.com/static/v2/images/lmbMainImg.png);
+	background-repeat: no-repeat;
+	background-position: -199px -73px
+}
+
+.LMB_main .selectBtnBox .selectBtn:hover dd {
+	display: block
+}
+
+.LMB_main .selectBtnBox .selectBtn dd {
+	display: none;
+	cursor: pointer
+}
+
+.LMB_main .selectBtnBox .selectBtn dd.curr {
+	display: block
+}
+
+.LMB_main .selectBtnBox .selectBtn dd a,
+.LMB_main .selectBtnBox .selectBtn dd a:hover {
+	color: #999
+}
+
+.LMB_main .bannerAdW {
+	height: 90px
+}
+
+.LMB_main .bannerAdW img {
+	width: 100%;
+	height: 100%
+}
+
+.LMB_main .chat-window {
+	background-color: #fff;
+	border-top: 5px solid #ffcfcd;
+	width: 640px;
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	z-index: 10001
+}
+
+.LMB_main .chat-window .mainTitle {
+	position: relative;
+	border: 1px solid #eee;
+	border-top: 0;
+	padding: 0 18px
+}
+
+.LMB_main .chat-window .mainTitle .user-self {
+	overflow: hidden;
+	height: 40px;
+	margin: 14px 0
+}
+
+.LMB_main .chat-window .mainTitle .user-self .avatar {
+	width: 36px;
+	height: 36px
+}
+
+.LMB_main .chat-window .mainTitle .user-self .avatar img {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%
+}
+
+.LMB_main .chat-window .mainTitle .user-self .intro {
+	width: 550px;
+	font-size: 14px;
+	line-height: 20px;
+	text-align: left;
+	margin-left: 12px
+}
+
+.LMB_main .chat-window .mainTitle .user-self .intro .user-name {
+	color: #333;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis
+}
+
+.LMB_main .chat-window .mainTitle .user-self .intro .info {
+	color: #999;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis
+}
+
+.LMB_main .chat-window .mainTitle .user-self .intro .info .dash {
+	padding: 0 10px
+}
+
+.LMB_main .chat-window .mainTitle .user-self .intro .info .cR {
+	color: #fb717b
+}
+
+.LMB_main .chat-window .mainTitle .close {
+	position: absolute;
+	line-height: 24px;
+	width: 24px;
+	text-align: center;
+	cursor: pointer;
+	right: 0;
+	top: 0;
+	font-size: 26px;
+	color: #eb7280
+}
+
+.LMB_main .chat-window .cont {
+	overflow: hidden
+}
+
+.LMB_main .chat-window .cont .talkerList {
+	width: 205px;
+	overflow-y: auto;
+	height: 420px;
+	overflow-x: hidden;
+	background-color: #f4f4f4
+}
+
+.LMB_main .chat-window .cont .talkerList>ul {
+	width: 200px;
+	border-right: 2px solid #ddd;
+	padding: 5px 15px
+}
+
+.LMB_main .chat-window .cont .talkerList>ul>li {
+	text-align: left;
+	height: 40px;
+	line-height: 40px;
+	position: relative;
+	padding-left: 20px;
+	margin-right: -2px;
+	cursor: pointer;
+	font-size: 14px;
+	color: #666;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis
+}
+
+.LMB_main .chat-window .cont .talkerList>ul>li i {
+	display: none;
+	width: 6px;
+	height: 6px;
+	position: absolute;
+	right: 20px;
+	top: 10px;
+	background-color: #ff8190;
+	border-radius: 3px
+}
+
+.LMB_main .chat-window .cont .talkerList>ul>li .avatar {
+	width: 26px;
+	height: 26px;
+	border-radius: 13px;
+	vertical-align: middle;
+	margin-right: 10px
+}
+
+.LMB_main .chat-window .cont .talkerList>ul>li.active {
+	background-color: #FBFBFB;
+	border-right: 2px solid #ff8190;
+	color: #fb7191
+}
+
+.LMB_main .chat-window .cont .talkerList>ul>li.active i {
+	display: inline-block
+}
+
+.LMB_main .chat-window .cont .chat-panel {
+	width: 435px
+}
+
+.LMB_main .chat-window .cont .chat-panel .chat-content {
+	height: 285px;
+	padding: 0 20px;
+	overflow: auto
+}
+
+.LMB_main .chat-window .cont .chat-panel .chat-content .date {
+	color: #999;
+	font-size: 12px;
+	line-height: 30px
+}
+
+.LMB_main .chat-window .cont .chat-panel .chat-content .name {
+	color: #333;
+	font-size: 14px
+}
+
+.LMB_main .chat-window .cont .chat-panel .chat-content .time {
+	color: #999;
+	font-size: 10px;
+	padding-left: 10px
+}
+
+.LMB_main .chat-window .cont .chat-panel .chat-content .msg-cont {
+	font-size: 14px;
+	line-height: 21px;
+	position: relative;
+	padding: 10px 15px;
+	border-radius: 4px;
+	margin-top: 5px
+}
+
+.LMB_main .chat-window .cont .chat-panel .chat-content .msg-cont em.arrow {
+	display: inline-block;
+	position: absolute;
+	height: 0;
+	width: 0;
+	border: 6px solid transparent;
+	border-top: 0;
+	top: -6px
+}
+
+.LMB_main .chat-window .cont .chat-panel .chat-content .receive-msg {
+	margin-top: 20px;
+	text-align: left
+}
+
+.LMB_main .chat-window .cont .chat-panel .chat-content .receive-msg .msg-cont {
+	background-color: #eee;
+	color: #333;
+	width: 310px
+}
+
+.LMB_main .chat-window .cont .chat-panel .chat-content .receive-msg .msg-cont em.arrow {
+	left: 10px;
+	border-bottom-color: #eee
+}
+
+.LMB_main .chat-window .cont .chat-panel .chat-content .send-msg {
+	margin-top: 20px;
+	text-align: right;
+	overflow: hidden
+}
+
+.LMB_main .chat-window .cont .chat-panel .chat-content .send-msg .msg-cont {
+	background-color: #fb7191;
+	text-align: left;
+	color: #fff;
+	float: right;
+	width: 320px
+}
+
+.LMB_main .chat-window .cont .chat-panel .chat-content .send-msg .msg-cont em.arrow {
+	right: 10px;
+	border-bottom-color: #fb7191
+}
+
+.LMB_main .chat-window .cont .chat-panel .message-send {
+	background-color: #fbfbfb;
+	margin-left: -3px;
+	padding: 10px
+}
+
+.LMB_main .chat-window .cont .chat-panel .message-send .send-cont {
+	width: 408px;
+	height: 68px;
+	padding: 5px;
+	resize: none;
+	border: 1px solid #eee
+}
+
+.LMB_main .chat-window .cont .chat-panel .message-send .send-bottom {
+	overflow: hidden
+}
+
+.LMB_main .chat-window .cont .chat-panel .message-send .send-bottom .list {
+	position: relative
+}
+
+.LMB_main .chat-window .cont .chat-panel .message-send .send-bottom .list dd {
+	float: left;
+	margin-right: 30px;
+	cursor: pointer;
+	color: #666;
+	font-size: 14px;
+	line-height: 30px
+}
+
+.LMB_main .chat-window .cont .chat-panel .message-send .send-bottom .list dd .icoF {
+	color: #CCC;
+	font-size: 18px;
+	margin-right: 10px
+}
+
+.LMB_main .chat-window .cont .chat-panel .message-send .send-bottom .list dd .upload {
+	width: 100px;
+	height: 30px;
+	position: absolute;
+	bottom: 6px;
+	left: 133px;
+	opacity: 0;
+	cursor: pointer
+}
+
+.LMB_main .chat-window .cont .chat-panel .message-send .send-bottom .list dd.addPic {
+	position: relative
+}
+
+.LMB_main .chat-window .cont .chat-panel .message-send .send-bottom .list dd.addPic .uploadImg {
+	height: 30px
+}
+
+.LMB_main .chat-window .cont .chat-panel .message-send .send-bottom .list dd.addPic object,
+.LMB_main .chat-window .cont .chat-panel .message-send .send-bottom .list dd.addPic .swfupload {
+	position: absolute;
+	left: 0;
+	top: 0;
+	-moz-opacity: 0;
+	-webkit-opacity: 0;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	filter: alpha(Opacity=0)
+}
+
+.LMB_main .chat-window .cont .chat-panel .message-send .send-bottom .btns {
+	width: 80px;
+	text-align: right
+}
+
+.LMB_main .chat-window .cont .chat-panel .message-send .send-bottom .btns button {
+	background-image: none;
+	width: 68px;
+	line-height: 30px;
+	border: 0;
+	background-color: #fb7191;
+	border-radius: 4px;
+	font-size: 14px;
+	color: #fff;
+	cursor: pointer
+}
+
+.LMB_main .chat-window .cont .chat-panel .message-send .browBox {
+	position: absolute;
+	bottom: 0;
+	left: 205px;
+	z-index: 100;
+	margin-bottom: 45px
+}
+
+.LMB_main .chat-window .cont .chat-panel .message-send .browBox .upTool {
+	width: 15px;
+	height: 8px;
+	_font-size: 0;
+	top: -7px;
+	left: 5px;
+	position: absolute
+}
+
+.LMB_main .chat-window .cont .chat-panel .message-send .browBox .listOut {
+	padding: 5px;
+	background: #fbfbfb;
+	width: 290px;
+	border: #d1d1d1 1px solid
+}
+
+.LMB_main .chat-window .cont .chat-panel .message-send .browBox .browList {
+	border: #e3e3e3 1px solid;
+	border-top: 0;
+	border-left: 0;
+	width: 288px;
+	height: 180px;
+	_overflow: hidden
+}
+
+.LMB_main .chat-window .cont .chat-panel .message-send .browBox .browList li {
+	float: left;
+	padding: 5px;
+	border-left: #e3e3e3 1px solid;
+	border-top: #e3e3e3 1px solid;
+	background-color: #FFF;
+	cursor: pointer;
+	height: 25px;
+	width: 25px;
+	margin-bottom: 0
+}
+
+.LMB_main .chat-window .cont .chat-panel .message-send .browBox .browList li span {
+	height: 25px;
+	width: 25px;
+	display: block
+}
+
+.LMB_main .chat-window .cont .chat-panel .message-send .browBox .dot {
+	margin-top: 10px;
+	text-align: center
+}
+
+.LMB_main .chat-window .cont .chat-panel .message-send .browBox .dot li {
+	display: inline-block;
+	height: 11px;
+	width: 11px;
+	border-radius: 6px;
+	background-color: #ddd;
+	cursor: pointer;
+	margin: 0 5px;
+	_display: inline;
+	margin-bottom: 0!important;
+	zoom: 1
+}
+
+.LMB_main .chat-window .cont .chat-panel .message-send .browBox .dot li.on {
+	background-color: #fb7191
+}
+
+.LMB_main .pageTurning {
+	text-align: center;
+	font-size: 0
+}
+
+.LMB_main .pageTurning a {
+	display: inline-block;
+	font-size: 14px;
+	vertical-align: top;
+	text-align: center
+}
+
+.LMB_main .pageTurning .btn a {
+	margin: 0 10px;
+	background-color: #666;
+	line-height: 30px;
+	width: 40px;
+	color: #FFF;
+	font-family: 宋体;
+	font-weight: 700
+}
+
+.LMB_main .pageTurning .btn01 a {
+	margin: 0 10px;
+	height: 28px;
+	line-height: 28px;
+	border: #999 1px solid;
+	width: 48px;
+	color: #999
+}
+
+.LMB_main .pageTurning .btn01 a:hover {
+	margin: 0 10px;
+	height: 28px;
+	line-height: 28px;
+	border: #999 1px solid;
+	background-color: #999;
+	width: 48px;
+	color: #fff
+}
+
+.LMB_main .pageTurning span a {
+	color: #999;
+	line-height: 28px;
+	padding: 0 10px;
+	border: 1px solid #DDD;
+	margin-left: -1px
+}
+
+.LMB_main .pageTurning span a:hover {
+	color: #fb7191;
+	position: relative;
+	z-index: 2;
+	border: 1px solid #fb7191
+}
+
+.LMB_main .pageTurning span.curr a {
+	border-color: #fb7191;
+	background-color: #fb7191;
+	color: #FFF
+}
+
+.LMB_main .pageTurning span input {
+	display: inline-block;
+	height: 28px;
+	border: #ddd 1px solid;
+	text-align: center;
+	width: 40px;
+	line-height: 28px \9;
+	margin: 0 5px;
+	color: #999
+}
+
+.LMB_main .pageTurning .dot {
+	line-height: 30px;
+	padding: 0 5px;
+	color: #999;
+	display: inline-block;
+	font-size: 14px
+}
+
+.LMB_main button:hover>.common-icon.join-red,
+.LMB_main .btn:hover>.common-icon.join-red,
+.LMB_main a:hover>.common-icon.join-red {
+	background-image: url(http://www.lamabang.com/static/v2/images/icons/join.png)
+}
+
+.LMB_main .common-icon {
+	display: inline-block;
+	vertical-align: middle;
+	width: 20px;
+	height: 20px;
+	background-position: center;
+	background-repeat: no-repeat
+}
+
+.LMB_main .common-icon.post {
+	background-image: url(http://www.lamabang.com/static/v2/images/icons/post-icon.png)
+}
+
+.LMB_main .common-icon.join {
+	background-image: url(http://www.lamabang.com/static/v2/images/icons/join.png)
+}
+
+.LMB_main .common-icon.join-red {
+	background-image: url(http://www.lamabang.com/static/v2/images/icons/join-red.png)
+}
+
+.LMB_main .common-icon.members {
+	background-image: url(http://www.lamabang.com/static/v2/images/icons/members.png)
+}
+
+.LMB_main .common-icon.comments {
+	background-image: url(http://www.lamabang.com/static/v2/images/icons/comments.png)
+}
+
+.LMB_main .common-icon.aljoin {
+	background-image: url(http://www.lamabang.com/static/v2/images/icons/aljoin.png)
+}
+
+.LMB_main .common-icon.abort {
+	background-image: url(http://www.lamabang.com/static/v2/images/icons/abort.png)
+}
+
+.LMB_main .common-icon.star {
+	background-image: url(http://www.lamabang.com/static/v2/images/icons/star.png)
+}
+
+.LMB_main .common-icon.share {
+	background-image: url(http://www.lamabang.com/static/v2/images/icons/share.png)
+}
+
+.LMB_main .common-icon.mark {
+	background-image: url(http://www.lamabang.com/static/v2/images/icons/favourite.png)
+}
+
+.LMB_main .common-icon.userFollow {
+	background-image: url(http://www.lamabang.com/static/v2/images/icons/user-check.png)
+}
+
+.LMB_main .common-icon.headCart {
+	width: 22px;
+	height: 18px;
+	background-image: url(http://www.lamabang.com/static/v2/images/icons/head-cart.png)
+}
+
+.LMB_main .common-icon.home {
+	width: 22px;
+	height: 18px;
+	background-image: url(http://www.lamabang.com/static/v2/images/icons/head-home.png)
+}
+
+.LMB_main .common-icon.live {
+	width: 22px;
+	height: 18px;
+	background-image: url(../images/icons/head-live.png)
+}
+
+.LMB_main .common-icon.communicate {
+	width: 22px;
+	height: 18px;
+	background-image: url(http://www.lamabang.com/static/v2/images/icons/head-comunity.png)
+}
+
+.LMB_main .common-icon.knowledgeIco {
+	width: 22px;
+	height: 18px;
+	background-image: url(http://www.lamabang.com/static/v2/images/icons/head-knowledge.png)
+}
+
+.LMB_main .common-icon.diary {
+	background-image: url(http://www.lamabang.com/static/v2/images/icons/diary.png)
+}
+
+.LMB_main .common-icon.mail {
+	background-image: url(http://www.lamabang.com/static/v2/images/icons/mail.png)
+}
+
+.LMB_main .common-icon.searchIcon {
+	background-image: url(http://www.lamabang.com/static/v2/images/icons/search.png)
+}
+
+.LMB_main i.icon-weibo {
+	background: url(http://www.lamabang.com/static/v2/images/sina.png) center no-repeat
+}
+
+.LMB_main i.icon-lmb {
+	display: inline-block;
+	background: url(http://www.lamabang.com/static/v2/images/lmbIcon.png) center no-repeat
+}
+
+.LMB_main i.icon-yunqi {
+	background: url(http://www.lamabang.com/static/v2/images/yunqi.png) center no-repeat
+}
+
+.LMB_main b.downToggle {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border: 5px solid transparent;
+	border-top-color: #ccc;
+	vertical-align: middle
+}
+
+.LMB_main .lmShareBar>li {
+	display: inline-block;
+	margin-right: 5px;
+	height: 22px;
+	width: 22px;
+	line-height: 22px;
+	padding: 0;
+	border: 1px solid #EEE;
+	border-radius: 3px;
+	text-align: center
+}
+
+.LMB_main .lmShareBar>li>a {
+	margin: 0;
+	font-size: 16px;
+	color: #ccc;
+	display: block;
+	line-height: 22px;
+	border-radius: 3px
+}
+
+.LMB_main .lmShareBar>li>a.icoF {
+	margin: 0
+}
+
+.LMB_main .lmShareBar>li:hover>a {
+	color: #fff
+}
+
+.LMB_main .lmShareBar>li:hover>a.bds_qzone {
+	background-color: #73d2dd
+}
+
+.LMB_main .lmShareBar>li:hover>a.bds_tsina {
+	background-color: #ff9173
+}
+
+.LMB_main .lmShareBar>li:hover>a.bds_weixin {
+	background-color: #6bd185
+}
+
+.LMB_main .lmShareBar>li:hover>a.bds_baidu {
+	background-color: #7387dd
+}
+
+.LMB_main .lmShareBar>li:hover>a.bds_douban {
+	background-color: #61a64c
+}
+
+.LMB_main .lmShareBar>li:hover>a.bds_qq {
+	background-color: #73acdd
+}
+
+.LMB_main .adContainer {
+	position: relative
+}
+
+.LMB_main .adContainer.couple-ad .bigBgAd {
+	position: fixed;
+	top: 159px;
+	width: 120px;
+	height: 1000px;
+	z-index: 500
+}
+
+.LMB_main .adContainer.couple-ad .bigBgAd.adL {
+	left: 0
+}
+
+.LMB_main .adContainer.couple-ad .bigBgAd.adR {
+	right: 0
+}
+
+.LMB_main .adContainer.couple-ad .bigBgAd img {
+	width: 100%
+}
+
+.LMB_main .adContainer.couple-ad .bigBgAd .closeBigAd {
+	cursor: pointer;
+	display: block;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	border-radius: 10px;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	text-align: center;
+	background-color: #000;
+	opacity: .4;
+	-webkit-opacity: .4;
+	-moz-opacity: .4;
+	-o-opacity: .4;
+	-ms-opacity: .4;
+	filter: alpha(opacity=40);
+	filter: alpha(Opacity=40)
+}
+
+.LMB_main .adContainer.couple-ad .bigBgAd .closeBigAd .icoF {
+	color: #fff;
+	font-size: 12px
+}
+
+.LMB_main .adContainer.fixed-ad .adLayer {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1000;
+	background-color: #000;
+	opacity: .5;
+	-moz-opacity: .5;
+	-webkit-opacity: .5;
+	-ms-opacity: .5;
+	filter: alpha(opacity=50)
+}
+
+.LMB_main .adContainer.fixed-ad .adMain {
+	z-index: 1001;
+	width: 600px;
+	height: 600px;
+	position: fixed;
+	left: 50%;
+	top: 20%;
+	margin-left: -300px;
+	margin-top: -120px
+}
+
+.LMB_main .adContainer.fixed-ad .adMain img {
+	width: 100%;
+	height: 100%
+}
+
+.LMB_main .adContainer.drop-ad {
+	width: 1200px;
+	margin: 0 auto
+}
+
+.LMB_main .adContainer.drop-ad .adHref {
+	display: block
+}
+
+.LMB_main .adContainer .close {
+	display: block;
+	width: 24px;
+	height: 24px;
+	background: url(http://www.lamabang.com/static/v2/images/closeIco.png) center no-repeat;
+	position: absolute;
+	top: 5px;
+	right: 10px
+}
+
+.homeStage .stageBox {
+	position: relative;
+	margin-top: 58px;
+	margin-left: 50px;
+	border-top: 1px solid #e2e2e2
+}
+
+.homeStage .stageBox .dotLeft,
+.homeStage .stageBox .dotRight {
+	position: absolute;
+	display: block;
+	width: 3px;
+	height: 3px;
+	border-radius: 1.5px;
+	background-color: #ccc;
+	top: -2px
+}
+
+.homeStage .stageBox .dotLeft {
+	left: 0
+}
+
+.homeStage .stageBox .dotRight {
+	right: 0
+}
+
+.homeStage .stageBox .tagList {
+	overflow: hidden;
+	padding: 0 23px;
+	margin-top: -13px
+}
+
+.homeStage .stageBox .tagList>a {
+	display: inline-block;
+	float: left;
+	line-height: 24px;
+	border-radius: 12px;
+	padding: 0 8px;
+	border: 1px solid #999;
+	margin: 1px 7px;
+	cursor: pointer;
+	background-color: #fbfbfb;
+	font-size: 14px;
+	color: #333;
+	vertical-align: middle
+}
+
+.homeStage .stageBox .tagList>a.on,
+.homeStage .stageBox .tagList>a:hover {
+	border: 1px solid #52dcd3;
+	color: #52dcd3;
+	background-color: #f8fdfd
+}
+
+.homeStage .stageBox .tagList>a.on {
+	padding: 0 12px;
+	line-height: 26px;
+	font-size: 15px;
+	margin-top: 0;
+	margin-bottom: 0
+}
+
+@font-face {
+	font-family: iconfont;
+	src: url(http://www.lamabang.com/static/v2/css/iconfont/iconfont.eot);
+	src: url(http://www.lamabang.com/static/v2/css/iconfont/iconfont.eot?) format("embedded-opentype"), url(http://www.lamabang.com/static/v2/css/iconfont/iconfont.woff) format("woff"), url(http://www.lamabang.com/static/v2/css/iconfont/iconfont.ttf) format("truetype"), url(http://www.lamabang.com/static/v2/css/iconfont/iconfont.svg) format("svg")
+}
+
+.icoF {
+	font-family: iconfont!important;
+	font-size: 16px;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-stroke-width: .2px;
+	-moz-osx-font-smoothing: grayscale
+}
+
+@charset "UTF-8";
+.cGreen {
+	color: #52dcd3
+}
+
+.cRed {
+	color: #fb7191
+}
+
+.LMB_parentingList .contL .optimumAnswerBox .title h2 i {
+	background-image: url(http://www.lamabang.com/static/v2/images/lmbMainImg.png);
+	background-repeat: no-repeat
+}
+
+.LMB_parentingList .contL .optimumAnswerBox .title h2 i {
+	background-position: -232px -53px
+}
+
+.LMB_parentingList .knowledge {
+	min-height: 100px;
+	padding-bottom: 40px;
+	margin-bottom: 30px;
+	border-bottom: 1px solid #52dcd3
+}
+
+.LMB_parentingList .knowledge .list {
+	line-height: 24px;
+	background-color: #fafafa
+}
+
+.LMB_parentingList .knowledge .list li {
+	font-size: 0;
+	border-bottom: 1px solid #EEE;
+	padding: 13px 0 4px 50px;
+	margin-left: 20px
+}
+
+.LMB_parentingList .knowledge .list li:last-child {
+	border: 0
+}
+
+.LMB_parentingList .knowledge .list li label {
+	margin-left: -50px;
+	color: #5fdad1;
+	float: left;
+	font-size: 14px
+}
+
+.LMB_parentingList .knowledge .list li a {
+	line-height: 22px;
+	display: inline-block;
+	font-size: 12px;
+	padding: 0 7px;
+	border: 1px solid #DDD;
+	background-color: #FFF;
+	border-radius: 4px;
+	margin: 0 10px 10px 0;
+	color: #666
+}
+
+.LMB_parentingList .knowledge .list li a:hover {
+	border-color: #fb7191;
+	color: #fb7191
+}
+
+.LMB_parentingList .knowledge .list li a.styleC1 {
+	border-color: #9cb2ee;
+	color: #9cb2ee
+}
+
+.LMB_parentingList .knowledge .list li a.styleC2 {
+	border-color: #f8b094;
+	color: #f8b094
+}
+
+.LMB_parentingList .knowledge .list li a.styleC3 {
+	border-color: #8cc48c;
+	color: #8cc48c
+}
+
+.LMB_parentingList .knowledge .list li a.styleC4 {
+	border-color: #ff9aab;
+	color: #ff9aab
+}
+
+.LMB_parentingList .knowledge .list li a.styleC5 {
+	border-color: #64cdc5;
+	color: #64cdc5
+}
+
+.LMB_parentingList .knowledge .list li a.styleC6 {
+	border-color: #73cddd;
+	color: #73cddd
+}
+
+.LMB_parentingList .knowledge .list li a.styleC7 {
+	border-color: #efc34c;
+	color: #efc34c
+}
+
+.LMB_parentingList .contL {
+	width: 790px
+}
+
+.LMB_parentingList .contL .hotlyList li {
+	overflow: hidden;
+	margin-bottom: 30px
+}
+
+.LMB_parentingList .contL .hotlyList li .img {
+	width: 210px;
+	height: 140px;
+	float: left;
+	margin-right: 30px
+}
+
+.LMB_parentingList .contL .hotlyList li .img img {
+	width: 100%;
+	height: 100%
+}
+
+.LMB_parentingList .contL .hotlyList li .title {
+	color: #333;
+	line-height: 44px;
+	margin-bottom: 20px;
+	font-size: 18px
+}
+
+.LMB_parentingList .contL .hotlyList li .text {
+	font-size: 14px;
+	color: #999;
+	line-height: 24px
+}
+
+.LMB_parentingList .contR {
+	width: 390px;
+	font-size: 14px
+}
+
+.LMB_parentingList .contR .publicTitle {
+	font-size: 20px;
+	line-height: 1;
+	padding-bottom: 19px;
+	overflow: hidden
+}
+
+.LMB_parentingList .contR .publicTitle h3 {
+	float: left;
+	border-left: 5px solid #52dcd3;
+	padding-left: 10px
+}
+
+.LMB_parentingList .contR .publicTitle .more {
+	float: right;
+	color: #DDD;
+	font-family: 宋体;
+	font-weight: 700
+}
+
+.LMB_parentingList .contR .lmAnswers .list {
+	border: 1px solid #f4f4f4;
+	padding: 0 19px;
+	border-top-color: #DDD
+}
+
+.LMB_parentingList .contR .lmAnswers .list li {
+	line-height: 47px;
+	border-bottom: 1px dashed #EEE
+}
+
+.LMB_parentingList .contR .lmAnswers .list li:last-child {
+	border: 0
+}
+
+.LMB_parentingList .contR .lmAnswers .list li i {
+	background-color: #bae5b3;
+	color: #FFF;
+	line-height: 14px;
+	width: 14px;
+	border-radius: 50%;
+	display: inline-block;
+	margin-right: 10px;
+	text-align: center;
+	font-size: 12px
+}
+
+.LMB_parentingList .contR .ranking .list {
+	border: 1px solid #f4f4f4;
+	padding: 0 19px;
+	border-top-color: #DDD
+}
+
+.LMB_parentingList .contR .ranking .list li {
+	padding-left: 40px;
+	height: 43px;
+	padding-top: 8px;
+	border-bottom: 1px dashed #EEE;
+	position: relative
+}
+
+.LMB_parentingList .contR .ranking .list li:last-child {
+	border: 0
+}
+
+.LMB_parentingList .contR .ranking .list li .no {
+	left: 0;
+	width: 40px;
+	top: 50%;
+	margin-top: -18px;
+	font-size: 36px;
+	line-height: 36px;
+	position: absolute;
+	color: #CCC;
+	font-family: baskerville old face;
+	text-align: center
+}
+
+.LMB_parentingList .contR .ranking .list li .no.no1 {
+	color: #ff9aab
+}
+
+.LMB_parentingList .contR .ranking .list li .no.no2 {
+	color: #fdbda4
+}
+
+.LMB_parentingList .contR .ranking .list li .no.no3 {
+	color: #fddd69
+}
+
+.LMB_parentingList .contR .ranking .list li .img {
+	display: none;
+	width: 80px;
+	height: 80px;
+	float: left;
+	background-color: #EEE;
+	margin-right: 20px;
+	margin-left: 10px
+}
+
+.LMB_parentingList .contR .ranking .list li .img img {
+	width: 100%;
+	height: 100%
+}
+
+.LMB_parentingList .contR .ranking .list li .name {
+	line-height: 18px;
+	font-size: 14px;
+	color: #333;
+	display: block;
+	height: 18px;
+	overflow: hidden
+}
+
+.LMB_parentingList .contR .ranking .list li .info {
+	color: #999
+}
+
+.LMB_parentingList .contR .ranking .list li .info .tag {
+	line-height: 18px;
+	padding: 0 5px;
+	border: 1px solid #fb7191;
+	color: #fb7191;
+	border-radius: 4px;
+	display: none
+}
+
+.LMB_parentingList .contR .ranking .list li.curr {
+	height: 101px;
+	padding-top: 20px
+}
+
+.LMB_parentingList .contR .ranking .list li.curr .img {
+	display: block
+}
+
+.LMB_parentingList .contR .ranking .list li.curr .name {
+	height: 54px;
+	overflow: hidden
+}
+
+.LMB_parentingList .contR .ranking .list li.curr .info {
+	margin-top: 6px
+}
+
+.LMB_parentingList .contR .ranking .list li.curr .info .tag {
+	display: block
+}

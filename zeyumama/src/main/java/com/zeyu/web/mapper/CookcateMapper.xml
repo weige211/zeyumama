@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zeyu.web.mapper.CookcateMapper" >
+  <resultMap id="BaseResultMap" type="com.zeyu.web.model.Cookcate" >
+    <id column="ccid" property="ccid" jdbcType="BIGINT" />
+    <result column="name" property="name" jdbcType="VARCHAR" />
+    <result column="parid" property="parid" jdbcType="BIGINT" />
+    <result column="createtime" property="createtime" jdbcType="TIMESTAMP" />
+    <result column="createuser" property="createuser" jdbcType="BIGINT" />
+    <result column="auditor" property="auditor" jdbcType="BIGINT" />
+    <result column="status" property="status" jdbcType="TINYINT" />
+    <result column="audittime" property="audittime" jdbcType="TIMESTAMP" />
+    <result column="isdel" property="isdel" jdbcType="BIT" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    ccid, name, parid, createtime, createuser, auditor, status, audittime, isdel
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select 
+    <include refid="Base_Column_List" />
+    from cookcate
+    where ccid = #{ccid,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from cookcate
+    where ccid = #{ccid,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.zeyu.web.model.Cookcate" >
+    insert into cookcate (ccid, name, parid, 
+      createtime, createuser, auditor, 
+      status, audittime, isdel
+      )
+    values (#{ccid,jdbcType=BIGINT}, #{name,jdbcType=VARCHAR}, #{parid,jdbcType=BIGINT}, 
+      #{createtime,jdbcType=TIMESTAMP}, #{createuser,jdbcType=BIGINT}, #{auditor,jdbcType=BIGINT}, 
+      #{status,jdbcType=TINYINT}, #{audittime,jdbcType=TIMESTAMP}, #{isdel,jdbcType=BIT}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.zeyu.web.model.Cookcate" >
+    insert into cookcate
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="ccid != null" >
+        ccid,
+      </if>
+      <if test="name != null" >
+        name,
+      </if>
+      <if test="parid != null" >
+        parid,
+      </if>
+      <if test="createtime != null" >
+        createtime,
+      </if>
+      <if test="createuser != null" >
+        createuser,
+      </if>
+      <if test="auditor != null" >
+        auditor,
+      </if>
+      <if test="status != null" >
+        status,
+      </if>
+      <if test="audittime != null" >
+        audittime,
+      </if>
+      <if test="isdel != null" >
+        isdel,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="ccid != null" >
+        #{ccid,jdbcType=BIGINT},
+      </if>
+      <if test="name != null" >
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="parid != null" >
+        #{parid,jdbcType=BIGINT},
+      </if>
+      <if test="createtime != null" >
+        #{createtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createuser != null" >
+        #{createuser,jdbcType=BIGINT},
+      </if>
+      <if test="auditor != null" >
+        #{auditor,jdbcType=BIGINT},
+      </if>
+      <if test="status != null" >
+        #{status,jdbcType=TINYINT},
+      </if>
+      <if test="audittime != null" >
+        #{audittime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="isdel != null" >
+        #{isdel,jdbcType=BIT},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.zeyu.web.model.Cookcate" >
+    update cookcate
+    <set >
+      <if test="name != null" >
+        name = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="parid != null" >
+        parid = #{parid,jdbcType=BIGINT},
+      </if>
+      <if test="createtime != null" >
+        createtime = #{createtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createuser != null" >
+        createuser = #{createuser,jdbcType=BIGINT},
+      </if>
+      <if test="auditor != null" >
+        auditor = #{auditor,jdbcType=BIGINT},
+      </if>
+      <if test="status != null" >
+        status = #{status,jdbcType=TINYINT},
+      </if>
+      <if test="audittime != null" >
+        audittime = #{audittime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="isdel != null" >
+        isdel = #{isdel,jdbcType=BIT},
+      </if>
+    </set>
+    where ccid = #{ccid,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.zeyu.web.model.Cookcate" >
+    update cookcate
+    set name = #{name,jdbcType=VARCHAR},
+      parid = #{parid,jdbcType=BIGINT},
+      createtime = #{createtime,jdbcType=TIMESTAMP},
+      createuser = #{createuser,jdbcType=BIGINT},
+      auditor = #{auditor,jdbcType=BIGINT},
+      status = #{status,jdbcType=TINYINT},
+      audittime = #{audittime,jdbcType=TIMESTAMP},
+      isdel = #{isdel,jdbcType=BIT}
+    where ccid = #{ccid,jdbcType=BIGINT}
+  </update>
+</mapper>

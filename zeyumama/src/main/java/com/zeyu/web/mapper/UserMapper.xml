@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zeyu.web.mapper.UserMapper" >
+  <resultMap id="BaseResultMap" type="com.zeyu.web.model.User" >
+    <id column="uid" property="uid" jdbcType="BIGINT" />
+    <result column="name" property="name" jdbcType="VARCHAR" />
+    <result column="pwd" property="pwd" jdbcType="VARCHAR" />
+    <result column="phone" property="phone" jdbcType="VARCHAR" />
+    <result column="six" property="six" jdbcType="VARCHAR" />
+    <result column="babytime" property="babytime" jdbcType="VARCHAR" />
+    <result column="babysix" property="babysix" jdbcType="VARCHAR" />
+    <result column="role" property="role" jdbcType="TINYINT" />
+    <result column="openid" property="openid" jdbcType="VARCHAR" />
+    <result column="opentype" property="opentype" jdbcType="VARCHAR" />
+    <result column="img" property="img" jdbcType="VARCHAR" />
+    <result column="deviceid" property="deviceid" jdbcType="VARCHAR" />
+    <result column="createtime" property="createtime" jdbcType="TIMESTAMP" />
+    <result column="createuser" property="createuser" jdbcType="BIGINT" />
+    <result column="auditor" property="auditor" jdbcType="BIGINT" />
+    <result column="status" property="status" jdbcType="TINYINT" />
+    <result column="audittime" property="audittime" jdbcType="TIMESTAMP" />
+    <result column="isdel" property="isdel" jdbcType="BIT" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    uid, name, pwd, phone, six, babytime, babysix, role, openid, opentype, img, deviceid, 
+    createtime, createuser, auditor, status, audittime, isdel
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select 
+    <include refid="Base_Column_List" />
+    from users
+    where uid = #{uid,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from users
+    where uid = #{uid,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.zeyu.web.model.User" >
+    insert into users (uid, name, pwd, 
+      phone, six, babytime, 
+      babysix, role, openid, 
+      opentype, img, deviceid, 
+      createtime, createuser, auditor, 
+      status, audittime, isdel
+      )
+    values (#{uid,jdbcType=BIGINT}, #{name,jdbcType=VARCHAR}, #{pwd,jdbcType=VARCHAR}, 
+      #{phone,jdbcType=VARCHAR}, #{six,jdbcType=VARCHAR}, #{babytime,jdbcType=VARCHAR}, 
+      #{babysix,jdbcType=VARCHAR}, #{role,jdbcType=TINYINT}, #{openid,jdbcType=VARCHAR}, 
+      #{opentype,jdbcType=VARCHAR}, #{img,jdbcType=VARCHAR}, #{deviceid,jdbcType=VARCHAR}, 
+      #{createtime,jdbcType=TIMESTAMP}, #{createuser,jdbcType=BIGINT}, #{auditor,jdbcType=BIGINT}, 
+      #{status,jdbcType=TINYINT}, #{audittime,jdbcType=TIMESTAMP}, #{isdel,jdbcType=BIT}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.zeyu.web.model.User" >
+    insert into users
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="uid != null" >
+        uid,
+      </if>
+      <if test="name != null" >
+        name,
+      </if>
+      <if test="pwd != null" >
+        pwd,
+      </if>
+      <if test="phone != null" >
+        phone,
+      </if>
+      <if test="six != null" >
+        six,
+      </if>
+      <if test="babytime != null" >
+        babytime,
+      </if>
+      <if test="babysix != null" >
+        babysix,
+      </if>
+      <if test="role != null" >
+        role,
+      </if>
+      <if test="openid != null" >
+        openid,
+      </if>
+      <if test="opentype != null" >
+        opentype,
+      </if>
+      <if test="img != null" >
+        img,
+      </if>
+      <if test="deviceid != null" >
+        deviceid,
+      </if>
+      <if test="createtime != null" >
+        createtime,
+      </if>
+      <if test="createuser != null" >
+        createuser,
+      </if>
+      <if test="auditor != null" >
+        auditor,
+      </if>
+      <if test="status != null" >
+        status,
+      </if>
+      <if test="audittime != null" >
+        audittime,
+      </if>
+      <if test="isdel != null" >
+        isdel,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="uid != null" >
+        #{uid,jdbcType=BIGINT},
+      </if>
+      <if test="name != null" >
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="pwd != null" >
+        #{pwd,jdbcType=VARCHAR},
+      </if>
+      <if test="phone != null" >
+        #{phone,jdbcType=VARCHAR},
+      </if>
+      <if test="six != null" >
+        #{six,jdbcType=VARCHAR},
+      </if>
+      <if test="babytime != null" >
+        #{babytime,jdbcType=VARCHAR},
+      </if>
+      <if test="babysix != null" >
+        #{babysix,jdbcType=VARCHAR},
+      </if>
+      <if test="role != null" >
+        #{role,jdbcType=TINYINT},
+      </if>
+      <if test="openid != null" >
+        #{openid,jdbcType=VARCHAR},
+      </if>
+      <if test="opentype != null" >
+        #{opentype,jdbcType=VARCHAR},
+      </if>
+      <if test="img != null" >
+        #{img,jdbcType=VARCHAR},
+      </if>
+      <if test="deviceid != null" >
+        #{deviceid,jdbcType=VARCHAR},
+      </if>
+      <if test="createtime != null" >
+        #{createtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createuser != null" >
+        #{createuser,jdbcType=BIGINT},
+      </if>
+      <if test="auditor != null" >
+        #{auditor,jdbcType=BIGINT},
+      </if>
+      <if test="status != null" >
+        #{status,jdbcType=TINYINT},
+      </if>
+      <if test="audittime != null" >
+        #{audittime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="isdel != null" >
+        #{isdel,jdbcType=BIT},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.zeyu.web.model.User" >
+    update users
+    <set >
+      <if test="name != null" >
+        name = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="pwd != null" >
+        pwd = #{pwd,jdbcType=VARCHAR},
+      </if>
+      <if test="phone != null" >
+        phone = #{phone,jdbcType=VARCHAR},
+      </if>
+      <if test="six != null" >
+        six = #{six,jdbcType=VARCHAR},
+      </if>
+      <if test="babytime != null" >
+        babytime = #{babytime,jdbcType=VARCHAR},
+      </if>
+      <if test="babysix != null" >
+        babysix = #{babysix,jdbcType=VARCHAR},
+      </if>
+      <if test="role != null" >
+        role = #{role,jdbcType=TINYINT},
+      </if>
+      <if test="openid != null" >
+        openid = #{openid,jdbcType=VARCHAR},
+      </if>
+      <if test="opentype != null" >
+        opentype = #{opentype,jdbcType=VARCHAR},
+      </if>
+      <if test="img != null" >
+        img = #{img,jdbcType=VARCHAR},
+      </if>
+      <if test="deviceid != null" >
+        deviceid = #{deviceid,jdbcType=VARCHAR},
+      </if>
+      <if test="createtime != null" >
+        createtime = #{createtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createuser != null" >
+        createuser = #{createuser,jdbcType=BIGINT},
+      </if>
+      <if test="auditor != null" >
+        auditor = #{auditor,jdbcType=BIGINT},
+      </if>
+      <if test="status != null" >
+        status = #{status,jdbcType=TINYINT},
+      </if>
+      <if test="audittime != null" >
+        audittime = #{audittime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="isdel != null" >
+        isdel = #{isdel,jdbcType=BIT},
+      </if>
+    </set>
+    where uid = #{uid,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.zeyu.web.model.User" >
+    update users
+    set name = #{name,jdbcType=VARCHAR},
+      pwd = #{pwd,jdbcType=VARCHAR},
+      phone = #{phone,jdbcType=VARCHAR},
+      six = #{six,jdbcType=VARCHAR},
+      babytime = #{babytime,jdbcType=VARCHAR},
+      babysix = #{babysix,jdbcType=VARCHAR},
+      role = #{role,jdbcType=TINYINT},
+      openid = #{openid,jdbcType=VARCHAR},
+      opentype = #{opentype,jdbcType=VARCHAR},
+      img = #{img,jdbcType=VARCHAR},
+      deviceid = #{deviceid,jdbcType=VARCHAR},
+      createtime = #{createtime,jdbcType=TIMESTAMP},
+      createuser = #{createuser,jdbcType=BIGINT},
+      auditor = #{auditor,jdbcType=BIGINT},
+      status = #{status,jdbcType=TINYINT},
+      audittime = #{audittime,jdbcType=TIMESTAMP},
+      isdel = #{isdel,jdbcType=BIT}
+    where uid = #{uid,jdbcType=BIGINT}
+  </update>
+</mapper>

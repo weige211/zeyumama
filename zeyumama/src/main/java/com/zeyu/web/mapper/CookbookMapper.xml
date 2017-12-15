@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zeyu.web.mapper.CookbookMapper" >
+  <resultMap id="BaseResultMap" type="com.zeyu.web.model.Cookbook" >
+    <id column="cid" property="cid" jdbcType="BIGINT" />
+    <result column="ccid" property="ccid" jdbcType="BIGINT" />
+    <result column="name" property="name" jdbcType="VARCHAR" />
+    <result column="method" property="method" jdbcType="VARCHAR" />
+    <result column="taste" property="taste" jdbcType="VARCHAR" />
+    <result column="difficulty" property="difficulty" jdbcType="VARCHAR" />
+    <result column="pretime" property="pretime" jdbcType="VARCHAR" />
+    <result column="qty" property="qty" jdbcType="VARCHAR" />
+    <result column="dotime" property="dotime" jdbcType="VARCHAR" />
+    <result column="img" property="img" jdbcType="VARCHAR" />
+    <result column="alt" property="alt" jdbcType="VARCHAR" />
+    <result column="createtime" property="createtime" jdbcType="TIMESTAMP" />
+    <result column="createuser" property="createuser" jdbcType="BIGINT" />
+    <result column="auditor" property="auditor" jdbcType="BIGINT" />
+    <result column="status" property="status" jdbcType="TINYINT" />
+    <result column="audittime" property="audittime" jdbcType="TIMESTAMP" />
+    <result column="isdel" property="isdel" jdbcType="BIT" />
+  </resultMap>
+  <resultMap id="ResultMapWithBLOBs" type="com.zeyu.web.model.CookbookWithBLOBs" extends="BaseResultMap" >
+    <result column="materials" property="materials" jdbcType="LONGVARCHAR" />
+    <result column="step" property="step" jdbcType="LONGVARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    cid, ccid, name, method, taste, difficulty, pretime, qty, dotime, img, alt, createtime, 
+    createuser, auditor, status, audittime, isdel
+  </sql>
+  <sql id="Blob_Column_List" >
+    materials, step
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="ResultMapWithBLOBs" parameterType="java.lang.Long" >
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from cookbook
+    where cid = #{cid,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from cookbook
+    where cid = #{cid,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.zeyu.web.model.CookbookWithBLOBs" >
+    insert into cookbook (cid, ccid, name, 
+      method, taste, difficulty, 
+      pretime, qty, dotime, 
+      img, alt, createtime, 
+      createuser, auditor, status, 
+      audittime, isdel, materials, 
+      step)
+    values (#{cid,jdbcType=BIGINT}, #{ccid,jdbcType=BIGINT}, #{name,jdbcType=VARCHAR}, 
+      #{method,jdbcType=VARCHAR}, #{taste,jdbcType=VARCHAR}, #{difficulty,jdbcType=VARCHAR}, 
+      #{pretime,jdbcType=VARCHAR}, #{qty,jdbcType=VARCHAR}, #{dotime,jdbcType=VARCHAR}, 
+      #{img,jdbcType=VARCHAR}, #{alt,jdbcType=VARCHAR}, #{createtime,jdbcType=TIMESTAMP}, 
+      #{createuser,jdbcType=BIGINT}, #{auditor,jdbcType=BIGINT}, #{status,jdbcType=TINYINT}, 
+      #{audittime,jdbcType=TIMESTAMP}, #{isdel,jdbcType=BIT}, #{materials,jdbcType=LONGVARCHAR}, 
+      #{step,jdbcType=LONGVARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.zeyu.web.model.CookbookWithBLOBs" >
+    insert into cookbook
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="cid != null" >
+        cid,
+      </if>
+      <if test="ccid != null" >
+        ccid,
+      </if>
+      <if test="name != null" >
+        name,
+      </if>
+      <if test="method != null" >
+        method,
+      </if>
+      <if test="taste != null" >
+        taste,
+      </if>
+      <if test="difficulty != null" >
+        difficulty,
+      </if>
+      <if test="pretime != null" >
+        pretime,
+      </if>
+      <if test="qty != null" >
+        qty,
+      </if>
+      <if test="dotime != null" >
+        dotime,
+      </if>
+      <if test="img != null" >
+        img,
+      </if>
+      <if test="alt != null" >
+        alt,
+      </if>
+      <if test="createtime != null" >
+        createtime,
+      </if>
+      <if test="createuser != null" >
+        createuser,
+      </if>
+      <if test="auditor != null" >
+        auditor,
+      </if>
+      <if test="status != null" >
+        status,
+      </if>
+      <if test="audittime != null" >
+        audittime,
+      </if>
+      <if test="isdel != null" >
+        isdel,
+      </if>
+      <if test="materials != null" >
+        materials,
+      </if>
+      <if test="step != null" >
+        step,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="cid != null" >
+        #{cid,jdbcType=BIGINT},
+      </if>
+      <if test="ccid != null" >
+        #{ccid,jdbcType=BIGINT},
+      </if>
+      <if test="name != null" >
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="method != null" >
+        #{method,jdbcType=VARCHAR},
+      </if>
+      <if test="taste != null" >
+        #{taste,jdbcType=VARCHAR},
+      </if>
+      <if test="difficulty != null" >
+        #{difficulty,jdbcType=VARCHAR},
+      </if>
+      <if test="pretime != null" >
+        #{pretime,jdbcType=VARCHAR},
+      </if>
+      <if test="qty != null" >
+        #{qty,jdbcType=VARCHAR},
+      </if>
+      <if test="dotime != null" >
+        #{dotime,jdbcType=VARCHAR},
+      </if>
+      <if test="img != null" >
+        #{img,jdbcType=VARCHAR},
+      </if>
+      <if test="alt != null" >
+        #{alt,jdbcType=VARCHAR},
+      </if>
+      <if test="createtime != null" >
+        #{createtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createuser != null" >
+        #{createuser,jdbcType=BIGINT},
+      </if>
+      <if test="auditor != null" >
+        #{auditor,jdbcType=BIGINT},
+      </if>
+      <if test="status != null" >
+        #{status,jdbcType=TINYINT},
+      </if>
+      <if test="audittime != null" >
+        #{audittime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="isdel != null" >
+        #{isdel,jdbcType=BIT},
+      </if>
+      <if test="materials != null" >
+        #{materials,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="step != null" >
+        #{step,jdbcType=LONGVARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.zeyu.web.model.CookbookWithBLOBs" >
+    update cookbook
+    <set >
+      <if test="ccid != null" >
+        ccid = #{ccid,jdbcType=BIGINT},
+      </if>
+      <if test="name != null" >
+        name = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="method != null" >
+        method = #{method,jdbcType=VARCHAR},
+      </if>
+      <if test="taste != null" >
+        taste = #{taste,jdbcType=VARCHAR},
+      </if>
+      <if test="difficulty != null" >
+        difficulty = #{difficulty,jdbcType=VARCHAR},
+      </if>
+      <if test="pretime != null" >
+        pretime = #{pretime,jdbcType=VARCHAR},
+      </if>
+      <if test="qty != null" >
+        qty = #{qty,jdbcType=VARCHAR},
+      </if>
+      <if test="dotime != null" >
+        dotime = #{dotime,jdbcType=VARCHAR},
+      </if>
+      <if test="img != null" >
+        img = #{img,jdbcType=VARCHAR},
+      </if>
+      <if test="alt != null" >
+        alt = #{alt,jdbcType=VARCHAR},
+      </if>
+      <if test="createtime != null" >
+        createtime = #{createtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createuser != null" >
+        createuser = #{createuser,jdbcType=BIGINT},
+      </if>
+      <if test="auditor != null" >
+        auditor = #{auditor,jdbcType=BIGINT},
+      </if>
+      <if test="status != null" >
+        status = #{status,jdbcType=TINYINT},
+      </if>
+      <if test="audittime != null" >
+        audittime = #{audittime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="isdel != null" >
+        isdel = #{isdel,jdbcType=BIT},
+      </if>
+      <if test="materials != null" >
+        materials = #{materials,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="step != null" >
+        step = #{step,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    where cid = #{cid,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.zeyu.web.model.CookbookWithBLOBs" >
+    update cookbook
+    set ccid = #{ccid,jdbcType=BIGINT},
+      name = #{name,jdbcType=VARCHAR},
+      method = #{method,jdbcType=VARCHAR},
+      taste = #{taste,jdbcType=VARCHAR},
+      difficulty = #{difficulty,jdbcType=VARCHAR},
+      pretime = #{pretime,jdbcType=VARCHAR},
+      qty = #{qty,jdbcType=VARCHAR},
+      dotime = #{dotime,jdbcType=VARCHAR},
+      img = #{img,jdbcType=VARCHAR},
+      alt = #{alt,jdbcType=VARCHAR},
+      createtime = #{createtime,jdbcType=TIMESTAMP},
+      createuser = #{createuser,jdbcType=BIGINT},
+      auditor = #{auditor,jdbcType=BIGINT},
+      status = #{status,jdbcType=TINYINT},
+      audittime = #{audittime,jdbcType=TIMESTAMP},
+      isdel = #{isdel,jdbcType=BIT},
+      materials = #{materials,jdbcType=LONGVARCHAR},
+      step = #{step,jdbcType=LONGVARCHAR}
+    where cid = #{cid,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.zeyu.web.model.Cookbook" >
+    update cookbook
+    set ccid = #{ccid,jdbcType=BIGINT},
+      name = #{name,jdbcType=VARCHAR},
+      method = #{method,jdbcType=VARCHAR},
+      taste = #{taste,jdbcType=VARCHAR},
+      difficulty = #{difficulty,jdbcType=VARCHAR},
+      pretime = #{pretime,jdbcType=VARCHAR},
+      qty = #{qty,jdbcType=VARCHAR},
+      dotime = #{dotime,jdbcType=VARCHAR},
+      img = #{img,jdbcType=VARCHAR},
+      alt = #{alt,jdbcType=VARCHAR},
+      createtime = #{createtime,jdbcType=TIMESTAMP},
+      createuser = #{createuser,jdbcType=BIGINT},
+      auditor = #{auditor,jdbcType=BIGINT},
+      status = #{status,jdbcType=TINYINT},
+      audittime = #{audittime,jdbcType=TIMESTAMP},
+      isdel = #{isdel,jdbcType=BIT}
+    where cid = #{cid,jdbcType=BIGINT}
+  </update>
+</mapper>

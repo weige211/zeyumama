@@ -1,0 +1,138 @@
+@charset 'utf-8';
+body{background:#f5f7d5;font-size:14px; font-family:"微软雅黑"!important;}
+.bg{width:100%; background:url(../images/bg.jpg) no-repeat center top;}
+.main{width:960px;margin:0 auto;}
+.wrapper{ background:#fff;}
+.header{height:429px;overflow:hidden; width:960px; margin:0 auto;background:url(../images/bg.jpg) no-repeat -480px top; position:relative }
+.nav_ul{ float:right; width:160px;}
+.nav_ul li{ margin-bottom:1px; width:160px; height:40px; overflow: hidden;}
+.nav_ul li a{display:block;font-size:18px; width:160px; height:40px; line-height:40px; position:relative;}
+.nav_ul li a em{ background: url(http://h.yaolanimage.cn/assets/rev/pc/diet/images/diet_ico.png?v=1) no-repeat; width:40px; height: 26px; float: left; position: absolute; left: 10px; top: 5px; z-index: 10;}
+.nav_ul li a em.shipu{ background-position: left -165px;}
+.nav_ul li a em.no{ background-position: left -194px;}
+.nav_ul li a:hover em.shipu{ background-position: -61px -165px;}
+.nav_ul li a:hover em.no{ background-position: -59px -194px;}
+.nav_ul li a span{ background:#f2938f; filter:alpha(opacity=50); opacity:0.5; display:block; height:40px; width:160px; position: absolute; left: 0px; top: 0px; z-index: 1;}
+.nav_ul li a p{display:block; height:40px; width:100px; position: absolute; right: 0px; top: 0px; z-index: 10; color:#fff; }
+.nav_ul li a:hover p{color:#e07a6f; }
+.nav_ul li a:hover span{ background:#f2efe1; filter:alpha(opacity=50); opacity:0.5;}
+
+.search{width:437px;height:42px;  }
+.search span{float:left;}
+.search .input-box{width:250px; margin-right:8px;height:36px;background:#fff; box-shadow:0 1px 1px #b4a669;box-shadow /*\**/:0 1px 1px #b4a669\9; border-radius:16px;border-radius /*\**/:16px\9;}
+.search .input-box input{border:0;width:220px;margin:7px 0 0 10px;outline:none;color:#ccc;font-size:16px;}
+.search .input-box input.wrong{color: #f00}
+.search .submit-box input{cursor:pointer; background:#ee4664 url("../images/searchpic.png") no-repeat 24px 12px;border:none;height:36px;width:136px; text-align: left; display:block;line-height:32px; padding-left:40px;color:#fff;font-size:20px; font-size:16px; font-weight:bold; border-radius:16px; box-shadow:0 1px 1px #b4a669;}
+.header .search{padding:210px 0 0 374px;}
+.corhuang{color:#f90;}
+.corlv{color:#693;}
+.corhong{color:#ee4664;}
+.sidebar{float:left;width:160px;padding:40px;background:#fff;}
+.sidebar-fixed{position:fixed;top:0;}
+.catagory dt{font-size:18px;margin-bottom:30px; width:150px; height:30px; color:#333; padding-left:10px; background:#f5f4f2 url(../images/gt.gif) no-repeat 132px center;}
+.catagory dd{height:30px;overflow:hidden;margin-bottom:18px;}
+.catagory em{float:left;width:30px;height:30px;}
+.catagory a{float:left;margin:3px 0 0 15px;_display:inline;padding:0 5px;height:24px;line-height:24px;font-size:14px;color:#333;}
+.catagory a.cur,.catagory a:hover{color:#ee4664;text-decoration:none;}
+.icon-fruit{background:url(../images/ico.png) no-repeat 0 5px}
+.icon-meat{background:url(../images/ico.png) no-repeat 0 -35px}
+.icon-seafood{background:url(../images/ico.png) no-repeat 0 -75px}
+.icon-drink{background:url(../images/ico.png) no-repeat 0 -111px}
+.icon-snacks{background:url(../images/ico.png) no-repeat 0 -150px}
+.icon-nuts{background:url(../images/ico.png) no-repeat 0 -193px}
+.icon-vegetables{background:url(../images/ico.png) no-repeat 0 -232px}
+.icon-crops{background:url(../images/ico.png) no-repeat 0 -271px}
+.icon-condiments{background:url(../images/ico.png) no-repeat 0 -310px}
+.icon-milk{background:url(../images/ico.png) no-repeat 0 -345px}
+.container{float:right; padding-bottom:24px;}
+.food-list-hd{font-size:22px;line-height:50px; padding-top:24px;}
+.food-list li{height:130px;padding-bottom:30px; margin-bottom:30px; border-bottom:solid 1px #e8e8e8;}
+.food-list .img{float:left;width:130px;height:130px;margin-right:20px;_display:inline;}
+.result{height:22px;line-height:22px;margin-top:10px;}
+.result span{float:left;margin-right:35px;_display:inline; font-size:16px;}
+.icon-yes,.icon-warn,.icon-no{display:inline-block;vertical-align:middle;margin-right:5px;width:39px; height:38px;}
+.icon-yes-2x,.icon-warn-2x,.icon-no-2x{display:inline-block;margin-right:15px;vertical-align:top;width:51px;height:51px;}
+.icon-yes{background:url(../images/ico.png) no-repeat 0 -446px;}
+.icon-warn{background:url(../images/ico.png) no-repeat 0 -386px; }
+.icon-no{ background:url(../images/ico.png) no-repeat 0 -499px;}
+.icon-yes-2x{background:url(../images/ico2.png) no-repeat 0 -170px;}
+.icon-warn-2x{background:url(../images/ico2.png) no-repeat;}
+.icon-no-2x{background:url(../images/ico2.png) no-repeat 0 -304px;}
+.more{color:#9c6;margin-left:5px;}
+.jzmore{display:block; margin:0 auto; padding-right:30px; background:url(../images/xiala.gif) no-repeat right center; color:#333; font-size:18px; width:80px; line-height:55px}
+/*内页food-baike*/
+.food-baike{width:720px; color:#999; line-height:19px; font-size:14px;}
+.food-baike .food-name{font-size:22px;margin:45px 0 18px 0; font-weight:normal; color:#333}
+.detail .food-name a{color: #333; font-size: 18px; line-height: 180%}
+.detail .food-name a:hover{color: #ee4664}
+.catalog{position:relative;}
+.catalog-main{width:214px; position:fixed;}
+.catalog-hd{height:40px;line-height:40px;font-size:16px;padding-left:38px;font-weight:bold;}
+.catalog-bd{ background:url(../images/line.jpg) repeat-y 6px 0}
+.catalog-fixed{position:fixed;top:50px;right:50%;margin-right:-650px;width:154px;}
+.catalog-bd li{height:39px;}
+.catalog-bd a{color:#999;padding-left:38px; background:url(../images/yuan.png) no-repeat; }
+.catalog .food-img{ float:left;text-align:center;}
+.catalog .food-img img{display:block;}
+.food-info{margin:30px 30px 0 0;}
+.food-info dt{font-size:20px;padding-top:23px;margin:30px 0 20px;border-top:1px solid #ddd; color:#333; line-height: 40px;}
+.food-info p{line-height:28px;}
+.food-info .result-yes,
+.food-info .result-warn,
+.food-info .result-no{margin-right:15px;margin-bottom:10px;height:36px;font-size:20px;line-height:36px;}
+.food-info .result-yes,.food-info .green{color:#71c219;}
+.food-info .result-warn{color:#ff7e00;}
+.food-info .result-no,.food-info .red{color:#eb4444;}
+.recipe-list li{float:left;width:120px;margin-right:17px;_display:inline;text-align:center;}
+.recipe-list img{display:block;margin-bottom:10px;}
+.recipe-list a{color:#666;}
+.recipe-list a:hover{color:#f00;}
+.nutrition {width:700px;margin-top:20px;}
+.nutrition thead td{background:#feffee; color:#333;font-size:16px;font-weight:bold;}
+.nutrition td{border:1px solid #dddddd;padding:15px 25px;}
+.catalog-bd .highlight{color:#333!important; background:url(../images/yuan.png) no-repeat 0 -39px!important}
+.food_sm{ float:right; padding-right:40px; width:440px;}
+.food_sm .result span{float:left;margin-right:17px;_display:inline; font-size:16px;}
+.wdtiao{width:677px; height:37px; background:#f5f4f2}
+.wdtiao li{float:left;}
+.wdtiao li span{ cursor:pointer;display:block; width:115px; height:37px;text-align:center; font-size:18px; line-height:37px;} 
+.wdtiao .on span{ height:35px; border-top:solid 2px #f66;line-height:35px; background:#fff;} 
+.wd{display:none; width:677px;}
+.wd li{width:318px; margin-right:20px; font-size:12px; height:33px; float:left; border-bottom:dashed 1px #e3e3e3; line-height:33px;}  
+.wd li p{float:left; width:250px; overflow:hidden; height:28px;  text-overflow:ellipsis;white-space: nowrap; }
+.wd li p a{color:#555; font-size:12px; padding-left:7px; background: url(../images/dian1.gif) no-repeat 0 center;}
+.wd li p a:hover{ text-decoration:none;color:#ee4664;background:url(../images/dian2.gif) no-repeat 0 center;}
+.wd li span{display:block; float:left; color:#999;}
+/*page*/
+.page{text-align:center;}
+.page .info{margin-right:10px;}
+.page .info em{list-style:normal;color:#ff8304;margin:0 3px;}
+.page .page-list a{display:inline-block;margin-right:5px;color:#666;width:28px;height:28px;line-height:28px;text-align:center;border:1px solid #dcdcdc;}
+.page .page-list .last-page{width:50px;}
+.page .page-list .next-page{width:60px;}
+.page .page-list a:hover,
+.page .page-list .cur{background:#ff8304;color:#fff;border:1px solid #ff8304;text-decoration:none;}
+.food-list-hd-fixed{display:none;position:fixed;top:0;left:50%;height:60px;width:780px;margin-left:-280px;background:#fff;box-shadow:1px 1px 3px rgba(0,0,0,0.3);}
+.food-list-hd-fixed .catagory-name{font-size:28px;line-height:60px;margin-left:10px;}
+.food-list-hd-fixed .search{position:absolute;right:10px;top:10px;}
+.index-page,.next-page{ padding:0 8px;}
+.fruit{width:720px; padding-top:40px}
+.fruit li{float:left; border:solid 1px #ececec; overflow:hidden; width:320px; height:400px; margin:0 19px 28px 19px; box-shadow:0 1px 1px #ccc}
+.fruit li .pic{width:320px; height:200px; overflow:hidden;}
+.fruit li .pic img{width:320px; height:200px;}
+.fruit_js{width:296px; padding:0 12px; height:147px; overflow:hidden; line-height:20px; color:#999; font-size:14px;}
+.fruit_js h3{font-size:18px; font-weight:normal; line-height:190%}
+.fruit_js h3 a{color:#333; }
+.fruit_js .xq{color:#9c6;}
+.fruit_bot{width:320px; height:37px; border-top:solid 1px #e5e5e5; background:#f8f8f8; padding:14px 0 0 0;}
+.ico_tan{background:url(../images/ico3.png) no-repeat; width:22px; height:22px; display:inline-block; vertical-align:middle; margin-right:6px;}
+.ico_yes{background:url(../images/ico3.png) no-repeat 0 -57px; width:22px; height:22px; display:inline-block; vertical-align:middle; margin:0 6px;}
+.ico_no{background:url(../images/ico3.png) no-repeat 0 -105px; width:22px; height:22px; display:inline-block; vertical-align:middle; margin:0 3px 0 4px;}
+.food-list{width: 690px; padding-right: 30px;  overflow: hidden;}
+.fb_bg{height:87px!important;}
+
+.min-height .catagory dd{margin-bottom: 0}
+.min-height{padding: 20px 40px 0;}
+
+
+

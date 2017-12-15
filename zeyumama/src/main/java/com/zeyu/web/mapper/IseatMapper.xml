@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zeyu.web.mapper.IseatMapper" >
+  <resultMap id="BaseResultMap" type="com.zeyu.web.model.Iseat" >
+    <id column="eid" property="eid" jdbcType="BIGINT" />
+    <result column="ccid" property="ccid" jdbcType="BIGINT" />
+    <result column="name" property="name" jdbcType="VARCHAR" />
+    <result column="profile" property="profile" jdbcType="VARCHAR" />
+    <result column="pregnantstatus" property="pregnantstatus" jdbcType="VARCHAR" />
+    <result column="maternalstatus" property="maternalstatus" jdbcType="VARCHAR" />
+    <result column="babysatus" property="babysatus" jdbcType="VARCHAR" />
+    <result column="pregnan" property="pregnan" jdbcType="VARCHAR" />
+    <result column="maternal" property="maternal" jdbcType="VARCHAR" />
+    <result column="baby" property="baby" jdbcType="VARCHAR" />
+    <result column="img" property="img" jdbcType="VARCHAR" />
+    <result column="alt" property="alt" jdbcType="VARCHAR" />
+    <result column="createtime" property="createtime" jdbcType="TIMESTAMP" />
+    <result column="createuser" property="createuser" jdbcType="BIGINT" />
+    <result column="auditor" property="auditor" jdbcType="BIGINT" />
+    <result column="status" property="status" jdbcType="TINYINT" />
+    <result column="audittime" property="audittime" jdbcType="TIMESTAMP" />
+    <result column="isdel" property="isdel" jdbcType="BIT" />
+  </resultMap>
+  <resultMap id="ResultMapWithBLOBs" type="com.zeyu.web.model.Iseat" extends="BaseResultMap" >
+    <result column="nutrition" property="nutrition" jdbcType="LONGVARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    eid, ccid, name, profile, pregnantstatus, maternalstatus, babysatus, pregnan, maternal, 
+    baby, img, alt, createtime, createuser, auditor, status, audittime, isdel
+  </sql>
+  <sql id="Blob_Column_List" >
+    nutrition
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="ResultMapWithBLOBs" parameterType="java.lang.Long" >
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from iseat
+    where eid = #{eid,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from iseat
+    where eid = #{eid,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.zeyu.web.model.Iseat" >
+    insert into iseat (eid, ccid, name, 
+      profile, pregnantstatus, maternalstatus, 
+      babysatus, pregnan, maternal, 
+      baby, img, alt, createtime, 
+      createuser, auditor, status, 
+      audittime, isdel, nutrition
+      )
+    values (#{eid,jdbcType=BIGINT}, #{ccid,jdbcType=BIGINT}, #{name,jdbcType=VARCHAR}, 
+      #{profile,jdbcType=VARCHAR}, #{pregnantstatus,jdbcType=VARCHAR}, #{maternalstatus,jdbcType=VARCHAR}, 
+      #{babysatus,jdbcType=VARCHAR}, #{pregnan,jdbcType=VARCHAR}, #{maternal,jdbcType=VARCHAR}, 
+      #{baby,jdbcType=VARCHAR}, #{img,jdbcType=VARCHAR}, #{alt,jdbcType=VARCHAR}, #{createtime,jdbcType=TIMESTAMP}, 
+      #{createuser,jdbcType=BIGINT}, #{auditor,jdbcType=BIGINT}, #{status,jdbcType=TINYINT}, 
+      #{audittime,jdbcType=TIMESTAMP}, #{isdel,jdbcType=BIT}, #{nutrition,jdbcType=LONGVARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.zeyu.web.model.Iseat" >
+    insert into iseat
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="eid != null" >
+        eid,
+      </if>
+      <if test="ccid != null" >
+        ccid,
+      </if>
+      <if test="name != null" >
+        name,
+      </if>
+      <if test="profile != null" >
+        profile,
+      </if>
+      <if test="pregnantstatus != null" >
+        pregnantstatus,
+      </if>
+      <if test="maternalstatus != null" >
+        maternalstatus,
+      </if>
+      <if test="babysatus != null" >
+        babysatus,
+      </if>
+      <if test="pregnan != null" >
+        pregnan,
+      </if>
+      <if test="maternal != null" >
+        maternal,
+      </if>
+      <if test="baby != null" >
+        baby,
+      </if>
+      <if test="img != null" >
+        img,
+      </if>
+      <if test="alt != null" >
+        alt,
+      </if>
+      <if test="createtime != null" >
+        createtime,
+      </if>
+      <if test="createuser != null" >
+        createuser,
+      </if>
+      <if test="auditor != null" >
+        auditor,
+      </if>
+      <if test="status != null" >
+        status,
+      </if>
+      <if test="audittime != null" >
+        audittime,
+      </if>
+      <if test="isdel != null" >
+        isdel,
+      </if>
+      <if test="nutrition != null" >
+        nutrition,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="eid != null" >
+        #{eid,jdbcType=BIGINT},
+      </if>
+      <if test="ccid != null" >
+        #{ccid,jdbcType=BIGINT},
+      </if>
+      <if test="name != null" >
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="profile != null" >
+        #{profile,jdbcType=VARCHAR},
+      </if>
+      <if test="pregnantstatus != null" >
+        #{pregnantstatus,jdbcType=VARCHAR},
+      </if>
+      <if test="maternalstatus != null" >
+        #{maternalstatus,jdbcType=VARCHAR},
+      </if>
+      <if test="babysatus != null" >
+        #{babysatus,jdbcType=VARCHAR},
+      </if>
+      <if test="pregnan != null" >
+        #{pregnan,jdbcType=VARCHAR},
+      </if>
+      <if test="maternal != null" >
+        #{maternal,jdbcType=VARCHAR},
+      </if>
+      <if test="baby != null" >
+        #{baby,jdbcType=VARCHAR},
+      </if>
+      <if test="img != null" >
+        #{img,jdbcType=VARCHAR},
+      </if>
+      <if test="alt != null" >
+        #{alt,jdbcType=VARCHAR},
+      </if>
+      <if test="createtime != null" >
+        #{createtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createuser != null" >
+        #{createuser,jdbcType=BIGINT},
+      </if>
+      <if test="auditor != null" >
+        #{auditor,jdbcType=BIGINT},
+      </if>
+      <if test="status != null" >
+        #{status,jdbcType=TINYINT},
+      </if>
+      <if test="audittime != null" >
+        #{audittime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="isdel != null" >
+        #{isdel,jdbcType=BIT},
+      </if>
+      <if test="nutrition != null" >
+        #{nutrition,jdbcType=LONGVARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.zeyu.web.model.Iseat" >
+    update iseat
+    <set >
+      <if test="ccid != null" >
+        ccid = #{ccid,jdbcType=BIGINT},
+      </if>
+      <if test="name != null" >
+        name = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="profile != null" >
+        profile = #{profile,jdbcType=VARCHAR},
+      </if>
+      <if test="pregnantstatus != null" >
+        pregnantstatus = #{pregnantstatus,jdbcType=VARCHAR},
+      </if>
+      <if test="maternalstatus != null" >
+        maternalstatus = #{maternalstatus,jdbcType=VARCHAR},
+      </if>
+      <if test="babysatus != null" >
+        babysatus = #{babysatus,jdbcType=VARCHAR},
+      </if>
+      <if test="pregnan != null" >
+        pregnan = #{pregnan,jdbcType=VARCHAR},
+      </if>
+      <if test="maternal != null" >
+        maternal = #{maternal,jdbcType=VARCHAR},
+      </if>
+      <if test="baby != null" >
+        baby = #{baby,jdbcType=VARCHAR},
+      </if>
+      <if test="img != null" >
+        img = #{img,jdbcType=VARCHAR},
+      </if>
+      <if test="alt != null" >
+        alt = #{alt,jdbcType=VARCHAR},
+      </if>
+      <if test="createtime != null" >
+        createtime = #{createtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createuser != null" >
+        createuser = #{createuser,jdbcType=BIGINT},
+      </if>
+      <if test="auditor != null" >
+        auditor = #{auditor,jdbcType=BIGINT},
+      </if>
+      <if test="status != null" >
+        status = #{status,jdbcType=TINYINT},
+      </if>
+      <if test="audittime != null" >
+        audittime = #{audittime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="isdel != null" >
+        isdel = #{isdel,jdbcType=BIT},
+      </if>
+      <if test="nutrition != null" >
+        nutrition = #{nutrition,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    where eid = #{eid,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.zeyu.web.model.Iseat" >
+    update iseat
+    set ccid = #{ccid,jdbcType=BIGINT},
+      name = #{name,jdbcType=VARCHAR},
+      profile = #{profile,jdbcType=VARCHAR},
+      pregnantstatus = #{pregnantstatus,jdbcType=VARCHAR},
+      maternalstatus = #{maternalstatus,jdbcType=VARCHAR},
+      babysatus = #{babysatus,jdbcType=VARCHAR},
+      pregnan = #{pregnan,jdbcType=VARCHAR},
+      maternal = #{maternal,jdbcType=VARCHAR},
+      baby = #{baby,jdbcType=VARCHAR},
+      img = #{img,jdbcType=VARCHAR},
+      alt = #{alt,jdbcType=VARCHAR},
+      createtime = #{createtime,jdbcType=TIMESTAMP},
+      createuser = #{createuser,jdbcType=BIGINT},
+      auditor = #{auditor,jdbcType=BIGINT},
+      status = #{status,jdbcType=TINYINT},
+      audittime = #{audittime,jdbcType=TIMESTAMP},
+      isdel = #{isdel,jdbcType=BIT},
+      nutrition = #{nutrition,jdbcType=LONGVARCHAR}
+    where eid = #{eid,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.zeyu.web.model.Iseat" >
+    update iseat
+    set ccid = #{ccid,jdbcType=BIGINT},
+      name = #{name,jdbcType=VARCHAR},
+      profile = #{profile,jdbcType=VARCHAR},
+      pregnantstatus = #{pregnantstatus,jdbcType=VARCHAR},
+      maternalstatus = #{maternalstatus,jdbcType=VARCHAR},
+      babysatus = #{babysatus,jdbcType=VARCHAR},
+      pregnan = #{pregnan,jdbcType=VARCHAR},
+      maternal = #{maternal,jdbcType=VARCHAR},
+      baby = #{baby,jdbcType=VARCHAR},
+      img = #{img,jdbcType=VARCHAR},
+      alt = #{alt,jdbcType=VARCHAR},
+      createtime = #{createtime,jdbcType=TIMESTAMP},
+      createuser = #{createuser,jdbcType=BIGINT},
+      auditor = #{auditor,jdbcType=BIGINT},
+      status = #{status,jdbcType=TINYINT},
+      audittime = #{audittime,jdbcType=TIMESTAMP},
+      isdel = #{isdel,jdbcType=BIT}
+    where eid = #{eid,jdbcType=BIGINT}
+  </update>
+</mapper>
