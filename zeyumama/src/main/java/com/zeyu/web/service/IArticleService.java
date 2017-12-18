@@ -10,5 +10,9 @@ public interface IArticleService {
 	public List<Article> getPageArticle(int start,int pagesize);
 	
 	public int getCount();
+	
+public List<Article> getPageArticleByCid(long cid,int start,int pagesize);
+	
+	public int getCountByCid(long cid);
 
 }

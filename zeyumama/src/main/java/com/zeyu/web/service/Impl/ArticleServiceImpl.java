@@ -37,4 +37,16 @@ public class ArticleServiceImpl implements IArticleService {
 		return this.articleExtDao.getCount();
 	}
 
+
+	public List<Article> getPageArticleByCid(long cid, int start, int pagesize) {
+		// TODO Auto-generated method stub
+		return this.articleExtDao.getPageArticleByCid(cid, start, pagesize);
+	}
+
+
+	public int getCountByCid(long cid) {
+		// TODO Auto-generated method stub
+		return this.articleExtDao.getCountByCid(cid);
+	}
+
 }

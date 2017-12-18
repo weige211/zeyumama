@@ -36,10 +36,25 @@
     from articles
     limit #{start,jdbcType=INTEGER},#{pagesize,jdbcType=INTEGER}
   </select>
-  
+  <select id="getPageArticleByCid" resultMap="ResultMapWithBLOBs" >
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from articles
+    where cid = #{cid,jdbcType=BIGINT}
+    limit #{start,jdbcType=INTEGER},#{pagesize,jdbcType=INTEGER}
+  </select>
   <select id="getCount" parameterType="Int"  resultType="Int">
 
        select Count(*) from articles
+
+    </select>
+    
+     <select id="getCountByCid" parameterType="java.lang.Long"  resultType="Int">
+
+       select Count(*) from articles
+       where cid = #{cid,jdbcType=BIGINT}
 
     </select>
 </mapper>
