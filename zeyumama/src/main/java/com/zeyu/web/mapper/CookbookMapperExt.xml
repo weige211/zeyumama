@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zeyu.web.mapper.CookbookMapperExt" >
+  <resultMap id="BaseResultMap" type="com.zeyu.web.model.Cookbook" >
+    <id column="cid" property="cid" jdbcType="BIGINT" />
+    <result column="ccid" property="ccid" jdbcType="BIGINT" />
+    <result column="name" property="name" jdbcType="VARCHAR" />
+    <result column="method" property="method" jdbcType="VARCHAR" />
+    <result column="taste" property="taste" jdbcType="VARCHAR" />
+    <result column="difficulty" property="difficulty" jdbcType="VARCHAR" />
+    <result column="pretime" property="pretime" jdbcType="VARCHAR" />
+    <result column="qty" property="qty" jdbcType="VARCHAR" />
+    <result column="dotime" property="dotime" jdbcType="VARCHAR" />
+    <result column="img" property="img" jdbcType="VARCHAR" />
+    <result column="alt" property="alt" jdbcType="VARCHAR" />
+    <result column="createtime" property="createtime" jdbcType="TIMESTAMP" />
+    <result column="createuser" property="createuser" jdbcType="BIGINT" />
+    <result column="auditor" property="auditor" jdbcType="BIGINT" />
+    <result column="status" property="status" jdbcType="TINYINT" />
+    <result column="audittime" property="audittime" jdbcType="TIMESTAMP" />
+    <result column="isdel" property="isdel" jdbcType="BIT" />
+  </resultMap>
+  <resultMap id="ResultMapWithBLOBs" type="com.zeyu.web.model.CookbookWithBLOBs" extends="BaseResultMap" >
+    <result column="materials" property="materials" jdbcType="LONGVARCHAR" />
+    <result column="step" property="step" jdbcType="LONGVARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    cid, ccid, name, method, taste, difficulty, pretime, qty, dotime, img, alt, createtime, 
+    createuser, auditor, status, audittime, isdel
+  </sql>
+  <sql id="Blob_Column_List" >
+    materials, step
+  </sql>
+  <select id="getPageCookbookByCcid" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from cookbook
+    where ccid = #{ccid,jdbcType=BIGINT}
+    limit #{start,jdbcType=INTEGER},#{pagesize,jdbcType=INTEGER}
+  </select>
+  
+  <select id="getCountByCcid" parameterType="java.lang.Long"  resultType="Int">
+
+       select Count(*) from cookbook
+       where ccid = #{ccid,jdbcType=BIGINT}
+
+    </select>
+  
+</mapper>

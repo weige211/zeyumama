@@ -1,5 +1,6 @@
 package com.zeyu.web.controller;
 
+import java.text.SimpleDateFormat;
 import java.util.List;
 
 import javax.annotation.Resource;
@@ -11,6 +12,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import com.zeyu.web.dto.ArticleDto;
 import com.zeyu.web.dto.PageInfoDto;
 import com.zeyu.web.model.Article;
 import com.zeyu.web.model.Category;
@@ -28,7 +30,7 @@ public class ArticlesController {
 	@Resource
 	private ICategoryService categoryservice;
 	//每页显示十条
-	private int pageSize=3;
+	private int pageSize=8;
 	
 	public ArticlesController() {
 		super();
@@ -93,7 +95,7 @@ public String getPageArticlesByCid(@PathVariable(value="cid") long cid,@PathVari
 		List<Category> ylist=this.categoryservice.getCategoryByparid(3);
 		
 		//获取精华文章列表，取相关类别数据
-		List<Article> jlist=this.articleservice.getPageArticleByCid(cid,start, this.pageSize);
+		List<Article> jlist=this.articleservice.getPageArticleByCid(cid,start+this.pageSize, this.pageSize);
 		
 		model.addAttribute("clist",clist);
 		model.addAttribute("ylist",ylist);
@@ -115,9 +117,29 @@ public String getArticleById(@PathVariable(value="aid") long aid,Model model) {
 	
     try {
     	Article a=this.articleservice.getArticleById(aid);
+    	
+    	ArticleDto dto =new ArticleDto();
+    	dto.setAid(a.getAid());
+    	dto.setAuthor(a.getAuthor());
+    	dto.setCid(a.getCid());
+    	//日期转化
+    	SimpleDateFormat formatter; 
+        formatter = new SimpleDateFormat ("yyyy-MM-dd"); 
+    	String date= formatter.format(a.getCreatetime()); 
+    	dto.setCreatetime(date);
+    	
+    	dto.setEditor(a.getEditor());
+    	dto.setImgart(a.getImgart());
+    	dto.setImgurl(a.getImgurl());
+    	dto.setSource(a.getSource());
+    	dto.setStatus(a.getStatus());
+    	dto.setSummary(a.getSummary());
+    	dto.setTitle(a.getTitle());
+    	dto.setContent(a.getContent());
+    	
     	List<Article> list=this.articleservice.getPageArticleByCid(a.getCid(),0,10);
     	
-    	model.addAttribute("article",a);
+    	model.addAttribute("article",dto);
     	model.addAttribute("list",list);
     	return "articledetail";
 	} catch (Exception e) {

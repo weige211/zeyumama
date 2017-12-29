@@ -173,8 +173,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<div class="expertIntroHotlyDebated mb20">
 		<div class="w clearfix">
 			<div class="webMapNav">
-				<a href="http://www.lamabang.com">泽雨妈妈首页</a><span class="arrows">&gt;</span>
-				<a href="http://www.lamabang.com/parenting">
+				<a href="<%=basePath%>">泽雨妈妈首页</a><span class="arrows">&gt;</span>
+				<a href="<%=basePath%>articles/page/4/1">
 					<h1>育儿知识</h1>
 				</a>
 			</div>
@@ -263,10 +263,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 											alt="${item.title}" title="${item.title}">
 									</div> <a href="http://www.lamabang.com/topic/id-21660041.html"
 									class="name">${item.title}</a>
-									<div class="info ovH">
+									<%-- <div class="info ovH">
 										<div class="time fl">${item.createtime}</div>
 										<!-- <span class="tag fr">宝宝营养全攻略-飞鹤奶粉</span> -->
-									</div>
+									</div> --%>
 								</li>
 							</c:forEach>
 

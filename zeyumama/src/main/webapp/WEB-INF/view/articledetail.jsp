@@ -183,7 +183,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		<div class="mapNavArea">
 			<div class="webMapNav">
 				<a href="<%=basePath%>" title="泽雨妈妈首页">泽雨妈妈首页</a><span class="arrows">&gt;</span>
-				<a title="育儿知识" href="<%=basePath%>articles/page/${article.cid}/1">育儿知识
+				<a title="育儿知识" href="<%=basePath%>articles/page/4/1">育儿知识
 				</a><span class="arrows">&gt;</span>${article.title}</div>
 		</div>
 		<div class="orationContBox mb20">
@@ -200,7 +200,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						</div>
 						<p class="summary">
 							${article.summary}</p>
-							<span style="line-height:2;">&nbsp;&nbsp;</span><img src='${article.imgurl}' />
 						<div class="maintext text">
 			                     ${article.content}
 						</div>
