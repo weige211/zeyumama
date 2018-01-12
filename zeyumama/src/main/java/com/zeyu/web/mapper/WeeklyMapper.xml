@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zeyu.web.mapper.WeeklyMapper" >
+  <resultMap id="BaseResultMap" type="com.zeyu.web.model.Weekly" >
+    <id column="wid" property="wid" jdbcType="BIGINT" />
+    <result column="weekly" property="weekly" jdbcType="VARCHAR" />
+    <result column="days" property="days" jdbcType="VARCHAR" />
+    <result column="babyheigh" property="babyheigh" jdbcType="VARCHAR" />
+    <result column="babyweigh" property="babyweigh" jdbcType="VARCHAR" />
+    <result column="profile" property="profile" jdbcType="VARCHAR" />
+    <result column="mamachange" property="mamachange" jdbcType="VARCHAR" />
+    <result column="Prompt" property="prompt" jdbcType="VARCHAR" />
+    <result column="helpbaby" property="helpbaby" jdbcType="VARCHAR" />
+    <result column="know" property="know" jdbcType="VARCHAR" />
+    <result column="follow" property="follow" jdbcType="VARCHAR" />
+    <result column="feedtips" property="feedtips" jdbcType="VARCHAR" />
+    <result column="foodrecomment" property="foodrecomment" jdbcType="VARCHAR" />
+    <result column="img" property="img" jdbcType="VARCHAR" />
+    <result column="img2" property="img2" jdbcType="VARCHAR" />
+    <result column="createtime" property="createtime" jdbcType="TIMESTAMP" />
+    <result column="createuser" property="createuser" jdbcType="BIGINT" />
+    <result column="auditor" property="auditor" jdbcType="BIGINT" />
+    <result column="status" property="status" jdbcType="TINYINT" />
+    <result column="audittime" property="audittime" jdbcType="TIMESTAMP" />
+    <result column="isdel" property="isdel" jdbcType="BIT" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    wid, weekly, days, babyheigh, babyweigh, profile, mamachange, Prompt, helpbaby, know, 
+    follow, feedtips, foodrecomment, img, img2, createtime, createuser, auditor, status, 
+    audittime, isdel
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select 
+    <include refid="Base_Column_List" />
+    from weekly
+    where wid = #{wid,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from weekly
+    where wid = #{wid,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.zeyu.web.model.Weekly" >
+    insert into weekly (wid, weekly, days, 
+      babyheigh, babyweigh, profile, 
+      mamachange, Prompt, helpbaby, 
+      know, follow, feedtips, 
+      foodrecomment, img, img2, 
+      createtime, createuser, auditor, 
+      status, audittime, isdel
+      )
+    values (#{wid,jdbcType=BIGINT}, #{weekly,jdbcType=VARCHAR}, #{days,jdbcType=VARCHAR}, 
+      #{babyheigh,jdbcType=VARCHAR}, #{babyweigh,jdbcType=VARCHAR}, #{profile,jdbcType=VARCHAR}, 
+      #{mamachange,jdbcType=VARCHAR}, #{prompt,jdbcType=VARCHAR}, #{helpbaby,jdbcType=VARCHAR}, 
+      #{know,jdbcType=VARCHAR}, #{follow,jdbcType=VARCHAR}, #{feedtips,jdbcType=VARCHAR}, 
+      #{foodrecomment,jdbcType=VARCHAR}, #{img,jdbcType=VARCHAR}, #{img2,jdbcType=VARCHAR}, 
+      #{createtime,jdbcType=TIMESTAMP}, #{createuser,jdbcType=BIGINT}, #{auditor,jdbcType=BIGINT}, 
+      #{status,jdbcType=TINYINT}, #{audittime,jdbcType=TIMESTAMP}, #{isdel,jdbcType=BIT}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.zeyu.web.model.Weekly" >
+    insert into weekly
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="wid != null" >
+        wid,
+      </if>
+      <if test="weekly != null" >
+        weekly,
+      </if>
+      <if test="days != null" >
+        days,
+      </if>
+      <if test="babyheigh != null" >
+        babyheigh,
+      </if>
+      <if test="babyweigh != null" >
+        babyweigh,
+      </if>
+      <if test="profile != null" >
+        profile,
+      </if>
+      <if test="mamachange != null" >
+        mamachange,
+      </if>
+      <if test="prompt != null" >
+        Prompt,
+      </if>
+      <if test="helpbaby != null" >
+        helpbaby,
+      </if>
+      <if test="know != null" >
+        know,
+      </if>
+      <if test="follow != null" >
+        follow,
+      </if>
+      <if test="feedtips != null" >
+        feedtips,
+      </if>
+      <if test="foodrecomment != null" >
+        foodrecomment,
+      </if>
+      <if test="img != null" >
+        img,
+      </if>
+      <if test="img2 != null" >
+        img2,
+      </if>
+      <if test="createtime != null" >
+        createtime,
+      </if>
+      <if test="createuser != null" >
+        createuser,
+      </if>
+      <if test="auditor != null" >
+        auditor,
+      </if>
+      <if test="status != null" >
+        status,
+      </if>
+      <if test="audittime != null" >
+        audittime,
+      </if>
+      <if test="isdel != null" >
+        isdel,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="wid != null" >
+        #{wid,jdbcType=BIGINT},
+      </if>
+      <if test="weekly != null" >
+        #{weekly,jdbcType=VARCHAR},
+      </if>
+      <if test="days != null" >
+        #{days,jdbcType=VARCHAR},
+      </if>
+      <if test="babyheigh != null" >
+        #{babyheigh,jdbcType=VARCHAR},
+      </if>
+      <if test="babyweigh != null" >
+        #{babyweigh,jdbcType=VARCHAR},
+      </if>
+      <if test="profile != null" >
+        #{profile,jdbcType=VARCHAR},
+      </if>
+      <if test="mamachange != null" >
+        #{mamachange,jdbcType=VARCHAR},
+      </if>
+      <if test="prompt != null" >
+        #{prompt,jdbcType=VARCHAR},
+      </if>
+      <if test="helpbaby != null" >
+        #{helpbaby,jdbcType=VARCHAR},
+      </if>
+      <if test="know != null" >
+        #{know,jdbcType=VARCHAR},
+      </if>
+      <if test="follow != null" >
+        #{follow,jdbcType=VARCHAR},
+      </if>
+      <if test="feedtips != null" >
+        #{feedtips,jdbcType=VARCHAR},
+      </if>
+      <if test="foodrecomment != null" >
+        #{foodrecomment,jdbcType=VARCHAR},
+      </if>
+      <if test="img != null" >
+        #{img,jdbcType=VARCHAR},
+      </if>
+      <if test="img2 != null" >
+        #{img2,jdbcType=VARCHAR},
+      </if>
+      <if test="createtime != null" >
+        #{createtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createuser != null" >
+        #{createuser,jdbcType=BIGINT},
+      </if>
+      <if test="auditor != null" >
+        #{auditor,jdbcType=BIGINT},
+      </if>
+      <if test="status != null" >
+        #{status,jdbcType=TINYINT},
+      </if>
+      <if test="audittime != null" >
+        #{audittime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="isdel != null" >
+        #{isdel,jdbcType=BIT},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.zeyu.web.model.Weekly" >
+    update weekly
+    <set >
+      <if test="weekly != null" >
+        weekly = #{weekly,jdbcType=VARCHAR},
+      </if>
+      <if test="days != null" >
+        days = #{days,jdbcType=VARCHAR},
+      </if>
+      <if test="babyheigh != null" >
+        babyheigh = #{babyheigh,jdbcType=VARCHAR},
+      </if>
+      <if test="babyweigh != null" >
+        babyweigh = #{babyweigh,jdbcType=VARCHAR},
+      </if>
+      <if test="profile != null" >
+        profile = #{profile,jdbcType=VARCHAR},
+      </if>
+      <if test="mamachange != null" >
+        mamachange = #{mamachange,jdbcType=VARCHAR},
+      </if>
+      <if test="prompt != null" >
+        Prompt = #{prompt,jdbcType=VARCHAR},
+      </if>
+      <if test="helpbaby != null" >
+        helpbaby = #{helpbaby,jdbcType=VARCHAR},
+      </if>
+      <if test="know != null" >
+        know = #{know,jdbcType=VARCHAR},
+      </if>
+      <if test="follow != null" >
+        follow = #{follow,jdbcType=VARCHAR},
+      </if>
+      <if test="feedtips != null" >
+        feedtips = #{feedtips,jdbcType=VARCHAR},
+      </if>
+      <if test="foodrecomment != null" >
+        foodrecomment = #{foodrecomment,jdbcType=VARCHAR},
+      </if>
+      <if test="img != null" >
+        img = #{img,jdbcType=VARCHAR},
+      </if>
+      <if test="img2 != null" >
+        img2 = #{img2,jdbcType=VARCHAR},
+      </if>
+      <if test="createtime != null" >
+        createtime = #{createtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createuser != null" >
+        createuser = #{createuser,jdbcType=BIGINT},
+      </if>
+      <if test="auditor != null" >
+        auditor = #{auditor,jdbcType=BIGINT},
+      </if>
+      <if test="status != null" >
+        status = #{status,jdbcType=TINYINT},
+      </if>
+      <if test="audittime != null" >
+        audittime = #{audittime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="isdel != null" >
+        isdel = #{isdel,jdbcType=BIT},
+      </if>
+    </set>
+    where wid = #{wid,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.zeyu.web.model.Weekly" >
+    update weekly
+    set weekly = #{weekly,jdbcType=VARCHAR},
+      days = #{days,jdbcType=VARCHAR},
+      babyheigh = #{babyheigh,jdbcType=VARCHAR},
+      babyweigh = #{babyweigh,jdbcType=VARCHAR},
+      profile = #{profile,jdbcType=VARCHAR},
+      mamachange = #{mamachange,jdbcType=VARCHAR},
+      Prompt = #{prompt,jdbcType=VARCHAR},
+      helpbaby = #{helpbaby,jdbcType=VARCHAR},
+      know = #{know,jdbcType=VARCHAR},
+      follow = #{follow,jdbcType=VARCHAR},
+      feedtips = #{feedtips,jdbcType=VARCHAR},
+      foodrecomment = #{foodrecomment,jdbcType=VARCHAR},
+      img = #{img,jdbcType=VARCHAR},
+      img2 = #{img2,jdbcType=VARCHAR},
+      createtime = #{createtime,jdbcType=TIMESTAMP},
+      createuser = #{createuser,jdbcType=BIGINT},
+      auditor = #{auditor,jdbcType=BIGINT},
+      status = #{status,jdbcType=TINYINT},
+      audittime = #{audittime,jdbcType=TIMESTAMP},
+      isdel = #{isdel,jdbcType=BIT}
+    where wid = #{wid,jdbcType=BIGINT}
+  </update>
+</mapper>

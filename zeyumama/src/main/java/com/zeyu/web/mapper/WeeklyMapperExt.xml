@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zeyu.web.mapper.WeeklyMapperExt" >
+  <resultMap id="BaseResultMap" type="com.zeyu.web.model.Weekly" >
+    <id column="wid" property="wid" jdbcType="BIGINT" />
+    <result column="weekly" property="weekly" jdbcType="VARCHAR" />
+    <result column="days" property="days" jdbcType="VARCHAR" />
+    <result column="babyheigh" property="babyheigh" jdbcType="VARCHAR" />
+    <result column="babyweigh" property="babyweigh" jdbcType="VARCHAR" />
+    <result column="profile" property="profile" jdbcType="VARCHAR" />
+    <result column="mamachange" property="mamachange" jdbcType="VARCHAR" />
+    <result column="Prompt" property="prompt" jdbcType="VARCHAR" />
+    <result column="helpbaby" property="helpbaby" jdbcType="VARCHAR" />
+    <result column="know" property="know" jdbcType="VARCHAR" />
+    <result column="follow" property="follow" jdbcType="VARCHAR" />
+    <result column="feedtips" property="feedtips" jdbcType="VARCHAR" />
+    <result column="foodrecomment" property="foodrecomment" jdbcType="VARCHAR" />
+    <result column="img" property="img" jdbcType="VARCHAR" />
+    <result column="img2" property="img2" jdbcType="VARCHAR" />
+    <result column="createtime" property="createtime" jdbcType="TIMESTAMP" />
+    <result column="createuser" property="createuser" jdbcType="BIGINT" />
+    <result column="auditor" property="auditor" jdbcType="BIGINT" />
+    <result column="status" property="status" jdbcType="TINYINT" />
+    <result column="audittime" property="audittime" jdbcType="TIMESTAMP" />
+    <result column="isdel" property="isdel" jdbcType="BIT" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    wid, weekly, days, babyheigh, babyweigh, profile, mamachange, Prompt, helpbaby, know, 
+    follow, feedtips, foodrecomment, img, img2, createtime, createuser, auditor, status, 
+    audittime, isdel
+  </sql>
+  <select id="getAllWeekly" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select 
+    <include refid="Base_Column_List" />
+    from weekly
+  </select>
+ 
+</mapper>

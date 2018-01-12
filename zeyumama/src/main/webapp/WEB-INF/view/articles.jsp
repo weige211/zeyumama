@@ -68,14 +68,14 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						<ul class="tabList">
 							<li class="on">
 								<div class="menuCont">
-									<a href="http://www.lamabang.com/"><i
+									<a href="<%=basePath%>"><i>
 										class="common-icon home"></i><span class="text">首页</span></a><span
 										class="pipe"></span>
 								</div>
 							</li>
 							<li class="on">
 								<div class="menuCont">
-									<a href="http://www.lamabang.com/"><i
+									<a href="<%=basePath%>"><i
 										class="common-icon communicate"></i><span class="text">资讯</span></a><span
 										class="pipe"></span>
 								</div>
