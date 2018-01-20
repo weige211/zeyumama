@@ -13,5 +13,7 @@ public interface ArticleMapperExt{
 	public List<Article> getPageArticleByCid(@Param("cid")long cid,@Param("start")int start,@Param("pagesize")int pagesize);
 	public int getCountByCid(Long cid);
 	
+	public List<Article> getPageBaikeAll();
+	
 	
 }

@@ -49,4 +49,10 @@ public class ArticleServiceImpl implements IArticleService {
 		return this.articleExtDao.getCountByCid(cid);
 	}
 
+
+	public List<Article> getPageBaikeAll() {
+		// TODO Auto-generated method stub
+		return this.articleExtDao.getPageBaikeAll();
+	}
+
 }

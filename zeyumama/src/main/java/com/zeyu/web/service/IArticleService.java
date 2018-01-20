@@ -14,5 +14,7 @@ public interface IArticleService {
 public List<Article> getPageArticleByCid(long cid,int start,int pagesize);
 	
 	public int getCountByCid(long cid);
+	
+	public List<Article> getPageBaikeAll();
 
 }

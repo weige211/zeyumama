@@ -274,47 +274,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<!--日历End--
 
             <!--每日任务-->
-				<div class="dailyQuest mt30" id="floor3">
-					<div class="contLTitle">
-						<h2>每日任务</h2>
-					</div>
-					<div class="cont">
-						<div class="mainTitle">精心装扮你的小“窝”</div>
-
-						<div class="publicTag cY">
-							孕1周+0天<i></i>
-						</div>
-						<div class="article pointer" id="taskintro" onclick="taskmore()">
-							温馨的居室，和谐轻快的氛围，轻松平和的心态，会大大提升受孕几率，让整个妊娠过程更加顺利。因此，现在就开始动手吧，为自己、为宝宝提供一个舒适温暖的“窝”，在一个温馨而美好的环境中迎接宝宝的到来。色彩
-
-							......</div>
-						<div class="article" id="taskall" style="display: block">
-							温馨的居室，和谐轻快的氛围，轻松平和的心态，会大大提升受孕几率，让整个妊娠过程更加顺利。因此，现在就开始动手吧，为自己、为宝宝提供一个舒适温暖的“窝”，在一个温馨而美好的环境中迎接宝宝的到来。色彩
-
-							色彩会对人的心理产生明显的暗示作用。可以选择你喜爱的颜色来装饰居室，让自己心情更加舒畅。 艺术品
-
-							如果觉得房间的布置比较单调，不妨用点艺术品来加以装点。如果居室小，东西多，使人感到拥挤和紧张，不妨用优美宜人的风景图片、油画来开阔人的视野，帮助你忘记紧张和疲劳，解除忧虑和烦恼。
-
-							绿植 可以用小生命给准妈妈的居室生活带来生机，比如说阳台上种植花草、饲养鱼虫，使居室充满活力。 光线
-
-							将玻璃窗擦洗干净，增加照明度。 温度 冬季的住房更要解决保温问题，具体做法是增设取暖设备，维修好房屋等。 物品位置
-
-							经常使用的物品要放在你站立时就能够方便取放的地方，清理一下床下与衣柜上的东西，调整一下厨房用品的位置。 不要装修
-
-							在准备怀孕之前，居室最好不要装修。如果装修了，最好在装修3～6个月后再入住，否则易引起流产或胎儿发育畸形。</div>
-					</div>
-					<div class="questCondition" id="dotaskall" style="display: none">
-						<span class="fl">已有<i id="taskid_174">981</i>位妈妈完成该任务了哦
-						</span>
-						<button class="btn fr" id="dotask">
-							<i id="taskdo1" style="display: block">我已完成该任务</i> <i
-								id="taskdo0" style="display: none">我未完成该任务</i>
-						</button>
-					</div>
-					<div class="more" id="taskmore">
-						<a href="javascript:void(0);">阅读更多</a>
-					</div>
-				</div>
+				
 				<!--每日任务End-->
 
 			</div>
