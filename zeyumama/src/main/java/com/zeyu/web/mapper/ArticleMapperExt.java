@@ -15,5 +15,8 @@ public interface ArticleMapperExt{
 	
 	public List<Article> getPageBaikeAll();
 	
+	public List<Article> getPageArticleByKeyword(@Param("keyword")String keyword,@Param("start")int start,@Param("pagesize")int pagesize);
+	public int getCountBykeyword(@Param("keyword") String keyword);
+	
 	
 }

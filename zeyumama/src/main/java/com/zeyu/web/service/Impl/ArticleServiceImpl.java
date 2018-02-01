@@ -55,4 +55,16 @@ public class ArticleServiceImpl implements IArticleService {
 		return this.articleExtDao.getPageBaikeAll();
 	}
 
+
+	public List<Article> getPageArticleByKeyword(String keyword, int start, int pagesize) {
+		// TODO Auto-generated method stub
+		return this.articleExtDao.getPageArticleByKeyword(keyword, start, pagesize);
+	}
+
+
+	public int getCountBykeyword(String keyword) {
+		// TODO Auto-generated method stub
+		return this.articleExtDao.getCountBykeyword(keyword);
+	}
+
 }

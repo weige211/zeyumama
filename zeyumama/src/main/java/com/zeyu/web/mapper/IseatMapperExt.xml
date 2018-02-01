@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zeyu.web.mapper.IseatMapperExt" >
+  <resultMap id="BaseResultMap" type="com.zeyu.web.model.Iseat" >
+    <id column="eid" property="eid" jdbcType="BIGINT" />
+    <result column="ccid" property="ccid" jdbcType="BIGINT" />
+    <result column="name" property="name" jdbcType="VARCHAR" />
+    <result column="profile" property="profile" jdbcType="VARCHAR" />
+    <result column="pregnantstatus" property="pregnantstatus" jdbcType="VARCHAR" />
+    <result column="maternalstatus" property="maternalstatus" jdbcType="VARCHAR" />
+    <result column="babysatus" property="babysatus" jdbcType="VARCHAR" />
+    <result column="pregnan" property="pregnan" jdbcType="VARCHAR" />
+    <result column="maternal" property="maternal" jdbcType="VARCHAR" />
+    <result column="baby" property="baby" jdbcType="VARCHAR" />
+    <result column="img" property="img" jdbcType="VARCHAR" />
+    <result column="alt" property="alt" jdbcType="VARCHAR" />
+    <result column="createtime" property="createtime" jdbcType="TIMESTAMP" />
+    <result column="createuser" property="createuser" jdbcType="BIGINT" />
+    <result column="auditor" property="auditor" jdbcType="BIGINT" />
+    <result column="status" property="status" jdbcType="TINYINT" />
+    <result column="audittime" property="audittime" jdbcType="TIMESTAMP" />
+    <result column="isdel" property="isdel" jdbcType="BIT" />
+  </resultMap>
+  <resultMap id="ResultMapWithBLOBs" type="com.zeyu.web.model.Iseat" extends="BaseResultMap" >
+    <result column="nutrition" property="nutrition" jdbcType="LONGVARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    eid, ccid, name, profile, pregnantstatus, maternalstatus, babysatus, pregnan, maternal, 
+    baby, img, alt, createtime, createuser, auditor, status, audittime, isdel
+  </sql>
+  <sql id="Blob_Column_List" >
+    nutrition
+  </sql>
+  <select id="getPageIseatByCid" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from iseat
+    where ccid = #{ccid,jdbcType=BIGINT}
+    limit #{start,jdbcType=INTEGER},#{pagesize,jdbcType=INTEGER}
+  </select>
+  
+  <select id="getCountByCid" parameterType="java.lang.Long"  resultType="Int">
+       select Count(*) from iseat
+       where ccid = #{ccid,jdbcType=BIGINT}
+    </select>
+ 
+</mapper>

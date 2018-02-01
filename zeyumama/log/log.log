@@ -1,0 +1,366 @@
+2018-01-31 12:57:25  [ main:0 ] - [ DEBUG ]  SpringJUnit4ClassRunner constructor called with [class com.zeyu.web.test.TestMyBatis].
+2018-01-31 12:57:25  [ main:95 ] - [ DEBUG ]  Delegating to GenericXmlContextLoader to process context configuration [ContextConfigurationAttributes@56cbfb61 declaringClass = 'com.zeyu.web.test.TestMyBatis', locations = '{classpath:spring-mybatis.xml}', classes = '{}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+2018-01-31 12:57:25  [ main:101 ] - [ DEBUG ]  Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.zeyu.web.test.TestMyBatis]
+2018-01-31 12:57:25  [ main:114 ] - [ DEBUG ]  @TestExecutionListeners is not present for class [class com.zeyu.web.test.TestMyBatis]: using defaults.
+2018-01-31 12:57:25  [ main:153 ] - [ DEBUG ]  Retrieved @ProfileValueSourceConfiguration [null] for test class [com.zeyu.web.test.TestMyBatis]
+2018-01-31 12:57:25  [ main:154 ] - [ DEBUG ]  Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.zeyu.web.test.TestMyBatis]
+2018-01-31 12:57:25  [ main:194 ] - [ DEBUG ]  Retrieved @ProfileValueSourceConfiguration [null] for test class [com.zeyu.web.test.TestMyBatis]
+2018-01-31 12:57:25  [ main:198 ] - [ DEBUG ]  Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.zeyu.web.test.TestMyBatis]
+2018-01-31 12:57:25  [ main:203 ] - [ DEBUG ]  Retrieved @ProfileValueSourceConfiguration [null] for test class [com.zeyu.web.test.TestMyBatis]
+2018-01-31 12:57:25  [ main:204 ] - [ DEBUG ]  Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.zeyu.web.test.TestMyBatis]
+2018-01-31 12:57:25  [ main:207 ] - [ DEBUG ]  Retrieved @ProfileValueSourceConfiguration [null] for test class [com.zeyu.web.test.TestMyBatis]
+2018-01-31 12:57:25  [ main:208 ] - [ DEBUG ]  Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.zeyu.web.test.TestMyBatis]
+2018-01-31 12:57:25  [ main:212 ] - [ DEBUG ]  Retrieved @ProfileValueSourceConfiguration [null] for test class [com.zeyu.web.test.TestMyBatis]
+2018-01-31 12:57:25  [ main:213 ] - [ DEBUG ]  Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.zeyu.web.test.TestMyBatis]
+2018-01-31 12:57:25  [ main:218 ] - [ DEBUG ]  Performing dependency injection for test context [[DefaultTestContext@337d0578 testClass = TestMyBatis, testInstance = com.zeyu.web.test.TestMyBatis@59e84876, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@61a485d2 testClass = TestMyBatis, locations = '{classpath:spring-mybatis.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]].
+2018-01-31 12:57:25  [ main:219 ] - [ DEBUG ]  Delegating to GenericXmlContextLoader to load context from [MergedContextConfiguration@61a485d2 testClass = TestMyBatis, locations = '{classpath:spring-mybatis.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]].
+2018-01-31 12:57:25  [ main:221 ] - [ DEBUG ]  Loading ApplicationContext for merged context configuration [[MergedContextConfiguration@61a485d2 testClass = TestMyBatis, locations = '{classpath:spring-mybatis.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+2018-01-31 12:57:25  [ main:419 ] - [ DEBUG ]  Adding [systemProperties] PropertySource with lowest search precedence
+2018-01-31 12:57:25  [ main:422 ] - [ DEBUG ]  Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-01-31 12:57:25  [ main:423 ] - [ DEBUG ]  Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2018-01-31 12:57:25  [ main:449 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring-mybatis.xml]
+2018-01-31 12:57:25  [ main:514 ] - [ DEBUG ]  Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+2018-01-31 12:57:26  [ main:689 ] - [ DEBUG ]  Loading schema mappings from [META-INF/spring.schemas]
+2018-01-31 12:57:26  [ main:699 ] - [ DEBUG ]  Loaded schema mappings: {http://www.springframework.org/schema/tx/spring-tx-2.5.xsd=org/springframework/transaction/config/spring-tx-2.5.xsd, http://www.springframework.org/schema/context/spring-context-3.1.xsd=org/springframework/context/config/spring-context-3.1.xsd, http://www.springframework.org/schema/util/spring-util-3.0.xsd=org/springframework/beans/factory/xml/spring-util-3.0.xsd, http://mybatis.org/schema/mybatis-spring-1.2.xsd=org/mybatis/spring/config/mybatis-spring-1.2.xsd, http://www.springframework.org/schema/aop/spring-aop-3.2.xsd=org/springframework/aop/config/spring-aop-3.2.xsd, http://www.springframework.org/schema/tool/spring-tool.xsd=org/springframework/beans/factory/xml/spring-tool-4.0.xsd, http://www.springframework.org/schema/context/spring-context-4.0.xsd=org/springframework/context/config/spring-context-4.0.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd=org/springframework/web/servlet/config/spring-mvc-3.2.xsd, http://www.springframework.org/schema/oxm/spring-oxm-3.0.xsd=org/springframework/oxm/config/spring-oxm-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang-3.2.xsd=org/springframework/scripting/config/spring-lang-3.2.xsd, http://www.springframework.org/schema/cache/spring-cache-3.2.xsd=org/springframework/cache/config/spring-cache-3.2.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.1.xsd=org/springframework/jdbc/config/spring-jdbc-3.1.xsd, http://www.springframework.org/schema/util/spring-util-2.0.xsd=org/springframework/beans/factory/xml/spring-util-2.0.xsd, http://www.springframework.org/schema/tool/spring-tool-3.2.xsd=org/springframework/beans/factory/xml/spring-tool-3.2.xsd, http://www.springframework.org/schema/context/spring-context.xsd=org/springframework/context/config/spring-context-4.0.xsd, http://www.springframework.org/schema/aop/spring-aop-4.0.xsd=org/springframework/aop/config/spring-aop-4.0.xsd, http://www.springframework.org/schema/jee/spring-jee-3.2.xsd=org/springframework/ejb/config/spring-jee-3.2.xsd, http://www.springframework.org/schema/context/spring-context-3.0.xsd=org/springframework/context/config/spring-context-3.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-4.0.xsd=org/springframework/jdbc/config/spring-jdbc-4.0.xsd, http://www.springframework.org/schema/util/spring-util-2.5.xsd=org/springframework/beans/factory/xml/spring-util-2.5.xsd, http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd=org/springframework/web/servlet/config/spring-mvc-4.0.xsd, http://www.springframework.org/schema/beans/spring-beans-3.2.xsd=org/springframework/beans/factory/xml/spring-beans-3.2.xsd, http://www.springframework.org/schema/aop/spring-aop-3.1.xsd=org/springframework/aop/config/spring-aop-3.1.xsd, http://www.springframework.org/schema/lang/spring-lang-4.0.xsd=org/springframework/scripting/config/spring-lang-4.0.xsd, http://www.springframework.org/schema/mvc/spring-mvc.xsd=org/springframework/web/servlet/config/spring-mvc-4.0.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd=org/springframework/web/servlet/config/spring-mvc-3.1.xsd, http://www.springframework.org/schema/tool/spring-tool-4.0.xsd=org/springframework/beans/factory/xml/spring-tool-4.0.xsd, http://www.springframework.org/schema/lang/spring-lang-3.1.xsd=org/springframework/scripting/config/spring-lang-3.1.xsd, http://www.springframework.org/schema/tx/spring-tx-3.2.xsd=org/springframework/transaction/config/spring-tx-3.2.xsd, http://www.springframework.org/schema/cache/spring-cache-3.1.xsd=org/springframework/cache/config/spring-cache-3.1.xsd, http://www.springframework.org/schema/jee/spring-jee-4.0.xsd=org/springframework/ejb/config/spring-jee-4.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd=org/springframework/jdbc/config/spring-jdbc-3.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc.xsd=org/springframework/jdbc/config/spring-jdbc-4.0.xsd, http://www.springframework.org/schema/tool/spring-tool-3.1.xsd=org/springframework/beans/factory/xml/spring-tool-3.1.xsd, http://www.springframework.org/schema/cache/spring-cache-4.0.xsd=org/springframework/cache/config/spring-cache-4.0.xsd, http://www.springframework.org/schema/jee/spring-jee-3.1.xsd=org/springframework/ejb/config/spring-jee-3.1.xsd, http://www.springframework.org/schema/task/spring-task-3.2.xsd=org/springframework/scheduling/config/spring-task-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-3.1.xsd=org/springframework/beans/factory/xml/spring-beans-3.1.xsd, http://www.springframework.org/schema/util/spring-util.xsd=org/springframework/beans/factory/xml/spring-util-4.0.xsd, http://www.springframework.org/schema/aop/spring-aop-3.0.xsd=org/springframework/aop/config/spring-aop-3.0.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd=org/springframework/web/servlet/config/spring-mvc-3.0.xsd, http://www.springframework.org/schema/beans/spring-beans-4.0.xsd=org/springframework/beans/factory/xml/spring-beans-4.0.xsd, http://www.springframework.org/schema/beans/spring-beans.xsd=org/springframework/beans/factory/xml/spring-beans-4.0.xsd, http://mybatis.org/schema/mybatis-spring.xsd=org/mybatis/spring/config/mybatis-spring-1.2.xsd, http://www.springframework.org/schema/lang/spring-lang-3.0.xsd=org/springframework/scripting/config/spring-lang-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx-3.1.xsd=org/springframework/transaction/config/spring-tx-3.1.xsd, http://www.springframework.org/schema/context/spring-context-2.5.xsd=org/springframework/context/config/spring-context-2.5.xsd, http://www.springframework.org/schema/task/spring-task-4.0.xsd=org/springframework/scheduling/config/spring-task-4.0.xsd, http://www.springframework.org/schema/tool/spring-tool-3.0.xsd=org/springframework/beans/factory/xml/spring-tool-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx-4.0.xsd=org/springframework/transaction/config/spring-tx-4.0.xsd, http://www.springframework.org/schema/aop/spring-aop-2.0.xsd=org/springframework/aop/config/spring-aop-2.0.xsd, http://www.springframework.org/schema/jee/spring-jee-3.0.xsd=org/springframework/ejb/config/spring-jee-3.0.xsd, http://www.springframework.org/schema/task/spring-task-3.1.xsd=org/springframework/scheduling/config/spring-task-3.1.xsd, http://www.springframework.org/schema/beans/spring-beans-3.0.xsd=org/springframework/beans/factory/xml/spring-beans-3.0.xsd, http://www.springframework.org/schema/jee/spring-jee.xsd=org/springframework/ejb/config/spring-jee-4.0.xsd, http://www.springframework.org/schema/aop/spring-aop-2.5.xsd=org/springframework/aop/config/spring-aop-2.5.xsd, http://www.springframework.org/schema/lang/spring-lang-2.0.xsd=org/springframework/scripting/config/spring-lang-2.0.xsd, http://www.springframework.org/schema/oxm/spring-oxm.xsd=org/springframework/oxm/config/spring-oxm-4.0.xsd, http://www.springframework.org/schema/util/spring-util-3.2.xsd=org/springframework/beans/factory/xml/spring-util-3.2.xsd, http://www.springframework.org/schema/task/spring-task.xsd=org/springframework/scheduling/config/spring-task-4.0.xsd, http://www.springframework.org/schema/tool/spring-tool-2.0.xsd=org/springframework/beans/factory/xml/spring-tool-2.0.xsd, http://www.springframework.org/schema/tx/spring-tx-3.0.xsd=org/springframework/transaction/config/spring-tx-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang-2.5.xsd=org/springframework/scripting/config/spring-lang-2.5.xsd, http://www.springframework.org/schema/jee/spring-jee-2.0.xsd=org/springframework/ejb/config/spring-jee-2.0.xsd, http://www.springframework.org/schema/oxm/spring-oxm-3.2.xsd=org/springframework/oxm/config/spring-oxm-3.2.xsd, http://www.springframework.org/schema/tool/spring-tool-2.5.xsd=org/springframework/beans/factory/xml/spring-tool-2.5.xsd, http://www.springframework.org/schema/jee/spring-jee-2.5.xsd=org/springframework/ejb/config/spring-jee-2.5.xsd, http://www.springframework.org/schema/util/spring-util-4.0.xsd=org/springframework/beans/factory/xml/spring-util-4.0.xsd, http://www.springframework.org/schema/task/spring-task-3.0.xsd=org/springframework/scheduling/config/spring-task-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang.xsd=org/springframework/scripting/config/spring-lang-4.0.xsd, http://www.springframework.org/schema/context/spring-context-3.2.xsd=org/springframework/context/config/spring-context-3.2.xsd, http://www.springframework.org/schema/util/spring-util-3.1.xsd=org/springframework/beans/factory/xml/spring-util-3.1.xsd, http://www.springframework.org/schema/beans/spring-beans-2.0.xsd=org/springframework/beans/factory/xml/spring-beans-2.0.xsd, http://www.springframework.org/schema/oxm/spring-oxm-4.0.xsd=org/springframework/oxm/config/spring-oxm-4.0.xsd, http://www.springframework.org/schema/cache/spring-cache.xsd=org/springframework/cache/config/spring-cache-4.0.xsd, http://www.springframework.org/schema/tx/spring-tx.xsd=org/springframework/transaction/config/spring-tx-4.0.xsd, http://www.springframework.org/schema/beans/spring-beans-2.5.xsd=org/springframework/beans/factory/xml/spring-beans-2.5.xsd, http://www.springframework.org/schema/oxm/spring-oxm-3.1.xsd=org/springframework/oxm/config/spring-oxm-3.1.xsd, http://www.springframework.org/schema/tx/spring-tx-2.0.xsd=org/springframework/transaction/config/spring-tx-2.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.2.xsd=org/springframework/jdbc/config/spring-jdbc-3.2.xsd, http://www.springframework.org/schema/aop/spring-aop.xsd=org/springframework/aop/config/spring-aop-4.0.xsd}
+2018-01-31 12:57:26  [ main:703 ] - [ DEBUG ]  Found XML schema [http://www.springframework.org/schema/beans/spring-beans-3.1.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-3.1.xsd
+2018-01-31 12:57:26  [ main:844 ] - [ DEBUG ]  Found XML schema [http://www.springframework.org/schema/context/spring-context-3.1.xsd] in classpath: org/springframework/context/config/spring-context-3.1.xsd
+2018-01-31 12:57:26  [ main:898 ] - [ DEBUG ]  Found XML schema [http://www.springframework.org/schema/tool/spring-tool-3.1.xsd] in classpath: org/springframework/beans/factory/xml/spring-tool-3.1.xsd
+2018-01-31 12:57:26  [ main:945 ] - [ DEBUG ]  Loading bean definitions
+2018-01-31 12:57:26  [ main:972 ] - [ DEBUG ]  Loaded NamespaceHandler mappings: {http://www.springframework.org/schema/p=org.springframework.beans.factory.xml.SimplePropertyNamespaceHandler, http://www.springframework.org/schema/mvc=org.springframework.web.servlet.config.MvcNamespaceHandler, http://www.springframework.org/schema/util=org.springframework.beans.factory.xml.UtilNamespaceHandler, http://www.springframework.org/schema/jee=org.springframework.ejb.config.JeeNamespaceHandler, http://www.springframework.org/schema/aop=org.springframework.aop.config.AopNamespaceHandler, http://www.springframework.org/schema/jdbc=org.springframework.jdbc.config.JdbcNamespaceHandler, http://www.springframework.org/schema/oxm=org.springframework.oxm.config.OxmNamespaceHandler, http://www.springframework.org/schema/cache=org.springframework.cache.config.CacheNamespaceHandler, http://mybatis.org/schema/mybatis-spring=org.mybatis.spring.config.NamespaceHandler, http://www.springframework.org/schema/c=org.springframework.beans.factory.xml.SimpleConstructorNamespaceHandler, http://www.springframework.org/schema/tx=org.springframework.transaction.config.TxNamespaceHandler, http://www.springframework.org/schema/task=org.springframework.scheduling.config.TaskNamespaceHandler, http://www.springframework.org/schema/lang=org.springframework.scripting.config.LangNamespaceHandler, http://www.springframework.org/schema/context=org.springframework.context.config.ContextNamespaceHandler}
+2018-01-31 12:57:26  [ main:1083 ] - [ DEBUG ]  JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+2018-01-31 12:57:26  [ main:1086 ] - [ DEBUG ]  JSR-330 'javax.inject.Named' annotation found and supported for component scanning
+2018-01-31 12:57:26  [ main:1094 ] - [ DEBUG ]  Looking for matching resources in directory tree [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\service]
+2018-01-31 12:57:26  [ main:1095 ] - [ DEBUG ]  Searching directory [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\service] for files matching pattern [C:/Users/weige/git/zeyumama/zeyumama/target/classes/com/zeyu/web/service/**/*.class]
+2018-01-31 12:57:26  [ main:1103 ] - [ DEBUG ]  Searching directory [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\service\Impl] for files matching pattern [C:/Users/weige/git/zeyumama/zeyumama/target/classes/com/zeyu/web/service/**/*.class]
+2018-01-31 12:57:26  [ main:1112 ] - [ DEBUG ]  Resolved location pattern [classpath*:com/zeyu/web/service/**/*.class] to resources [file [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\service\IArticleService.class], file [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\service\ICategoryService.class], file [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\service\ICookbookService.class], file [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\service\ICookcateService.class], file [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\service\IIseatService.class], file [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\service\Impl\ArticleServiceImpl.class], file [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\service\Impl\BookbookServiceImpl.class], file [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\service\Impl\CategoryServiceImpl.class], file [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\service\Impl\CookcateServiceImpl.class], file [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\service\Impl\IseatServiceImpl.class], file [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\service\Impl\WeeklyServiceImpl.class], file [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\service\IWeeklyService.class]]
+2018-01-31 12:57:26  [ main:1158 ] - [ DEBUG ]  Identified candidate component class: file [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\service\Impl\ArticleServiceImpl.class]
+2018-01-31 12:57:26  [ main:1161 ] - [ DEBUG ]  Identified candidate component class: file [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\service\Impl\BookbookServiceImpl.class]
+2018-01-31 12:57:26  [ main:1164 ] - [ DEBUG ]  Identified candidate component class: file [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\service\Impl\CategoryServiceImpl.class]
+2018-01-31 12:57:26  [ main:1183 ] - [ DEBUG ]  Identified candidate component class: file [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\service\Impl\CookcateServiceImpl.class]
+2018-01-31 12:57:26  [ main:1192 ] - [ DEBUG ]  Identified candidate component class: file [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\service\Impl\IseatServiceImpl.class]
+2018-01-31 12:57:26  [ main:1199 ] - [ DEBUG ]  Identified candidate component class: file [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\service\Impl\WeeklyServiceImpl.class]
+2018-01-31 12:57:26  [ main:1246 ] - [ DEBUG ]  Neither XML 'id' nor 'name' specified - using generated bean name [org.mybatis.spring.mapper.MapperScannerConfigurer#0]
+2018-01-31 12:57:26  [ main:1247 ] - [ DEBUG ]  Loaded 15 bean definitions from location pattern [classpath:spring-mybatis.xml]
+2018-01-31 12:57:26  [ main:1253 ] - [ INFO ]  Refreshing org.springframework.context.support.GenericApplicationContext@4f933fd1: startup date [Wed Jan 31 12:57:26 CST 2018]; root of context hierarchy
+2018-01-31 12:57:26  [ main:1254 ] - [ DEBUG ]  Bean factory for org.springframework.context.support.GenericApplicationContext@4f933fd1: org.springframework.beans.factory.support.DefaultListableBeanFactory@5a4aa2f2: defining beans [articleServiceImpl,bookbookServiceImpl,categoryServiceImpl,cookcateServiceImpl,iseatServiceImpl,weeklyServiceImpl,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,sqlSessionFactory,org.mybatis.spring.mapper.MapperScannerConfigurer#0,transactionManager]; root of factory hierarchy
+2018-01-31 12:57:26  [ main:1293 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2018-01-31 12:57:26  [ main:1294 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2018-01-31 12:57:26  [ main:1322 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+2018-01-31 12:57:26  [ main:1325 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2018-01-31 12:57:26  [ main:1389 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.mybatis.spring.mapper.MapperScannerConfigurer#0'
+2018-01-31 12:57:26  [ main:1390 ] - [ DEBUG ]  Creating instance of bean 'org.mybatis.spring.mapper.MapperScannerConfigurer#0'
+2018-01-31 12:57:26  [ main:1391 ] - [ DEBUG ]  Eagerly caching bean 'org.mybatis.spring.mapper.MapperScannerConfigurer#0' to allow for resolving potential circular references
+2018-01-31 12:57:26  [ main:1434 ] - [ DEBUG ]  Invoking afterPropertiesSet() on bean with name 'org.mybatis.spring.mapper.MapperScannerConfigurer#0'
+2018-01-31 12:57:26  [ main:1435 ] - [ DEBUG ]  Finished creating instance of bean 'org.mybatis.spring.mapper.MapperScannerConfigurer#0'
+2018-01-31 12:57:26  [ main:1437 ] - [ DEBUG ]  Adding [systemProperties] PropertySource with lowest search precedence
+2018-01-31 12:57:26  [ main:1437 ] - [ DEBUG ]  Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-01-31 12:57:26  [ main:1438 ] - [ DEBUG ]  Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2018-01-31 12:57:26  [ main:1440 ] - [ DEBUG ]  Looking for matching resources in directory tree [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\mapper]
+2018-01-31 12:57:26  [ main:1441 ] - [ DEBUG ]  Searching directory [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\mapper] for files matching pattern [C:/Users/weige/git/zeyumama/zeyumama/target/classes/com/zeyu/web/mapper/**/*.class]
+2018-01-31 12:57:26  [ main:1460 ] - [ DEBUG ]  Resolved location pattern [classpath*:com/zeyu/web/mapper/**/*.class] to resources [file [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\mapper\ArticleMapper.class], file [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\mapper\ArticleMapperExt.class], file [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\mapper\CategoryMapper.class], file [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\mapper\CategoryMapperExt.class], file [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\mapper\CookbookMapper.class], file [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\mapper\CookbookMapperExt.class], file [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\mapper\CookcateMapper.class], file [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\mapper\CookcateMapperExt.class], file [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\mapper\IseatMapper.class], file [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\mapper\IseatMapperExt.class], file [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\mapper\NutritionMapper.class], file [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\mapper\UserMapper.class], file [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\mapper\WeeklyMapper.class], file [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\mapper\WeeklyMapperExt.class]]
+2018-01-31 12:57:26  [ main:1462 ] - [ DEBUG ]  Identified candidate component class: file [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\mapper\ArticleMapper.class]
+2018-01-31 12:57:26  [ main:1464 ] - [ DEBUG ]  Identified candidate component class: file [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\mapper\ArticleMapperExt.class]
+2018-01-31 12:57:26  [ main:1468 ] - [ DEBUG ]  Identified candidate component class: file [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\mapper\CategoryMapper.class]
+2018-01-31 12:57:26  [ main:1472 ] - [ DEBUG ]  Identified candidate component class: file [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\mapper\CategoryMapperExt.class]
+2018-01-31 12:57:26  [ main:1473 ] - [ DEBUG ]  Identified candidate component class: file [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\mapper\CookbookMapper.class]
+2018-01-31 12:57:26  [ main:1475 ] - [ DEBUG ]  Identified candidate component class: file [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\mapper\CookbookMapperExt.class]
+2018-01-31 12:57:26  [ main:1476 ] - [ DEBUG ]  Identified candidate component class: file [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\mapper\CookcateMapper.class]
+2018-01-31 12:57:26  [ main:1477 ] - [ DEBUG ]  Identified candidate component class: file [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\mapper\CookcateMapperExt.class]
+2018-01-31 12:57:26  [ main:1479 ] - [ DEBUG ]  Identified candidate component class: file [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\mapper\IseatMapper.class]
+2018-01-31 12:57:26  [ main:1480 ] - [ DEBUG ]  Identified candidate component class: file [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\mapper\IseatMapperExt.class]
+2018-01-31 12:57:26  [ main:1481 ] - [ DEBUG ]  Identified candidate component class: file [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\mapper\NutritionMapper.class]
+2018-01-31 12:57:26  [ main:1482 ] - [ DEBUG ]  Identified candidate component class: file [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\mapper\UserMapper.class]
+2018-01-31 12:57:26  [ main:1484 ] - [ DEBUG ]  Identified candidate component class: file [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\mapper\WeeklyMapper.class]
+2018-01-31 12:57:26  [ main:1486 ] - [ DEBUG ]  Identified candidate component class: file [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\mapper\WeeklyMapperExt.class]
+2018-01-31 12:57:26  [ main:1487 ] - [ DEBUG ]  Creating MapperFactoryBean with name 'articleMapper' and 'com.zeyu.web.mapper.ArticleMapper' mapperInterface
+2018-01-31 12:57:26  [ main:1490 ] - [ DEBUG ]  Creating MapperFactoryBean with name 'articleMapperExt' and 'com.zeyu.web.mapper.ArticleMapperExt' mapperInterface
+2018-01-31 12:57:26  [ main:1491 ] - [ DEBUG ]  Creating MapperFactoryBean with name 'categoryMapper' and 'com.zeyu.web.mapper.CategoryMapper' mapperInterface
+2018-01-31 12:57:26  [ main:1492 ] - [ DEBUG ]  Creating MapperFactoryBean with name 'categoryMapperExt' and 'com.zeyu.web.mapper.CategoryMapperExt' mapperInterface
+2018-01-31 12:57:26  [ main:1492 ] - [ DEBUG ]  Creating MapperFactoryBean with name 'cookbookMapper' and 'com.zeyu.web.mapper.CookbookMapper' mapperInterface
+2018-01-31 12:57:26  [ main:1494 ] - [ DEBUG ]  Creating MapperFactoryBean with name 'cookbookMapperExt' and 'com.zeyu.web.mapper.CookbookMapperExt' mapperInterface
+2018-01-31 12:57:26  [ main:1496 ] - [ DEBUG ]  Creating MapperFactoryBean with name 'cookcateMapper' and 'com.zeyu.web.mapper.CookcateMapper' mapperInterface
+2018-01-31 12:57:26  [ main:1497 ] - [ DEBUG ]  Creating MapperFactoryBean with name 'cookcateMapperExt' and 'com.zeyu.web.mapper.CookcateMapperExt' mapperInterface
+2018-01-31 12:57:26  [ main:1498 ] - [ DEBUG ]  Creating MapperFactoryBean with name 'iseatMapper' and 'com.zeyu.web.mapper.IseatMapper' mapperInterface
+2018-01-31 12:57:26  [ main:1498 ] - [ DEBUG ]  Creating MapperFactoryBean with name 'iseatMapperExt' and 'com.zeyu.web.mapper.IseatMapperExt' mapperInterface
+2018-01-31 12:57:26  [ main:1499 ] - [ DEBUG ]  Creating MapperFactoryBean with name 'nutritionMapper' and 'com.zeyu.web.mapper.NutritionMapper' mapperInterface
+2018-01-31 12:57:26  [ main:1499 ] - [ DEBUG ]  Creating MapperFactoryBean with name 'userMapper' and 'com.zeyu.web.mapper.UserMapper' mapperInterface
+2018-01-31 12:57:26  [ main:1500 ] - [ DEBUG ]  Creating MapperFactoryBean with name 'weeklyMapper' and 'com.zeyu.web.mapper.WeeklyMapper' mapperInterface
+2018-01-31 12:57:26  [ main:1501 ] - [ DEBUG ]  Creating MapperFactoryBean with name 'weeklyMapperExt' and 'com.zeyu.web.mapper.WeeklyMapperExt' mapperInterface
+2018-01-31 12:57:26  [ main:1507 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
+2018-01-31 12:57:26  [ main:1507 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
+2018-01-31 12:57:26  [ main:1509 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0' to allow for resolving potential circular references
+2018-01-31 12:57:27  [ main:1545 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
+2018-01-31 12:57:27  [ main:1546 ] - [ DEBUG ]  Adding [environmentProperties] PropertySource with lowest search precedence
+2018-01-31 12:57:27  [ main:1546 ] - [ INFO ]  Loading properties file from class path resource [jdbc.properties]
+2018-01-31 12:57:27  [ main:1548 ] - [ DEBUG ]  Adding [localProperties] PropertySource with lowest search precedence
+2018-01-31 12:57:27  [ main:1551 ] - [ DEBUG ]  Searching for key 'jdbc.url' in [environmentProperties]
+2018-01-31 12:57:27  [ main:1552 ] - [ DEBUG ]  Searching for key 'jdbc.url' in [systemProperties]
+2018-01-31 12:57:27  [ main:1552 ] - [ DEBUG ]  Searching for key 'jdbc.url' in [systemEnvironment]
+2018-01-31 12:57:27  [ main:1555 ] - [ DEBUG ]  Could not find key 'jdbc.url' in any property source. Returning [null]
+2018-01-31 12:57:27  [ main:1555 ] - [ DEBUG ]  Searching for key 'jdbc.url' in [localProperties]
+2018-01-31 12:57:27  [ main:1556 ] - [ DEBUG ]  Found key 'jdbc.url' in [localProperties] with type [String] and value 'jdbc:mysql://39.106.75.167:3306/zeyu?characterEncoding=utf-8'
+2018-01-31 12:57:27  [ main:1559 ] - [ DEBUG ]  Searching for key 'jdbc.username' in [environmentProperties]
+2018-01-31 12:57:27  [ main:1559 ] - [ DEBUG ]  Searching for key 'jdbc.username' in [systemProperties]
+2018-01-31 12:57:27  [ main:1560 ] - [ DEBUG ]  Searching for key 'jdbc.username' in [systemEnvironment]
+2018-01-31 12:57:27  [ main:1560 ] - [ DEBUG ]  Could not find key 'jdbc.username' in any property source. Returning [null]
+2018-01-31 12:57:27  [ main:1562 ] - [ DEBUG ]  Searching for key 'jdbc.username' in [localProperties]
+2018-01-31 12:57:27  [ main:1563 ] - [ DEBUG ]  Found key 'jdbc.username' in [localProperties] with type [String] and value 'admin'
+2018-01-31 12:57:27  [ main:1564 ] - [ DEBUG ]  Searching for key 'jdbc.password' in [environmentProperties]
+2018-01-31 12:57:27  [ main:1564 ] - [ DEBUG ]  Searching for key 'jdbc.password' in [systemProperties]
+2018-01-31 12:57:27  [ main:1565 ] - [ DEBUG ]  Searching for key 'jdbc.password' in [systemEnvironment]
+2018-01-31 12:57:27  [ main:1565 ] - [ DEBUG ]  Could not find key 'jdbc.password' in any property source. Returning [null]
+2018-01-31 12:57:27  [ main:1565 ] - [ DEBUG ]  Searching for key 'jdbc.password' in [localProperties]
+2018-01-31 12:57:27  [ main:1566 ] - [ DEBUG ]  Found key 'jdbc.password' in [localProperties] with type [String] and value 'weige211'
+2018-01-31 12:57:27  [ main:1567 ] - [ DEBUG ]  Searching for key 'jdbc.driver' in [environmentProperties]
+2018-01-31 12:57:27  [ main:1567 ] - [ DEBUG ]  Searching for key 'jdbc.driver' in [systemProperties]
+2018-01-31 12:57:27  [ main:1568 ] - [ DEBUG ]  Searching for key 'jdbc.driver' in [systemEnvironment]
+2018-01-31 12:57:27  [ main:1570 ] - [ DEBUG ]  Could not find key 'jdbc.driver' in any property source. Returning [null]
+2018-01-31 12:57:27  [ main:1576 ] - [ DEBUG ]  Searching for key 'jdbc.driver' in [localProperties]
+2018-01-31 12:57:27  [ main:1577 ] - [ DEBUG ]  Found key 'jdbc.driver' in [localProperties] with type [String] and value 'com.mysql.jdbc.Driver'
+2018-01-31 12:57:27  [ main:1584 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2018-01-31 12:57:27  [ main:1584 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2018-01-31 12:57:27  [ main:1587 ] - [ INFO ]  JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-31 12:57:27  [ main:1587 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+2018-01-31 12:57:27  [ main:1588 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2018-01-31 12:57:27  [ main:1590 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2018-01-31 12:57:27  [ main:1591 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2018-01-31 12:57:27  [ main:1601 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+2018-01-31 12:57:27  [ main:1603 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2018-01-31 12:57:27  [ main:1605 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2018-01-31 12:57:27  [ main:1605 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2018-01-31 12:57:27  [ main:1616 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
+2018-01-31 12:57:27  [ main:1617 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2018-01-31 12:57:27  [ main:1617 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2018-01-31 12:57:27  [ main:1618 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2018-01-31 12:57:27  [ main:1618 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor' to allow for resolving potential circular references
+2018-01-31 12:57:27  [ main:1619 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2018-01-31 12:57:27  [ main:1619 ] - [ DEBUG ]  Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+2018-01-31 12:57:27  [ main:1619 ] - [ DEBUG ]  Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+2018-01-31 12:57:27  [ main:1620 ] - [ DEBUG ]  Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor' to allow for resolving potential circular references
+2018-01-31 12:57:27  [ main:1620 ] - [ DEBUG ]  Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+2018-01-31 12:57:27  [ main:1631 ] - [ DEBUG ]  Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@9353778]
+2018-01-31 12:57:27  [ main:1635 ] - [ DEBUG ]  Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@5c30a9b0]
+2018-01-31 12:57:27  [ main:1639 ] - [ DEBUG ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5a4aa2f2: defining beans [articleServiceImpl,bookbookServiceImpl,categoryServiceImpl,cookcateServiceImpl,iseatServiceImpl,weeklyServiceImpl,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,sqlSessionFactory,org.mybatis.spring.mapper.MapperScannerConfigurer#0,transactionManager,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor,articleMapper,articleMapperExt,categoryMapper,categoryMapperExt,cookbookMapper,cookbookMapperExt,cookcateMapper,cookcateMapperExt,iseatMapper,iseatMapperExt,nutritionMapper,userMapper,weeklyMapper,weeklyMapperExt]; root of factory hierarchy
+2018-01-31 12:57:27  [ main:1641 ] - [ DEBUG ]  Creating shared instance of singleton bean 'articleServiceImpl'
+2018-01-31 12:57:27  [ main:1641 ] - [ DEBUG ]  Creating instance of bean 'articleServiceImpl'
+2018-01-31 12:57:27  [ main:1656 ] - [ DEBUG ]  Registered injected element on class [com.zeyu.web.service.Impl.ArticleServiceImpl]: ResourceElement for private com.zeyu.web.mapper.ArticleMapper com.zeyu.web.service.Impl.ArticleServiceImpl.articleDao
+2018-01-31 12:57:27  [ main:1657 ] - [ DEBUG ]  Registered injected element on class [com.zeyu.web.service.Impl.ArticleServiceImpl]: ResourceElement for private com.zeyu.web.mapper.ArticleMapperExt com.zeyu.web.service.Impl.ArticleServiceImpl.articleExtDao
+2018-01-31 12:57:27  [ main:1658 ] - [ DEBUG ]  Eagerly caching bean 'articleServiceImpl' to allow for resolving potential circular references
+2018-01-31 12:57:27  [ main:1665 ] - [ DEBUG ]  Processing injected method of bean 'articleServiceImpl': ResourceElement for private com.zeyu.web.mapper.ArticleMapper com.zeyu.web.service.Impl.ArticleServiceImpl.articleDao
+2018-01-31 12:57:27  [ main:1692 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-01-31 12:57:27  [ main:1698 ] - [ DEBUG ]  Creating shared instance of singleton bean 'articleMapper'
+2018-01-31 12:57:27  [ main:1699 ] - [ DEBUG ]  Creating instance of bean 'articleMapper'
+2018-01-31 12:57:27  [ main:1699 ] - [ DEBUG ]  Eagerly caching bean 'articleMapper' to allow for resolving potential circular references
+2018-01-31 12:57:27  [ main:1715 ] - [ DEBUG ]  Creating shared instance of singleton bean 'sqlSessionFactory'
+2018-01-31 12:57:27  [ main:1716 ] - [ DEBUG ]  Creating instance of bean 'sqlSessionFactory'
+2018-01-31 12:57:27  [ main:1721 ] - [ DEBUG ]  Eagerly caching bean 'sqlSessionFactory' to allow for resolving potential circular references
+2018-01-31 12:57:27  [ main:1731 ] - [ DEBUG ]  Creating shared instance of singleton bean 'dataSource'
+2018-01-31 12:57:27  [ main:1732 ] - [ DEBUG ]  Creating instance of bean 'dataSource'
+2018-01-31 12:57:27  [ main:1806 ] - [ DEBUG ]  Eagerly caching bean 'dataSource' to allow for resolving potential circular references
+2018-01-31 12:57:27  [ main:1878 ] - [ DEBUG ]  Finished creating instance of bean 'dataSource'
+2018-01-31 12:57:27  [ main:1880 ] - [ DEBUG ]  Looking for matching resources in directory tree [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\mapper]
+2018-01-31 12:57:27  [ main:1881 ] - [ DEBUG ]  Searching directory [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\mapper] for files matching pattern [C:/Users/weige/git/zeyumama/zeyumama/target/classes/com/zeyu/web/mapper/*.xml]
+2018-01-31 12:57:27  [ main:1888 ] - [ DEBUG ]  Resolved location pattern [classpath:com/zeyu/web/mapper/*.xml] to resources [file [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\mapper\ArticleMapper.xml], file [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\mapper\ArticleMapperExt.xml], file [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\mapper\CategoryMapper.xml], file [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\mapper\CategoryMapperExt.xml], file [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\mapper\CookbookMapper.xml], file [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\mapper\CookbookMapperExt.xml], file [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\mapper\CookcateMapper.xml], file [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\mapper\CookcateMapperExt.xml], file [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\mapper\IseatMapper.xml], file [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\mapper\IseatMapperExt.xml], file [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\mapper\NutritionMapper.xml], file [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\mapper\UserMapper.xml], file [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\mapper\WeeklyMapper.xml], file [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\mapper\WeeklyMapperExt.xml]]
+2018-01-31 12:57:27  [ main:1891 ] - [ DEBUG ]  Invoking afterPropertiesSet() on bean with name 'sqlSessionFactory'
+2018-01-31 12:57:27  [ main:1891 ] - [ DEBUG ]  Property 'configLocation' not specified, using default MyBatis Configuration
+2018-01-31 12:57:27  [ main:2231 ] - [ DEBUG ]  Parsed mapper file: 'file [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\mapper\ArticleMapper.xml]'
+2018-01-31 12:57:27  [ main:2253 ] - [ DEBUG ]  Parsed mapper file: 'file [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\mapper\ArticleMapperExt.xml]'
+2018-01-31 12:57:27  [ main:2280 ] - [ DEBUG ]  Parsed mapper file: 'file [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\mapper\CategoryMapper.xml]'
+2018-01-31 12:57:27  [ main:2295 ] - [ DEBUG ]  Parsed mapper file: 'file [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\mapper\CategoryMapperExt.xml]'
+2018-01-31 12:57:27  [ main:2358 ] - [ DEBUG ]  Parsed mapper file: 'file [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\mapper\CookbookMapper.xml]'
+2018-01-31 12:57:27  [ main:2376 ] - [ DEBUG ]  Parsed mapper file: 'file [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\mapper\CookbookMapperExt.xml]'
+2018-01-31 12:57:27  [ main:2399 ] - [ DEBUG ]  Parsed mapper file: 'file [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\mapper\CookcateMapper.xml]'
+2018-01-31 12:57:27  [ main:2451 ] - [ DEBUG ]  Parsed mapper file: 'file [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\mapper\CookcateMapperExt.xml]'
+2018-01-31 12:57:27  [ main:2482 ] - [ DEBUG ]  Parsed mapper file: 'file [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\mapper\IseatMapper.xml]'
+2018-01-31 12:57:27  [ main:2497 ] - [ DEBUG ]  Parsed mapper file: 'file [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\mapper\IseatMapperExt.xml]'
+2018-01-31 12:57:27  [ main:2526 ] - [ DEBUG ]  Parsed mapper file: 'file [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\mapper\NutritionMapper.xml]'
+2018-01-31 12:57:28  [ main:2572 ] - [ DEBUG ]  Parsed mapper file: 'file [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\mapper\UserMapper.xml]'
+2018-01-31 12:57:28  [ main:2596 ] - [ DEBUG ]  Parsed mapper file: 'file [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\mapper\WeeklyMapper.xml]'
+2018-01-31 12:57:28  [ main:2608 ] - [ DEBUG ]  Parsed mapper file: 'file [C:\Users\weige\git\zeyumama\zeyumama\target\classes\com\zeyu\web\mapper\WeeklyMapperExt.xml]'
+2018-01-31 12:57:28  [ main:2610 ] - [ DEBUG ]  Finished creating instance of bean 'sqlSessionFactory'
+2018-01-31 12:57:28  [ main:2623 ] - [ DEBUG ]  Invoking afterPropertiesSet() on bean with name 'articleMapper'
+2018-01-31 12:57:28  [ main:2625 ] - [ DEBUG ]  Finished creating instance of bean 'articleMapper'
+2018-01-31 12:57:28  [ main:2626 ] - [ DEBUG ]  Creating shared instance of singleton bean 'articleMapperExt'
+2018-01-31 12:57:28  [ main:2627 ] - [ DEBUG ]  Creating instance of bean 'articleMapperExt'
+2018-01-31 12:57:28  [ main:2629 ] - [ DEBUG ]  Eagerly caching bean 'articleMapperExt' to allow for resolving potential circular references
+2018-01-31 12:57:28  [ main:2630 ] - [ DEBUG ]  Returning cached instance of singleton bean 'sqlSessionFactory'
+2018-01-31 12:57:28  [ main:2632 ] - [ DEBUG ]  Invoking afterPropertiesSet() on bean with name 'articleMapperExt'
+2018-01-31 12:57:28  [ main:2632 ] - [ DEBUG ]  Finished creating instance of bean 'articleMapperExt'
+2018-01-31 12:57:28  [ main:2641 ] - [ DEBUG ]  Creating shared instance of singleton bean 'categoryMapper'
+2018-01-31 12:57:28  [ main:2641 ] - [ DEBUG ]  Creating instance of bean 'categoryMapper'
+2018-01-31 12:57:28  [ main:2642 ] - [ DEBUG ]  Eagerly caching bean 'categoryMapper' to allow for resolving potential circular references
+2018-01-31 12:57:28  [ main:2643 ] - [ DEBUG ]  Returning cached instance of singleton bean 'sqlSessionFactory'
+2018-01-31 12:57:28  [ main:2644 ] - [ DEBUG ]  Invoking afterPropertiesSet() on bean with name 'categoryMapper'
+2018-01-31 12:57:28  [ main:2645 ] - [ DEBUG ]  Finished creating instance of bean 'categoryMapper'
+2018-01-31 12:57:28  [ main:2646 ] - [ DEBUG ]  Creating shared instance of singleton bean 'categoryMapperExt'
+2018-01-31 12:57:28  [ main:2647 ] - [ DEBUG ]  Creating instance of bean 'categoryMapperExt'
+2018-01-31 12:57:28  [ main:2649 ] - [ DEBUG ]  Eagerly caching bean 'categoryMapperExt' to allow for resolving potential circular references
+2018-01-31 12:57:28  [ main:2650 ] - [ DEBUG ]  Returning cached instance of singleton bean 'sqlSessionFactory'
+2018-01-31 12:57:28  [ main:2651 ] - [ DEBUG ]  Invoking afterPropertiesSet() on bean with name 'categoryMapperExt'
+2018-01-31 12:57:28  [ main:2651 ] - [ DEBUG ]  Finished creating instance of bean 'categoryMapperExt'
+2018-01-31 12:57:28  [ main:2652 ] - [ DEBUG ]  Creating shared instance of singleton bean 'cookbookMapper'
+2018-01-31 12:57:28  [ main:2652 ] - [ DEBUG ]  Creating instance of bean 'cookbookMapper'
+2018-01-31 12:57:28  [ main:2653 ] - [ DEBUG ]  Eagerly caching bean 'cookbookMapper' to allow for resolving potential circular references
+2018-01-31 12:57:28  [ main:2654 ] - [ DEBUG ]  Returning cached instance of singleton bean 'sqlSessionFactory'
+2018-01-31 12:57:28  [ main:2655 ] - [ DEBUG ]  Invoking afterPropertiesSet() on bean with name 'cookbookMapper'
+2018-01-31 12:57:28  [ main:2655 ] - [ DEBUG ]  Finished creating instance of bean 'cookbookMapper'
+2018-01-31 12:57:28  [ main:2657 ] - [ DEBUG ]  Creating shared instance of singleton bean 'cookbookMapperExt'
+2018-01-31 12:57:28  [ main:2664 ] - [ DEBUG ]  Creating instance of bean 'cookbookMapperExt'
+2018-01-31 12:57:28  [ main:2665 ] - [ DEBUG ]  Eagerly caching bean 'cookbookMapperExt' to allow for resolving potential circular references
+2018-01-31 12:57:28  [ main:2668 ] - [ DEBUG ]  Returning cached instance of singleton bean 'sqlSessionFactory'
+2018-01-31 12:57:28  [ main:2669 ] - [ DEBUG ]  Invoking afterPropertiesSet() on bean with name 'cookbookMapperExt'
+2018-01-31 12:57:28  [ main:2670 ] - [ DEBUG ]  Finished creating instance of bean 'cookbookMapperExt'
+2018-01-31 12:57:28  [ main:2671 ] - [ DEBUG ]  Creating shared instance of singleton bean 'cookcateMapper'
+2018-01-31 12:57:28  [ main:2672 ] - [ DEBUG ]  Creating instance of bean 'cookcateMapper'
+2018-01-31 12:57:28  [ main:2672 ] - [ DEBUG ]  Eagerly caching bean 'cookcateMapper' to allow for resolving potential circular references
+2018-01-31 12:57:28  [ main:2673 ] - [ DEBUG ]  Returning cached instance of singleton bean 'sqlSessionFactory'
+2018-01-31 12:57:28  [ main:2673 ] - [ DEBUG ]  Invoking afterPropertiesSet() on bean with name 'cookcateMapper'
+2018-01-31 12:57:28  [ main:2674 ] - [ DEBUG ]  Finished creating instance of bean 'cookcateMapper'
+2018-01-31 12:57:28  [ main:2674 ] - [ DEBUG ]  Creating shared instance of singleton bean 'cookcateMapperExt'
+2018-01-31 12:57:28  [ main:2675 ] - [ DEBUG ]  Creating instance of bean 'cookcateMapperExt'
+2018-01-31 12:57:28  [ main:2675 ] - [ DEBUG ]  Eagerly caching bean 'cookcateMapperExt' to allow for resolving potential circular references
+2018-01-31 12:57:28  [ main:2676 ] - [ DEBUG ]  Returning cached instance of singleton bean 'sqlSessionFactory'
+2018-01-31 12:57:28  [ main:2676 ] - [ DEBUG ]  Invoking afterPropertiesSet() on bean with name 'cookcateMapperExt'
+2018-01-31 12:57:28  [ main:2677 ] - [ DEBUG ]  Finished creating instance of bean 'cookcateMapperExt'
+2018-01-31 12:57:28  [ main:2678 ] - [ DEBUG ]  Creating shared instance of singleton bean 'iseatMapper'
+2018-01-31 12:57:28  [ main:2678 ] - [ DEBUG ]  Creating instance of bean 'iseatMapper'
+2018-01-31 12:57:28  [ main:2679 ] - [ DEBUG ]  Eagerly caching bean 'iseatMapper' to allow for resolving potential circular references
+2018-01-31 12:57:28  [ main:2679 ] - [ DEBUG ]  Returning cached instance of singleton bean 'sqlSessionFactory'
+2018-01-31 12:57:28  [ main:2684 ] - [ DEBUG ]  Invoking afterPropertiesSet() on bean with name 'iseatMapper'
+2018-01-31 12:57:28  [ main:2685 ] - [ DEBUG ]  Finished creating instance of bean 'iseatMapper'
+2018-01-31 12:57:28  [ main:2686 ] - [ DEBUG ]  Creating shared instance of singleton bean 'iseatMapperExt'
+2018-01-31 12:57:28  [ main:2686 ] - [ DEBUG ]  Creating instance of bean 'iseatMapperExt'
+2018-01-31 12:57:28  [ main:2688 ] - [ DEBUG ]  Eagerly caching bean 'iseatMapperExt' to allow for resolving potential circular references
+2018-01-31 12:57:28  [ main:2690 ] - [ DEBUG ]  Returning cached instance of singleton bean 'sqlSessionFactory'
+2018-01-31 12:57:28  [ main:2691 ] - [ DEBUG ]  Invoking afterPropertiesSet() on bean with name 'iseatMapperExt'
+2018-01-31 12:57:28  [ main:2692 ] - [ DEBUG ]  Finished creating instance of bean 'iseatMapperExt'
+2018-01-31 12:57:28  [ main:2693 ] - [ DEBUG ]  Creating shared instance of singleton bean 'nutritionMapper'
+2018-01-31 12:57:28  [ main:2693 ] - [ DEBUG ]  Creating instance of bean 'nutritionMapper'
+2018-01-31 12:57:28  [ main:2698 ] - [ DEBUG ]  Eagerly caching bean 'nutritionMapper' to allow for resolving potential circular references
+2018-01-31 12:57:28  [ main:2700 ] - [ DEBUG ]  Returning cached instance of singleton bean 'sqlSessionFactory'
+2018-01-31 12:57:28  [ main:2701 ] - [ DEBUG ]  Invoking afterPropertiesSet() on bean with name 'nutritionMapper'
+2018-01-31 12:57:28  [ main:2702 ] - [ DEBUG ]  Finished creating instance of bean 'nutritionMapper'
+2018-01-31 12:57:28  [ main:2703 ] - [ DEBUG ]  Creating shared instance of singleton bean 'userMapper'
+2018-01-31 12:57:28  [ main:2704 ] - [ DEBUG ]  Creating instance of bean 'userMapper'
+2018-01-31 12:57:28  [ main:2710 ] - [ DEBUG ]  Eagerly caching bean 'userMapper' to allow for resolving potential circular references
+2018-01-31 12:57:28  [ main:2711 ] - [ DEBUG ]  Returning cached instance of singleton bean 'sqlSessionFactory'
+2018-01-31 12:57:28  [ main:2712 ] - [ DEBUG ]  Invoking afterPropertiesSet() on bean with name 'userMapper'
+2018-01-31 12:57:28  [ main:2712 ] - [ DEBUG ]  Finished creating instance of bean 'userMapper'
+2018-01-31 12:57:28  [ main:2718 ] - [ DEBUG ]  Creating shared instance of singleton bean 'weeklyMapper'
+2018-01-31 12:57:28  [ main:2718 ] - [ DEBUG ]  Creating instance of bean 'weeklyMapper'
+2018-01-31 12:57:28  [ main:2719 ] - [ DEBUG ]  Eagerly caching bean 'weeklyMapper' to allow for resolving potential circular references
+2018-01-31 12:57:28  [ main:2721 ] - [ DEBUG ]  Returning cached instance of singleton bean 'sqlSessionFactory'
+2018-01-31 12:57:28  [ main:2722 ] - [ DEBUG ]  Invoking afterPropertiesSet() on bean with name 'weeklyMapper'
+2018-01-31 12:57:28  [ main:2723 ] - [ DEBUG ]  Finished creating instance of bean 'weeklyMapper'
+2018-01-31 12:57:28  [ main:2724 ] - [ DEBUG ]  Creating shared instance of singleton bean 'weeklyMapperExt'
+2018-01-31 12:57:28  [ main:2725 ] - [ DEBUG ]  Creating instance of bean 'weeklyMapperExt'
+2018-01-31 12:57:28  [ main:2726 ] - [ DEBUG ]  Eagerly caching bean 'weeklyMapperExt' to allow for resolving potential circular references
+2018-01-31 12:57:28  [ main:2727 ] - [ DEBUG ]  Returning cached instance of singleton bean 'sqlSessionFactory'
+2018-01-31 12:57:28  [ main:2728 ] - [ DEBUG ]  Invoking afterPropertiesSet() on bean with name 'weeklyMapperExt'
+2018-01-31 12:57:28  [ main:2728 ] - [ DEBUG ]  Finished creating instance of bean 'weeklyMapperExt'
+2018-01-31 12:57:28  [ main:2733 ] - [ DEBUG ]  Returning cached instance of singleton bean 'articleMapper'
+2018-01-31 12:57:28  [ main:2739 ] - [ DEBUG ]  Processing injected method of bean 'articleServiceImpl': ResourceElement for private com.zeyu.web.mapper.ArticleMapperExt com.zeyu.web.service.Impl.ArticleServiceImpl.articleExtDao
+2018-01-31 12:57:28  [ main:2740 ] - [ DEBUG ]  Returning cached instance of singleton bean 'articleMapperExt'
+2018-01-31 12:57:28  [ main:2750 ] - [ DEBUG ]  Finished creating instance of bean 'articleServiceImpl'
+2018-01-31 12:57:28  [ main:2751 ] - [ DEBUG ]  Creating shared instance of singleton bean 'bookbookServiceImpl'
+2018-01-31 12:57:28  [ main:2751 ] - [ DEBUG ]  Creating instance of bean 'bookbookServiceImpl'
+2018-01-31 12:57:28  [ main:2753 ] - [ DEBUG ]  Registered injected element on class [com.zeyu.web.service.Impl.BookbookServiceImpl]: ResourceElement for private com.zeyu.web.mapper.CookbookMapper com.zeyu.web.service.Impl.BookbookServiceImpl.cookbookDao
+2018-01-31 12:57:28  [ main:2753 ] - [ DEBUG ]  Registered injected element on class [com.zeyu.web.service.Impl.BookbookServiceImpl]: ResourceElement for private com.zeyu.web.mapper.CookbookMapperExt com.zeyu.web.service.Impl.BookbookServiceImpl.cookbookExtDao
+2018-01-31 12:57:28  [ main:2754 ] - [ DEBUG ]  Eagerly caching bean 'bookbookServiceImpl' to allow for resolving potential circular references
+2018-01-31 12:57:28  [ main:2786 ] - [ DEBUG ]  Processing injected method of bean 'bookbookServiceImpl': ResourceElement for private com.zeyu.web.mapper.CookbookMapper com.zeyu.web.service.Impl.BookbookServiceImpl.cookbookDao
+2018-01-31 12:57:28  [ main:2787 ] - [ DEBUG ]  Returning cached instance of singleton bean 'cookbookMapper'
+2018-01-31 12:57:28  [ main:2792 ] - [ DEBUG ]  Processing injected method of bean 'bookbookServiceImpl': ResourceElement for private com.zeyu.web.mapper.CookbookMapperExt com.zeyu.web.service.Impl.BookbookServiceImpl.cookbookExtDao
+2018-01-31 12:57:28  [ main:2797 ] - [ DEBUG ]  Returning cached instance of singleton bean 'cookbookMapperExt'
+2018-01-31 12:57:28  [ main:2800 ] - [ DEBUG ]  Finished creating instance of bean 'bookbookServiceImpl'
+2018-01-31 12:57:28  [ main:2801 ] - [ DEBUG ]  Creating shared instance of singleton bean 'categoryServiceImpl'
+2018-01-31 12:57:28  [ main:2803 ] - [ DEBUG ]  Creating instance of bean 'categoryServiceImpl'
+2018-01-31 12:57:28  [ main:2804 ] - [ DEBUG ]  Registered injected element on class [com.zeyu.web.service.Impl.CategoryServiceImpl]: ResourceElement for private com.zeyu.web.mapper.CategoryMapperExt com.zeyu.web.service.Impl.CategoryServiceImpl.categorydaoExt
+2018-01-31 12:57:28  [ main:2805 ] - [ DEBUG ]  Eagerly caching bean 'categoryServiceImpl' to allow for resolving potential circular references
+2018-01-31 12:57:28  [ main:2811 ] - [ DEBUG ]  Processing injected method of bean 'categoryServiceImpl': ResourceElement for private com.zeyu.web.mapper.CategoryMapperExt com.zeyu.web.service.Impl.CategoryServiceImpl.categorydaoExt
+2018-01-31 12:57:28  [ main:2812 ] - [ DEBUG ]  Returning cached instance of singleton bean 'categoryMapperExt'
+2018-01-31 12:57:28  [ main:2813 ] - [ DEBUG ]  Finished creating instance of bean 'categoryServiceImpl'
+2018-01-31 12:57:28  [ main:2814 ] - [ DEBUG ]  Creating shared instance of singleton bean 'cookcateServiceImpl'
+2018-01-31 12:57:28  [ main:2814 ] - [ DEBUG ]  Creating instance of bean 'cookcateServiceImpl'
+2018-01-31 12:57:28  [ main:2817 ] - [ DEBUG ]  Registered injected element on class [com.zeyu.web.service.Impl.CookcateServiceImpl]: ResourceElement for private com.zeyu.web.mapper.CookcateMapperExt com.zeyu.web.service.Impl.CookcateServiceImpl.cookcateExtDto
+2018-01-31 12:57:28  [ main:2818 ] - [ DEBUG ]  Eagerly caching bean 'cookcateServiceImpl' to allow for resolving potential circular references
+2018-01-31 12:57:28  [ main:2835 ] - [ DEBUG ]  Processing injected method of bean 'cookcateServiceImpl': ResourceElement for private com.zeyu.web.mapper.CookcateMapperExt com.zeyu.web.service.Impl.CookcateServiceImpl.cookcateExtDto
+2018-01-31 12:57:28  [ main:2836 ] - [ DEBUG ]  Returning cached instance of singleton bean 'cookcateMapperExt'
+2018-01-31 12:57:28  [ main:2839 ] - [ DEBUG ]  Finished creating instance of bean 'cookcateServiceImpl'
+2018-01-31 12:57:28  [ main:2840 ] - [ DEBUG ]  Creating shared instance of singleton bean 'iseatServiceImpl'
+2018-01-31 12:57:28  [ main:2841 ] - [ DEBUG ]  Creating instance of bean 'iseatServiceImpl'
+2018-01-31 12:57:28  [ main:2842 ] - [ DEBUG ]  Registered injected element on class [com.zeyu.web.service.Impl.IseatServiceImpl]: ResourceElement for private com.zeyu.web.mapper.IseatMapper com.zeyu.web.service.Impl.IseatServiceImpl.iseatDto
+2018-01-31 12:57:28  [ main:2843 ] - [ DEBUG ]  Registered injected element on class [com.zeyu.web.service.Impl.IseatServiceImpl]: ResourceElement for private com.zeyu.web.mapper.IseatMapperExt com.zeyu.web.service.Impl.IseatServiceImpl.iseatDtoExt
+2018-01-31 12:57:28  [ main:2844 ] - [ DEBUG ]  Eagerly caching bean 'iseatServiceImpl' to allow for resolving potential circular references
+2018-01-31 12:57:28  [ main:2850 ] - [ DEBUG ]  Processing injected method of bean 'iseatServiceImpl': ResourceElement for private com.zeyu.web.mapper.IseatMapper com.zeyu.web.service.Impl.IseatServiceImpl.iseatDto
+2018-01-31 12:57:28  [ main:2851 ] - [ DEBUG ]  Returning cached instance of singleton bean 'iseatMapper'
+2018-01-31 12:57:28  [ main:2853 ] - [ DEBUG ]  Processing injected method of bean 'iseatServiceImpl': ResourceElement for private com.zeyu.web.mapper.IseatMapperExt com.zeyu.web.service.Impl.IseatServiceImpl.iseatDtoExt
+2018-01-31 12:57:28  [ main:2855 ] - [ DEBUG ]  Returning cached instance of singleton bean 'iseatMapperExt'
+2018-01-31 12:57:28  [ main:2856 ] - [ DEBUG ]  Finished creating instance of bean 'iseatServiceImpl'
+2018-01-31 12:57:28  [ main:2857 ] - [ DEBUG ]  Creating shared instance of singleton bean 'weeklyServiceImpl'
+2018-01-31 12:57:28  [ main:2857 ] - [ DEBUG ]  Creating instance of bean 'weeklyServiceImpl'
+2018-01-31 12:57:28  [ main:2858 ] - [ DEBUG ]  Registered injected element on class [com.zeyu.web.service.Impl.WeeklyServiceImpl]: ResourceElement for private com.zeyu.web.mapper.WeeklyMapper com.zeyu.web.service.Impl.WeeklyServiceImpl.weeklydao
+2018-01-31 12:57:28  [ main:2859 ] - [ DEBUG ]  Registered injected element on class [com.zeyu.web.service.Impl.WeeklyServiceImpl]: ResourceElement for private com.zeyu.web.mapper.WeeklyMapperExt com.zeyu.web.service.Impl.WeeklyServiceImpl.weeklyExtdao
+2018-01-31 12:57:28  [ main:2863 ] - [ DEBUG ]  Eagerly caching bean 'weeklyServiceImpl' to allow for resolving potential circular references
+2018-01-31 12:57:28  [ main:2868 ] - [ DEBUG ]  Processing injected method of bean 'weeklyServiceImpl': ResourceElement for private com.zeyu.web.mapper.WeeklyMapper com.zeyu.web.service.Impl.WeeklyServiceImpl.weeklydao
+2018-01-31 12:57:28  [ main:2872 ] - [ DEBUG ]  Returning cached instance of singleton bean 'weeklyMapper'
+2018-01-31 12:57:28  [ main:2874 ] - [ DEBUG ]  Processing injected method of bean 'weeklyServiceImpl': ResourceElement for private com.zeyu.web.mapper.WeeklyMapperExt com.zeyu.web.service.Impl.WeeklyServiceImpl.weeklyExtdao
+2018-01-31 12:57:28  [ main:2874 ] - [ DEBUG ]  Returning cached instance of singleton bean 'weeklyMapperExt'
+2018-01-31 12:57:28  [ main:2876 ] - [ DEBUG ]  Finished creating instance of bean 'weeklyServiceImpl'
+2018-01-31 12:57:28  [ main:2876 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2018-01-31 12:57:28  [ main:2876 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2018-01-31 12:57:28  [ main:2877 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2018-01-31 12:57:28  [ main:2877 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2018-01-31 12:57:28  [ main:2877 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
+2018-01-31 12:57:28  [ main:2877 ] - [ DEBUG ]  Returning cached instance of singleton bean 'dataSource'
+2018-01-31 12:57:28  [ main:2878 ] - [ DEBUG ]  Returning cached instance of singleton bean 'sqlSessionFactory'
+2018-01-31 12:57:28  [ main:2878 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.mybatis.spring.mapper.MapperScannerConfigurer#0'
+2018-01-31 12:57:28  [ main:2879 ] - [ DEBUG ]  Creating shared instance of singleton bean 'transactionManager'
+2018-01-31 12:57:28  [ main:2879 ] - [ DEBUG ]  Creating instance of bean 'transactionManager'
+2018-01-31 12:57:28  [ main:2890 ] - [ DEBUG ]  Eagerly caching bean 'transactionManager' to allow for resolving potential circular references
+2018-01-31 12:57:28  [ main:2898 ] - [ DEBUG ]  Returning cached instance of singleton bean 'dataSource'
+2018-01-31 12:57:28  [ main:2898 ] - [ DEBUG ]  Invoking afterPropertiesSet() on bean with name 'transactionManager'
+2018-01-31 12:57:28  [ main:2898 ] - [ DEBUG ]  Finished creating instance of bean 'transactionManager'
+2018-01-31 12:57:28  [ main:2899 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2018-01-31 12:57:28  [ main:2899 ] - [ DEBUG ]  Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+2018-01-31 12:57:28  [ main:2899 ] - [ DEBUG ]  Returning cached instance of singleton bean 'articleMapper'
+2018-01-31 12:57:28  [ main:2900 ] - [ DEBUG ]  Returning cached instance of singleton bean 'articleMapperExt'
+2018-01-31 12:57:28  [ main:2900 ] - [ DEBUG ]  Returning cached instance of singleton bean 'categoryMapper'
+2018-01-31 12:57:28  [ main:2900 ] - [ DEBUG ]  Returning cached instance of singleton bean 'categoryMapperExt'
+2018-01-31 12:57:28  [ main:2900 ] - [ DEBUG ]  Returning cached instance of singleton bean 'cookbookMapper'
+2018-01-31 12:57:28  [ main:2901 ] - [ DEBUG ]  Returning cached instance of singleton bean 'cookbookMapperExt'
+2018-01-31 12:57:28  [ main:2901 ] - [ DEBUG ]  Returning cached instance of singleton bean 'cookcateMapper'
+2018-01-31 12:57:28  [ main:2901 ] - [ DEBUG ]  Returning cached instance of singleton bean 'cookcateMapperExt'
+2018-01-31 12:57:28  [ main:2901 ] - [ DEBUG ]  Returning cached instance of singleton bean 'iseatMapper'
+2018-01-31 12:57:28  [ main:2901 ] - [ DEBUG ]  Returning cached instance of singleton bean 'iseatMapperExt'
+2018-01-31 12:57:28  [ main:2901 ] - [ DEBUG ]  Returning cached instance of singleton bean 'nutritionMapper'
+2018-01-31 12:57:28  [ main:2901 ] - [ DEBUG ]  Returning cached instance of singleton bean 'userMapper'
+2018-01-31 12:57:28  [ main:2902 ] - [ DEBUG ]  Returning cached instance of singleton bean 'weeklyMapper'
+2018-01-31 12:57:28  [ main:2902 ] - [ DEBUG ]  Returning cached instance of singleton bean 'weeklyMapperExt'
+2018-01-31 12:57:28  [ main:2904 ] - [ DEBUG ]  Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@306e95ec]
+2018-01-31 12:57:28  [ main:2904 ] - [ DEBUG ]  Returning cached instance of singleton bean 'lifecycleProcessor'
+2018-01-31 12:57:28  [ main:2907 ] - [ DEBUG ]  Returning cached instance of singleton bean 'sqlSessionFactory'
+2018-01-31 12:57:28  [ main:2917 ] - [ DEBUG ]  Searching for key 'spring.liveBeansView.mbeanDomain' in [systemProperties]
+2018-01-31 12:57:28  [ main:2918 ] - [ DEBUG ]  Searching for key 'spring.liveBeansView.mbeanDomain' in [systemEnvironment]
+2018-01-31 12:57:28  [ main:2918 ] - [ DEBUG ]  Could not find key 'spring.liveBeansView.mbeanDomain' in any property source. Returning [null]
+2018-01-31 12:57:28  [ main:2920 ] - [ DEBUG ]  Storing ApplicationContext in cache under key [[MergedContextConfiguration@61a485d2 testClass = TestMyBatis, locations = '{classpath:spring-mybatis.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+2018-01-31 12:57:28  [ main:2925 ] - [ DEBUG ]  Processing injected method of bean 'com.zeyu.web.test.TestMyBatis': ResourceElement for private com.zeyu.web.service.IArticleService com.zeyu.web.test.TestMyBatis.artcleService
+2018-01-31 12:57:28  [ main:2926 ] - [ DEBUG ]  Returning cached instance of singleton bean 'articleServiceImpl'
+2018-01-31 12:57:28  [ main:2952 ] - [ DEBUG ]  Creating a new SqlSession
+2018-01-31 12:57:28  [ main:2959 ] - [ DEBUG ]  SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4c1909a3] was not registered for synchronization because synchronization is not active
+2018-01-31 12:57:28  [ main:3000 ] - [ DEBUG ]  Fetching JDBC Connection from DataSource
+2018-01-31 12:57:28  [ main:3161 ] - [ INFO ]  {dataSource-1} inited
+2018-01-31 12:57:29  [ main:3644 ] - [ DEBUG ]  JDBC Connection [com.mysql.jdbc.JDBC4Connection@14028087] will not be managed by Spring
+2018-01-31 12:57:29  [ main:3650 ] - [ DEBUG ]  ==>  Preparing: select aid, cid, title, summary, imgurl, imgart, author, source, editor, createtime, createuser, auditor, status, audittime, isdel , content from articles where aid = ? 
+2018-01-31 12:57:29  [ main:3700 ] - [ DEBUG ]  ==> Parameters: 1(Long)
+2018-01-31 12:57:29  [ main:3728 ] - [ DEBUG ]  <==      Total: 0
+2018-01-31 12:57:29  [ main:3730 ] - [ DEBUG ]  Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4c1909a3]
+2018-01-31 12:57:29  [ main:3730 ] - [ DEBUG ]  Returning JDBC Connection to DataSource
+2018-01-31 12:57:29  [ main:3732 ] - [ DEBUG ]  After test method: context [DefaultTestContext@337d0578 testClass = TestMyBatis, testInstance = com.zeyu.web.test.TestMyBatis@59e84876, testMethod = test1@TestMyBatis, testException = java.lang.NullPointerException, mergedContextConfiguration = [MergedContextConfiguration@61a485d2 testClass = TestMyBatis, locations = '{classpath:spring-mybatis.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], class dirties context [false], class mode [null], method dirties context [false].
+2018-01-31 12:57:29  [ main:3742 ] - [ DEBUG ]  After test class: context [DefaultTestContext@337d0578 testClass = TestMyBatis, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@61a485d2 testClass = TestMyBatis, locations = '{classpath:spring-mybatis.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], dirtiesContext [false].
+2018-01-31 12:57:29  [ Thread-0:3746 ] - [ INFO ]  Closing org.springframework.context.support.GenericApplicationContext@4f933fd1: startup date [Wed Jan 31 12:57:26 CST 2018]; root of context hierarchy
+2018-01-31 12:57:29  [ Thread-0:3747 ] - [ DEBUG ]  Returning cached instance of singleton bean 'sqlSessionFactory'
+2018-01-31 12:57:29  [ Thread-0:3748 ] - [ DEBUG ]  Returning cached instance of singleton bean 'lifecycleProcessor'
+2018-01-31 12:57:29  [ Thread-0:3748 ] - [ DEBUG ]  Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5a4aa2f2: defining beans [articleServiceImpl,bookbookServiceImpl,categoryServiceImpl,cookcateServiceImpl,iseatServiceImpl,weeklyServiceImpl,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,sqlSessionFactory,org.mybatis.spring.mapper.MapperScannerConfigurer#0,transactionManager,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor,articleMapper,articleMapperExt,categoryMapper,categoryMapperExt,cookbookMapper,cookbookMapperExt,cookcateMapper,cookcateMapperExt,iseatMapper,iseatMapperExt,nutritionMapper,userMapper,weeklyMapper,weeklyMapperExt]; root of factory hierarchy
+2018-01-31 12:57:29  [ Thread-0:3749 ] - [ DEBUG ]  Retrieved dependent beans for bean 'articleServiceImpl': [com.zeyu.web.test.TestMyBatis]
+2018-01-31 12:57:29  [ Thread-0:3750 ] - [ DEBUG ]  Invoking destroy method 'close' on bean with name 'dataSource'
+2018-01-31 12:57:29  [ Thread-0:3754 ] - [ INFO ]  {dataSource-1} closed

@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
@@ -38,20 +38,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<div class="searchAppBox fr">
 					<div class="searchBox fl">
 						<div class="search fl">
-							<input class="text" type="text" id="keyword"
-								placeholder="请输入要搜索的关键词" /> <input class="btn" type="button"
+						<form action="<%=basePath%>articles/search/page/1" method="get">
+							<input class="text" type="text" name="keyword"
+								placeholder="请输入要搜索的关键词" /> <input class="btn" type="submit"
 								value="搜索" id="searchBtn" />
+						</form>
 						</div>
 					</div>
-					<!--<div class="appBox fr">
-                    <a href="http://www.lamabang.com/product" target="_blank"> 
-                        <i class="appIco icoF"></i>
-
-                        <p>APP下载</p>
-                    </a>
-
-                    <div class="appQRCode"><img src="/static/v1/images/vcode/lmb.png"></div>
-                </div>-->
 				</div>
 			</div>
 		</div>
@@ -64,21 +57,21 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						<ul class="tabList">
 							<li class="on">
 								<div class="menuCont">
-									<a href="http://www.lamabang.com/"><i
+									<a href="<%=basePath%>"><i
 										class="common-icon home"></i><span class="text">首页</span></a><span
 										class="pipe"></span>
 								</div>
 							</li>
-							<li class="on">
+							<li>
 								<div class="menuCont">
-									<a href="http://www.lamabang.com/"><i
+									<a href="<%=basePath%>articles/page/4/1"><i
 										class="common-icon communicate"></i><span class="text">资讯</span></a><span
 										class="pipe"></span>
 								</div>
 							</li>
 							<li class="noIndex">
 								<div class="menuCont">
-									<a> <!-- <i class="common-icon knowledgeIco"></i>--> <span
+									<a > <!-- <i class="common-icon knowledgeIco"></i>--> <span
 										class="text">周刊</span><b class="downToggle"></b>
 									</a> <span class="pipe"></span>
 
@@ -86,9 +79,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 										<ul class="menuList">
 											<!--                                    <li ><a href="http://www.lamabang.com/video">视频</a>
                                     </li>-->
-											<li><a href="http://www.lamabang.com/yunyu">怀孕中周刊</a></li>
-											<li><a href="http://www.lamabang.com/baike">宝宝已出生周刊</a>
-											</li>
+											<li><a href="<%=basePath%>weeklys/1">怀孕中周刊</a></li>
+											<!-- <li><a href="http://www.lamabang.com/baike">宝宝已出生周刊</a>
+											</li> -->
 
 										</ul>
 										<em class="arrow"></em> <em class="arrow arrowTop"></em>
@@ -98,38 +91,21 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 							</li>
 							<li class="noIndex">
 								<div class="menuCont">
-									<a href="http://www.lamabang.com/parenting"><i
-										class="common-icon knowledgeIco"></i><span class="text">百科</span><b
-										class="downToggle"></b></a><span class="pipe"></span>
-
-									<div class="sec-menu">
-										<ul class="menuList">
-											<!--                                    <li ><a href="http://www.lamabang.com/video">视频</a>
-                                    </li>-->
-											<li><a href="http://www.lamabang.com/yunyu">备孕</a></li>
-											<li><a href="http://www.lamabang.com/baike">孕期</a></li>
-											<li><a href="http://www.lamabang.com/zjdd">分娩</a></li>
-											<li><a href="http://www.lamabang.com/ask">0-1岁</a></li>
-											<li><a href="http://www.lamabang.com/special">1-3岁</a></li>
-											<li><a href="http://www.lamabang.com/special">3-6岁</a></li>
-										</ul>
-										<em class="arrow"></em> <em class="arrow arrowTop"></em>
-									</div>
-								</div>
-								<div class="secMenuBt"></div>
+								 <a href="<%=basePath%>baikes/page"><i
+										class="common-icon knowledgeIco"></i><span class="text">百科</span></a><span class="pipe"></span>
 							</li>
 							<li class="noIndex">
 								<div class="menuCont">
-									<a href="http://www.lamabang.com/live"> <!--<i class="common-icon live"></i>-->
+									<a href="<%=basePath%>cookbooks/page/3/1"> <!--<i class="common-icon live"></i>-->
 										<span class="text">食谱</span><b class="downToggle"></b></a><span
 										class="pipe"></span>
 									<div class="sec-menu">
 										<ul class="menuList">
 											<!--                                    <li ><a href="http://www.lamabang.com/video">视频</a>
                                     </li>-->
-											<li><a href="http://www.lamabang.com/yunyu">备孕食谱</a></li>
-											<li><a href="http://www.lamabang.com/baike">孕期食谱</a></li>
-											<li><a href="http://www.lamabang.com/zjdd">能不能吃</a></li>
+											<li><a href="<%=basePath%>cookbooks/page/3/1">备孕食谱</a></li>
+											<li><a href="<%=basePath%>cookbooks/page/4/1">孕期食谱</a></li>
+											<li><a href="<%=basePath%>iseats/page/5/1">能不能吃</a></li>
 										</ul>
 										<em class="arrow"></em> <em class="arrow arrowTop"></em>
 									</div>
@@ -137,24 +113,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 								<div class="secMenuBt"></div>
 							</li>
 						</ul>
-						<!--                    <div class="inline-block stageBox">
-                        <div class="tagList">
-                            <a  href="http://www.lamabang.com/beiyun">备孕</a>
-                            <a  href="http://www.lamabang.com/yunqi">孕期</a>
-                            <a  href="http://www.lamabang.com/fenmian">分娩</a>
-                            <a  href="http://www.lamabang.com/yinger">0-1岁</a>
-                            <a  href="http://www.lamabang.com/youer">1-3岁</a>
-                            <a  href="http://www.lamabang.com/xueqian">3-6岁</a>
-                        </div>
-                        <span class="dotLeft"></span><span class="dotRight"></span>
-                    </div>-->
-						<!--<div class="loginBox fr">
-							<div class="login">
-								<a class="loginBtn" href="javascript:void(0);">登录</a>
-								<a href="https://api.weibo.com/oauth2/authorize?client_id=1454287934&response_type=code&with_offical_account=1&redirect_uri=http://www.lmbang.com/signin/sina" class="icoF">&#xe601;</a>
-								<a href="https://graph.qq.com/oauth2.0/authorize?client_id=100317189&response_type=code&scope=get_user_info,get_info,get_other_info,get_fanslist,get_idolist&redirect_uri=http://www.lmbang.com/signin/qq" class="icoF">&#xe603;</a>
-							</div>
-						</div>-->
 					</div>
 				</div>
 			</div>
@@ -254,62 +212,20 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			<em class="figure"></em>
 		</div>
 		<div class="list">
-			<ul>
-				<li><label>常用</label> <a target="_blank"
-					href="http://www.lamabang.com/parenting/tag-72.html"
-					class="styleC1">母乳喂养</a> <a target="_blank"
-					href="http://www.lamabang.com/parenting/tag-113.html"
-					class="styleC2">坐月子</a> <a target="_blank"
-					href="http://www.lamabang.com/parenting/tag-142.html"
-					class="styleC3">早教</a> <a target="_blank"
-					href="http://www.lamabang.com/parenting/tag-183.html"
-					class="styleC4">胎教故事</a> <a target="_blank"
-					href="http://www.lamabang.com/parenting/tag-558.html"
-					class="styleC5">其他</a> <a target="_blank"
-					href="http://www.lamabang.com/parenting/tag-636.html"
-					class="styleC6">宝宝健康</a> <a target="_blank"
-					href="http://www.lamabang.com/parenting/tag-749.html"
-					class="styleC7">鼻炎</a> <a target="_blank"
-					href="http://www.lamabang.com/parenting/tag-777.html"
-					class="styleC1">手工</a> <a target="_blank"
-					href="http://www.lamabang.com/parenting/tag-75.html"
-					class="styleC2">断奶</a> <a target="_blank"
-					href="http://www.lamabang.com/parenting/tag-89.html"
-					class="styleC3">发烧</a> <a target="_blank"
-					href="http://www.lamabang.com/parenting/tag-98.html"
-					class="styleC4">湿疹</a> <a target="_blank"
-					href="http://www.lamabang.com/parenting/tag-581.html"
-					class="styleC5">辅食</a> <a target="_blank"
-					href="http://www.lamabang.com/parenting/tag-615.html"
-					class="styleC6">奶粉</a></li>
-				<li><label>月龄</label> <a target="_blank"
-					href="http://www.lamabang.com/parenting/tag-16.html"
-					class="styleC1">2-3岁</a> <a target="_blank"
-					href="http://www.lamabang.com/parenting/tag-2.html" class="styleC2">新生儿(1-3月)</a>
-					<a target="_blank"
-					href="http://www.lamabang.com/parenting/tag-3.html" class="styleC3">1个月</a>
-					<a target="_blank"
-					href="http://www.lamabang.com/parenting/tag-4.html" class="styleC4">2个月</a>
-					<a target="_blank"
-					href="http://www.lamabang.com/parenting/tag-5.html" class="styleC5">3个月</a>
-					<a target="_blank"
-					href="http://www.lamabang.com/parenting/tag-6.html" class="styleC6">4个月</a>
-					<a target="_blank"
-					href="http://www.lamabang.com/parenting/tag-7.html" class="styleC7">5个月</a>
-					<a target="_blank"
-					href="http://www.lamabang.com/parenting/tag-10.html"
-					class="styleC1">6个月</a> <a target="_blank"
-					href="http://www.lamabang.com/parenting/tag-8.html" class="styleC2">7个月</a>
-					<a target="_blank"
-					href="http://www.lamabang.com/parenting/tag-9.html" class="styleC3">8个月</a>
-					<a target="_blank"
-					href="http://www.lamabang.com/parenting/tag-11.html"
-					class="styleC4">9个月</a> <a target="_blank"
-					href="http://www.lamabang.com/parenting/tag-12.html"
-					class="styleC5">10个月</a> <a target="_blank"
-					href="http://www.lamabang.com/parenting/tag-13.html"
-					class="styleC6">11个月</a></li>
-			</ul>
+					<ul>
+						<li><label>常用</label> <c:forEach items="${clist}" var="item">
+								<a href="<%=basePath%>articles/page/${item.cid}/1"
+									class="styleC${item.cid%6+1}" title="${item.name}">
+									<h3>${item.name}</h3>
+								</a>
+							</c:forEach></li>
+						<li><label>月龄</label> <c:forEach items="${ylist}" var="item">
+								<a href="<%=basePath%>articles/page/${item.cid}/1"
+									class="styleC${item.cid%6+1}" title="${item.name}">
+									<h3>${item.name}</h3>
+								</a>
+							</c:forEach></li>
+					</ul>
 		</div>
 	</div>
 	<!--育儿知识End-->
@@ -353,178 +269,161 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 							<div class="tabCont" id="beiyuntab">
 								<div class="img">
 									<a target="_blank"
-										href="http://www.lamabang.com/beiyun/id-12185.html"><img
-										src="http://s06.lmbang.com/M00/DE/82/ecloA1eYezKAXJeoAAFDtbuPNoI299.jpg!c210x140x80"></a>
+										href="<%=basePath%>baikes/baike/${by.aid}"><img
+										src="${by.imgurl}"></a>
 								</div>
 								<div class="articleBlock">
 									<div class="title">
 										<a target="_blank"
-											href="http://www.lamabang.com/beiyun/id-12185.html">夏天备孕，你必须知道的小细节！</a>
+											href="<%=basePath%>baikes/baike/${by.aid}">${by.title}</a>
 									</div>
 									<p class="text">
 										<a target="_blank"
-											href="http://www.lamabang.com/beiyun/id-12185.html">聪明可爱的宝贝不是说来就来哦！需要爸爸妈咪周密的规划，认真的实施，才能得到这份珍贵的人生礼物。</a>
+											href="<%=basePath%>baikes/baike/${by.aid}">${by.summary}</a>
 									</p>
 								</div>
 								<ul class="list">
-									<li><a target="_blank"
-										href="http://www.lamabang.com/beiyun/id-12180.html"><i
-											class="icoF cB"></i>准妈驾车被交警拦下，原因竟是这样！</a></li>
-									<li><a target="_blank"
-										href="http://www.lamabang.com/beiyun/id-12176.html"><i
-											class="icoF cB"></i>营养师教你自由开关“孕期食欲”！</a></li>
-									<li><a target="_blank"
-										href="http://www.lamabang.com/beiyun/id-12160.html"><i
-											class="icoF cB"></i>胎儿缺氧危害大 准妈如何及时发现？</a></li>
+									<c:forEach items="${bylist}" var="item">
+								     <li><a target="_blank"
+										href="<%=basePath%>baikes/baike/${item.aid}"><i
+											class="icoF cB"></i>${item.title}</a></li>
+								    </c:forEach>
 								</ul>
 							</div>
 							<div class="tabCont" style="display: none;" id="yunqitab">
 								<div class="img">
 									<a target="_blank"
-										href="http://www.lamabang.com/yunqi/id-12186.html"><img
-										src="http://s03.lmbang.com/M00/5D/C4/ecloA1oD0H2AQQn7AABiqnoRxnc617.jpg"></a>
+										href="<%=basePath%>baikes/baike/${yq.aid}"><img
+										src="${yq.imgurl}"></a>
 								</div>
 								<div class="articleBlock">
 									<div class="title">
 										<a target="_blank"
-											href="http://www.lamabang.com/yunqi/id-12186.html">小心！这四种胎位最易导致难产！</a>
+											href="<%=basePath%>baikes/baike/${yq.aid}">${yq.title}</a>
 									</div>
 									<p class="text">
 										<a target="_blank"
-											href="http://www.lamabang.com/yunqi/id-12186.html">一个产科护士说，产房外问产妇是否平安的永远是妈妈，问男孩女孩的永远是婆婆！！这句话太经典了！危急时刻说出来的话就是内心底最真实的想法呀！大家觉得真的是这样吗？</a>
+											href="<%=basePath%>baikes/baike/${yq.aid}">${yq.summary}</a>
 									</p>
 								</div>
 								<ul class="list">
-									<li><a target="_blank"
-										href="http://www.lamabang.com/yunqi/id-12183.html"><i
-											class="icoF cB"></i>孕妈妈究竟能不能用电吹风？</a></li>
-									<li><a target="_blank"
-										href="http://www.lamabang.com/yunqi/id-12182.html"><i
-											class="icoF cB"></i>准妈妈，孕期你的心情还好吗？</a></li>
-									<li><a target="_blank"
-										href="http://www.lamabang.com/yunqi/id-12181.html"><i
-											class="icoF cB"></i>孕期阴道出血就要保胎吗？</a></li>
+									<c:forEach items="${yqlist}" var="item">
+								     <li><a target="_blank"
+										href="<%=basePath%>baikes/baike/${item.aid}"><i
+											class="icoF cB"></i>${item.title}</a></li>
+								    </c:forEach>
 								</ul>
 							</div>
 							<div class="tabCont" style="display: none;" id="fenmiantab">
 								<div class="img">
 									<a target="_blank"
-										href="http://www.lamabang.com/fenmian/id-12187.html"><img
-										src="http://s08.lmbang.com/M00/5D/C4/ecloA1oD0iCARgE8AABZIeEa6eE041.jpg"></a>
+										href="<%=basePath%>baikes/baike/${fm.aid}"><img
+										src="${fm.imgurl}"></a>
 								</div>
 								<div class="articleBlock">
 									<div class="title">
 										<a target="_blank"
-											href="http://www.lamabang.com/fenmian/id-12187.html">表羡慕超快顺产了，太快很危险！</a>
+											href="<%=basePath%>baikes/baike/${fm.aid}">${fm.title}</a>
 									</div>
 									<p class="text">
 										<a target="_blank"
-											href="http://www.lamabang.com/fenmian/id-12187.html">这几天在帮里看到一个妈妈发的帖子，和大家分享了她十分钟超快顺产的经历，我觉得很羡慕，我生的时候，如果也能特别快该多好，这样能少受点罪儿。</a>
+											href="<%=basePath%>baikes/baike/${fm.aid}">${fm.summary}</a>
 									</p>
 								</div>
 								<ul class="list">
-									<li><a target="_blank"
-										href="http://www.lamabang.com/fenmian/id-12184.html"><i
-											class="icoF cB"></i>预产期一点儿都不准？看完你就懂了</a></li>
-									<li><a target="_blank"
+								    <c:forEach items="${fmlist}" var="item">
+								     <li><a target="_blank"
+										href="<%=basePath%>baikes/baike/${item.aid}"><i
+											class="icoF cB"></i>${item.title}</a></li>
+								    </c:forEach>							
+									
+									<!-- <li><a target="_blank"
 										href="http://www.lamabang.com/fenmian/id-12178.html"><i
 											class="icoF cB"></i>产后坐月子的那些陋习该怎么破？</a></li>
 									<li><a target="_blank"
 										href="http://www.lamabang.com/fenmian/id-12174.html"><i
-											class="icoF cB"></i>专家支招：孕期这样运动有助顺产</a></li>
+											class="icoF cB"></i>专家支招：孕期这样运动有助顺产</a></li> -->
 								</ul>
 							</div>
 							<div class="tabCont" style="display: none;" id="oneagetab">
 								<div class="img">
 									<a target="_blank"
-										href="http://www.lamabang.com/yinger/id-12188.html"><img
-										src="http://s04.lmbang.com/M00/CF/B3/DpgiA1cfPfCAR5U_AABZnTMJQMY309.jpg!c210x140x80"></a>
+										href="<%=basePath%>baikes/baike/${l1.aid}"><img
+										src="${l1.imgurl}"></a>
 								</div>
 								<div class="articleBlock">
 									<div class="title">
 										<a target="_blank"
-											href="http://www.lamabang.com/yinger/id-12188.html">这些习惯影响胎儿健康，千万别再犯了！</a>
+											href="<%=basePath%>baikes/baike/${l1.aid}">${l1.title}</a>
 									</div>
 									<p class="text">
 										<a target="_blank"
-											href="http://www.lamabang.com/yinger/id-12188.html">拥有一个健康聪明的宝宝是每个爸爸妈妈的愿望，为了生下一个健康的宝宝，准妈妈在怀孕前就要注意戒掉不良的生活习惯，把影响宝宝健康的因素都降到最低。</a>
+											href="<%=basePath%>baikes/baike/${l1.aid}">${l1.summary}</a>
 									</p>
 								</div>
 								<ul class="list">
-									<li><a target="_blank"
-										href="http://www.lamabang.com/yinger/id-12175.html"><i
-											class="icoF cB"></i>宝宝血型为什么可能和爸爸妈妈都不一样？</a></li>
-									<li><a target="_blank"
-										href="http://www.lamabang.com/yinger/id-12166.html"><i
-											class="icoF cB"></i>产假婚假大比拼！新计生条例落地又增新省份</a></li>
-									<li><a target="_blank"
-										href="http://www.lamabang.com/yinger/id-12151.html"><i
-											class="icoF cB"></i>天啊！原来新生儿越丑越健康！</a></li>
+									<c:forEach items="${list1}" var="item">
+								     <li><a target="_blank"
+										href="<%=basePath%>baikes/baike/${item.aid}"><i
+											class="icoF cB"></i>${item.title}</a></li>
+								    </c:forEach>
 								</ul>
 							</div>
 							<div class="tabCont" style="display: none;" id="twoagetab">
 								<div class="img">
 									<a target="_blank"
-										href="http://www.lamabang.com/youer/id-12165.html"><img
-										src="http://s08.lmbang.com/M00/A5/8B/ecloA1byCZ2AJNZ5AACp_ISwuAg517.jpg!r750x600x100.jpg"></a>
+										href="<%=basePath%>baikes/baike/${l3.aid}"><img
+										src="${l3.imgurl}"></a>
 								</div>
 								<div class="articleBlock">
 									<div class="title">
 										<a target="_blank"
-											href="http://www.lamabang.com/youer/id-12165.html">养娃早知道！如何给宝宝安全接种疫苗</a>
+											href="<%=basePath%>baikes/baike/${l3.aid}">${l3.title}</a>
 									</div>
 									<p class="text">
 										<a target="_blank"
-											href="http://www.lamabang.com/youer/id-12165.html">从几年前的“毒奶粉”到今天的“假疫苗”，在利益面前那些无耻贪婪的人没了良心和底线！我们该如何保护自己的孩子？！面对即将出生的宝宝，出生24之后即将要打的疫苗，真是惊恐万分！纠结ing：还要不要给将要出</a>
+											href="<%=basePath%>baikes/baike/${l3.aid}">${l3.summary}</a>
 									</p>
 								</div>
 								<ul class="list">
-									<li><a target="_blank"
-										href="http://www.lamabang.com/youer/id-12152.html"><i
-											class="icoF cB"></i>新生儿采足跟血究竟是要做什么</a></li>
-									<li><a target="_blank"
-										href="http://www.lamabang.com/youer/id-12142.html"><i
-											class="icoF cB"></i>胎宝宝在子宫里真的会哭会笑？</a></li>
-									<li><a target="_blank"
-										href="http://www.lamabang.com/youer/id-12136.html"><i
-											class="icoF cB"></i>千万别把新生儿血管瘤当胎记</a></li>
+									<c:forEach items="${list3}" var="item">
+								     <li><a target="_blank"
+										href="<%=basePath%>baikes/baike/${item.aid}"><i
+											class="icoF cB"></i>${item.title}</a></li>
+								    </c:forEach>
 								</ul>
 							</div>
 							<div class="tabCont" style="display: none;" id="threeagetab">
 								<div class="img">
 									<a target="_blank"
-										href="http://www.lamabang.com/xueqian/id-12171.html"><img
-										src="http://s07.lmbang.com/M00/66/1B/DpgiA1mkv7iAYODMAAC0Tn_5a9A761.jpg"></a>
+										href="<%=basePath%>baikes/baike/${l6.aid}"><img
+										src="${l6.imgurl}"></a>
 								</div>
 								<div class="articleBlock">
 									<div class="title">
 										<a target="_blank"
-											href="http://www.lamabang.com/xueqian/id-12171.html">和孩子建立亲密关系，这10件事情做起来！</a>
+											href="<%=basePath%>baikes/baike/${l6.aid}">${l6.title}</a>
 									</div>
 									<p class="text">
 										<a target="_blank"
-											href="http://www.lamabang.com/xueqian/id-12171.html">管教孩子让他们听话是我们家庭生活的一小部分，下面列举的这些事，或许可以帮助大家改善家庭生活和亲子互动，和孩子建立亲密关系，一起享受美好特别的家庭时光。</a>
+											href="<%=basePath%>baikes/baike/${l6.aid}">${l6.summary}</a>
 									</p>
 								</div>
 								<ul class="list">
-									<li><a target="_blank"
-										href="http://www.lamabang.com/xueqian/id-12149.html"><i
-											class="icoF cB"></i>幼儿园，你是怎么挑的？</a></li>
-									<li><a target="_blank"
-										href="http://www.lamabang.com/xueqian/id-12144.html"><i
-											class="icoF cB"></i>熊孩子！你爸妈知道你们干的那些事儿吗！</a></li>
-									<li><a target="_blank"
-										href="http://www.lamabang.com/xueqian/id-12126.html"><i
-											class="icoF cB"></i>重磅消息！二孩生育登记7个工作日领证</a></li>
+									<c:forEach items="${list6}" var="item">
+								     <li><a target="_blank"
+										href="<%=basePath%>baikes/baike/${item.aid}"><i
+											class="icoF cB"></i>${item.title}</a></li>
+								    </c:forEach>
 								</ul>
 							</div>
 						</div>
 					</div>
 					<div class="attention">
 						<a target="_blank"
-							href="http://www.lamabang.com/search/type-2-k-%E4%B8%93%E5%AE%B6%E5%9C%A8%E7%BA%BF.html"
+							href="<%=basePath%>baikes/baike/${l6.aid}"
 							alt="" title=""> <img
-							src="http://s10.lmbang.com/Fu4Ufym3NiFY_AjfF9sxBMueQIne.jpg">
+							src="${l6.imgurl}">
 
 							<!--<div class="box">
 								<div class="aTitle"><i class="icoF cG"></i>广告图片</div>
@@ -540,45 +439,25 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					<div class="cont">
 						<div class="tabMenu">
 							<dd class="curr">备孕食谱</dd>
-							<dd>孕期食谱</dd>
+							<dd onclick="showyqcooktab()">孕期食谱</dd>
 						</div>
-						<div class="tabCont">
+						<div class="tabCont" id="yunqicook">
 							<ul>
-								<li><a target="_blank"
-									href="http://www.lamabang.com/topic/id-18783110.html"
-									class="fl"><i>?</i>手撕咸鸡丝粥</a><span class="fr">15分钟</span></li>
-								<li><a target="_blank"
-									href="http://www.lamabang.com/topic/id-18755200.html"
-									class="fl"><i>?</i>西红柿排骨汤</a><span class="fr">90分钟</span></li>
-								<li><a target="_blank"
-									href="http://www.lamabang.com/topic/id-18783110.html"
-									class="fl"><i>?</i>手撕咸鸡丝粥</a><span class="fr">15分钟</span></li>
-								<li><a target="_blank"
-									href="http://www.lamabang.com/topic/id-18755200.html"
-									class="fl"><i>?</i>西红柿排骨汤</a><span class="fr">90分钟</span></li>
-								<li><a target="_blank"
-									href="http://www.lamabang.com/topic/id-18783110.html"
-									class="fl"><i>?</i>手撕咸鸡丝粥</a><span class="fr">15分钟</span></li>
-								<li>
+							    <c:forEach items="${bycooklist}" var="item">
+								   <li><a target="_blank"
+									href="<%=basePath%>/cookbooks/cookbook/${item.cid}"
+									class="fl"><i>?</i>${item.name}</a><span class="fr">${item.pretime}</span></li>
+								 </c:forEach>
 							</ul>
 						</div>
-						<div class="tabCont" style="display: none;">
+						<div class="tabCont" style="display: none;" id="beiyuncook">
 							<ul>
-								<li><a target="_blank"
-									href="http://www.lamabang.com/ask/detail/id-615925.html"
-									class="fl"><i>?</i>三周岁的孩子，如何食疗化痰</a><span class="fr">9答</span></li>
-								<li><a target="_blank"
-									href="http://www.lamabang.com/ask/detail/id-621859.html"
-									class="fl"><i>?</i>怀孕35天，能在妇保做无痛人流吗？</a><span class="fr">7答</span></li>
-								<li><a target="_blank"
-									href="http://www.lamabang.com/ask/detail/id-621860.html"
-									class="fl"><i>?</i>断奶两个月还可以再回来吗</a><span class="fr">6答</span></li>
-								<li><a target="_blank"
-									href="http://www.lamabang.com/ask/detail/id-621861.html"
-									class="fl"><i>?</i>宝宝晒太阳真的可以补钙吗？</a><span class="fr">8答</span></li>
-								<li><a target="_blank"
-									href="http://www.lamabang.com/ask/detail/id-616236.html"
-									class="fl"><i>?</i>一岁孩子可以吃火龙果吗</a><span class="fr">7答</span></li>
+							
+							    <c:forEach items="${qycooklist}" var="item">
+								   <li><a target="_blank"
+									href="<%=basePath%>/cookbooks/cookbook/${item.cid}"
+									class="fl"><i>?</i>${item.name}</a><span class="fr">${item.pretime}</span></li>
+								 </c:forEach>
 							</ul>
 						</div>
 						<div class="askQuestions">

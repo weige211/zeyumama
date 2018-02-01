@@ -37,3 +37,9 @@
 		 	//将对应的tab 隐藏图层显示出来
 		 	document.getElementById(e+"tab").style.display="block";
 		 }
+ 
+ function showyqcooktab(){
+	 	//
+	 	document.getElementById("beiyuncook").style.display="none";
+	 	document.getElementById("yunqicook").style.display="block";
+	 }

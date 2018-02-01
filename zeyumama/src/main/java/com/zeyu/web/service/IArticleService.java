@@ -2,6 +2,7 @@ package com.zeyu.web.service;
 
 import java.util.List;
 
+
 import com.zeyu.web.model.Article;
 
 public interface IArticleService {
@@ -16,5 +17,9 @@ public List<Article> getPageArticleByCid(long cid,int start,int pagesize);
 	public int getCountByCid(long cid);
 	
 	public List<Article> getPageBaikeAll();
+	
+	
+	public List<Article> getPageArticleByKeyword(String keyword,int start,int pagesize);
+	public int getCountBykeyword(String keyword);
 
 }

@@ -28,28 +28,38 @@
   <sql id="Blob_Column_List" >
     content
   </sql>
-  <select id="getPageArticle" resultMap="ResultMapWithBLOBs" parameterType="Int" >
+  <select id="getPageArticle" resultMap="BaseResultMap" parameterType="Int" >
     select 
     <include refid="Base_Column_List" />
-    ,
-    <include refid="Blob_Column_List" />
     from articles
     limit #{start,jdbcType=INTEGER},#{pagesize,jdbcType=INTEGER}
   </select>
-  <select id="getPageArticleByCid" resultMap="ResultMapWithBLOBs" >
+  <select id="getPageArticleByCid" resultMap="BaseResultMap" >
     select 
     <include refid="Base_Column_List" />
-    ,
-    <include refid="Blob_Column_List" />
     from articles
     where cid = #{cid,jdbcType=BIGINT}
     limit #{start,jdbcType=INTEGER},#{pagesize,jdbcType=INTEGER}
   </select>
-  <select id="getPageBaikeAll" resultMap="ResultMapWithBLOBs" >
+  
+  <select id="getPageArticleByKeyword" resultMap="BaseResultMap" >
     select 
     <include refid="Base_Column_List" />
-    ,
-    <include refid="Blob_Column_List" />
+    from articles
+    where title like '%${keyword}%'
+    limit #{start,jdbcType=INTEGER},#{pagesize,jdbcType=INTEGER}
+  </select>
+  
+   <select id="getCountBykeyword" resultType="Int" parameterType="java.lang.String">
+
+       select Count(*) from articles
+       where title like '%${keyword}%'
+
+    </select>
+  
+  <select id="getPageBaikeAll" resultMap="BaseResultMap" >
+    select 
+    <include refid="Base_Column_List" />
     from articles
     where cid &gt;36 and cid &lt; 73
   </select>

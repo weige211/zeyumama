@@ -184,13 +184,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					<ul>
 						<li><label>常用</label> <c:forEach items="${clist}" var="item">
 								<a href="<%=basePath%>articles/page/${item.cid}/1"
-									class="styleC${item.cid%6+1}" title="${item.name}">
+									class="styleC${item.cid%6+1}" title="母乳喂养">
 									<h3>${item.name}</h3>
 								</a>
 							</c:forEach></li>
 						<li><label>月龄</label> <c:forEach items="${ylist}" var="item">
 								<a href="<%=basePath%>articles/page/${item.cid}/1"
-									class="styleC${item.cid%6+1}" title="${item.name}">
+									class="styleC${item.cid%6+1}" title="母乳喂养">
 									<h3>${item.name}</h3>
 								</a>
 							</c:forEach></li>
@@ -281,18 +281,18 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			<c:choose>
 				<c:when test="${page.nowPage-1>0}">
 					<em class="btn"><a
-						href="<%=basePath%>/articles/page/${cid}/${page.nowPage-1}">&lt;</a></em>
+						href="<%=basePath%>/articles/search/page/${page.nowPage-1}?keyword=${keyword}">&lt;</a></em>
 				</c:when>
 			</c:choose>
 			<c:forEach var="i" begin="1" end="${page.count}" step="1">
 				<c:choose>
 					<c:when test="${i==page.nowPage}">
 						<span class="curr"> <a
-							href="<%=basePath%>/articles/page/${cid}/${i}">${i}</a>
+							href="<%=basePath%>/articles/search/page/${i}?keyword=${keyword}">${i}</a>
 						</span>
 					</c:when>
 					<c:otherwise>
-						<span> <a href="<%=basePath%>/articles/page/${cid}/${i}">${i}</a>
+						<span> <a href="<%=basePath%>/articles/search/page/${i}?keyword=${keyword}">${i}</a>
 						</span>
 					</c:otherwise>
 				</c:choose>
@@ -300,7 +300,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			<c:choose>
 				<c:when test="${page.nowPage+1<=page.count}">
 					<em class="btn"><a
-						href="<%=basePath%>/articles/page/${cid}/${page.nowPage+1}">&gt;</a></em>
+						href="<%=basePath%>/articles/search/page/${page.nowPage+1}?keyword=${keyword}">&gt;</a></em>
 				</c:when>
 			</c:choose>
 		</div>

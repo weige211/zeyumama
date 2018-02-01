@@ -28,8 +28,7 @@ public class BaikeController {
 	
 	@Resource
 	private ICategoryService categoryservice;
-	//每页显示十条
-	private int pageSize=10;
+
 	
 	public BaikeController() {
 		super();
