@@ -12,6 +12,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.zeyu.web.dto.ArticleDto;
 import com.zeyu.web.dto.IseatDto;
@@ -116,6 +117,59 @@ public class IseatController {
 			// TODO: handle exception
 			logger.error("根据id获取文章失败！"+e.getMessage());
 			model.addAttribute("erro", "根据id获取文章失败！");
+			return "erro";
+		}
+	}
+	
+	
+	@RequestMapping(value="iseat/search",method=RequestMethod.GET)
+	public String getIseatByName(@RequestParam("name")String name,Model model) {
+		
+	    try {
+	    	
+            IseatDto m=new IseatDto();
+	    	
+	    	List<Iseat> tmplist=this.iseatservice.getIseatByName(name);
+	    	//获取能不能吃类目下的所有分类
+	        List<Cookcate> clist=this.cookcateservice.getCookcateListByParid(2);
+	    	
+	    	if(tmplist!=null&&tmplist.size()>0) {
+	    		Iseat item=tmplist.get(0);
+		        m.setCcid(item.getCcid());
+		        m.setEid(item.getEid());
+		        m.setImg(item.getImg());
+		        m.setName(item.getName());
+		        m.setProfile(item.getProfile());
+		        m.setPregnantstatus(item.getPregnantstatus());
+		        m.setMaternalstatus(item.getMaternalstatus());
+		        m.setBabysatus(item.getBabysatus());
+		        
+		        m.setBaby(item.getBaby());
+		        m.setPregnan(item.getPregnan());
+		        m.setMaternal(item.getMaternal());
+		        
+		    	model.addAttribute("nutrition",item.getNutrition());
+		        model.addAttribute("iseat",m);
+		        model.addAttribute("ccid",m.getCcid());
+				model.addAttribute("clist",clist);
+				return "iseatdetail";
+	    	}else {
+	    		
+	    		model.addAttribute("erro","抱歉，没有查到您想要的结果！");
+				model.addAttribute("clist",clist);
+	    	    //m.setCcid(ccid);
+				return "iseatErr";
+	    	}
+	    	
+	        
+	    	
+		
+	    	
+	    	
+		} catch (Exception e) {
+			// TODO: handle exception
+			logger.error("根据name获取文章失败！"+e.getMessage());
+			model.addAttribute("erro", "根据name获取文章失败！");
 			return "erro";
 		}
 	}

@@ -18,8 +18,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <meta name="Description"
 	content="泽雨妈妈官方网站，是国内大型的宝妈社交平台，用户可通过手机、ipad，Web等，随时随地以图片、文字、语音多种方式分享交流育儿、瘦身、美妆、情感、美食等话题。还可以结交来自全国各地、五湖四海志同道合的姐妹。" />
 <meta name="Keywords" content="泽雨妈妈,泽雨妈妈官网,宝妈女性社区,宝妈论坛,泽雨妈妈APP下载" />
-<link rel="shortcut icon" type="image/x-icon" href="img/ico.ico">
-<link type="text/css" rel="stylesheet" href="css/index.html.css" />
+<link rel="shortcut icon" type="image/x-icon" href="<%=basePath%>img/ico.ico">
+<link type="text/css" rel="stylesheet" href="<%=basePath%>css/index.html.css" />
 </head>
 
 <body class="LMB_main LMB_index">
@@ -31,7 +31,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		<div class="logoAndSearchApp">
 			<div class="w">
 				<div class="LOGO fl">
-					<a href="http://www.zeyumama.com/"> <img src="img/logo.png"
+					<a href="<%=basePath%>"> <img src="<%=basePath%>img/logo.png"
 						title="泽雨妈妈" alt="泽雨妈妈" />
 					</a>
 				</div>
@@ -62,7 +62,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 										class="pipe"></span>
 								</div>
 							</li>
-							<li>
+							<li class="noIndex">
 								<div class="menuCont">
 									<a href="<%=basePath%>articles/page/4/1"><i
 										class="common-icon communicate"></i><span class="text">资讯</span></a><span
@@ -128,29 +128,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		<div class="imgLeftBox fl">
 			<div class="list">
 				<ul>
-					<li><a target="_blank" href="http://www.lamabang.com"> <img
-							src="http://s10.lmbang.com/FhJWWXzGM0G0mLhyfi7Y9Tq_P6DG.jpg"
-							alt="">
-					</a></li>
-					<li><a target="_blank"
-						href="http://www.lamabang.com/topic/id-21441796.html"> <img
-							src="http://s10.lmbang.com/Fr8sHECMvtsDuKU_OssjtC6aHhE4.jpg"
-							alt="“2017年度最受家长信赖品牌">
-					</a></li>
-					<li><a target="_blank"
-						href="http://www.lamabang.com/topic/id-21255388.html"> <img
-							src="http://s10.lmbang.com/FoYac1K2GPpeEb3P07TWR8oESdCc.jpg"
-							alt="获奖">
-					</a></li>
-					<li><a target="_blank"
-						href="http://www.lamabang.com/topic/id-20879739.html"> <img
-							src="http://s10.lmbang.com/Ft1t3r84xmHyOxW9tuIYjrGBfy6A.jpg"
-							alt="亚马逊">
-					</a></li>
-					<li><a target="_blank"
-						href="http://www.lamabang.com/topic/id-20308350.html"> <img
-							src="http://s10.lmbang.com/Fvy_Z7IeVPjFD-c8455ZhYkriQLY.jpg"
-							alt="公关">
+					<li><a target="_blank" href="<%=basePath%>articles/article/${tu2.aid}"> <img
+							src="${tu2.imgurl}"
+							alt="${tu2.title}">
 					</a></li>
 				</ul>
 			</div>
@@ -161,32 +141,27 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		</div>
 		<div class="imgRightBox topicBox fr">
 			<a target="_blank"
-				href="http://www.lamabang.com/topic/id-18225413.html" alt=""
-				title=""> <img
-				src="http://s10.lmbang.com/FtE1SAUkbPbzO5-0y0MA_GBqOaMe.jpg" />
+				href="<%=basePath%>articles/article/${tu1.aid}" alt=""
+				title="${tu1.title}"> <img
+				src="${tu1.imgurl}" />
 			</a>
 			<div class="info">
 				<p>
 					<a target="_blank"
-						href="http://www.lamabang.com/topic/id-18225413.html" href=""></a>
+						href="<%=basePath%>articles/article/${tu1.aid}">${tu1.title}</a>
 				</p>
 			</div>
 			<div class="blackMask"></div>
 		</div>
+		
 		<div class="imgRightBox weeklySelctorBox fr">
 			<img class="babyImg fl"
 				src="http://s02.lmbang.com/M00/4A/1B/DpgiA1XkH2CAAf82AAEf5Mwvnao209.jpg" />
-
 			<div class="info fr">
 				<div class="infoHeader">
-					<h2 class="title fl">孕育周刊</h2>
+					<h2 class="title fl"><a href="<%=basePath%>weeklys/1">孕育周刊</a></h2>
 
 					<div class="dateBox fr">
-						<!--<em class="icoF">&#xe606;</em>-->
-						<span class="year">2015</span><span class="pipe"></span><span
-							class="month">07</span><span class="pipe"></span><span
-							class="date">07</span>
-						<!--<b class="downToggle last"></b>-->
 					</div>
 					<div class="clear"></div>
 				</div>
@@ -194,10 +169,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					<h3>请选择宝宝出生日期或预产期</h3>
 				</div>-->
 				<div class="babyLink">
-					宝宝变化 <a class="more">查看更多></a>
+					宝宝变化 <a class="more" href="<%=basePath%>weeklys/1">查看更多</a>
 				</div>
 				<p>
-					<a href="#">如果此时胎宝还没有出来“见世面”，他应该有一个冬瓜般大小了。他的胃已经成熟了萌宝节1分钱许愿中奖辣妈们还记得吧，估计很多妈妈都在翘首以待咯，小编在此重申一下活动内容哦，六一活动期间，从5月28日...</a>
+					<a href="<%=basePath%>weeklys/1" >如果此时胎宝还没有出来“见世面”，他应该有一个冬瓜般大小了。他的胃已经成熟了萌宝节1分钱许愿中奖辣妈们还记得吧，估计很多妈妈都在翘首以待咯，小编在此重申一下活动内容哦，六一活动期间，从5月28日...</a>
 				</p>
 			</div>
 		</div>
@@ -438,10 +413,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					</div>
 					<div class="cont">
 						<div class="tabMenu">
-							<dd class="curr">备孕食谱</dd>
-							<dd onclick="showyqcooktab()">孕期食谱</dd>
+							<dd class="curr" onclick="showbycooktab()" id="beiyunmenu">备孕食谱</dd>
+							<dd onclick="showyqcooktab()" id="yunqimenu">孕期食谱</dd>
 						</div>
-						<div class="tabCont" id="yunqicook">
+						<div class="tabCont" id="beiyuncook">
 							<ul>
 							    <c:forEach items="${bycooklist}" var="item">
 								   <li><a target="_blank"
@@ -450,10 +425,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 								 </c:forEach>
 							</ul>
 						</div>
-						<div class="tabCont" style="display: none;" id="beiyuncook">
+						<div class="tabCont" style="display: none;" id="yunqicook">
 							<ul>
 							
-							    <c:forEach items="${qycooklist}" var="item">
+							    <c:forEach items="${yqcooklist}" var="item">
 								   <li><a target="_blank"
 									href="<%=basePath%>/cookbooks/cookbook/${item.cid}"
 									class="fl"><i>?</i>${item.name}</a><span class="fr">${item.pretime}</span></li>
@@ -461,40 +436,76 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 							</ul>
 						</div>
 						<div class="askQuestions">
-							<input class="textStyle" type="text" id="titleInput"
-								placeholder="雪莲果？">
+						   <form action="<%=basePath%>iseats/iseat/search" method="get">
+							<input class="textStyle" type="text" id="titleInput" name="name"
+								placeholder="雪莲果">
 							<!-- <input class="btnStyle btn01" type="button" id="question" value="向专家提问">-->
-							<input class="btnStyle btn02" type="button" id="searchquestion"
+							<input class="btnStyle btn02" type="submit" id="searchquestion"
 								value="能不能吃"> <em class="Angle"></em>
+							</form>
 						</div>
 					</div>
 
 					<div class="expert mt20">
 						<div class="title">
 							<div class="text">
-								<a target="_blank" href="http://www.lamabang.com/zjdd"><i
+								<a target="_blank" href="<%=basePath%>iseats/iseat/${iseat.eid}"><i
 									class="icoF cB"></i>雪莲果能不能吃？</a>
 							</div>
-							<a target="_blank" href="http://www.lamabang.com/zjdd"
+							<a target="_blank" href="<%=basePath%>iseats/iseat/${iseat.eid}"
 								class="more">&gt;</a>
 						</div>
 						<div class="specialist">
 							<div class="info fl">
 								<div class="portrait">
 									<img
-										src="http://g.yaolanimage.cn/assets/seo/resources/3313.jpg">
+										src="${iseat.img}">
 								</div>
-								<div class="name">雪莲果</div>
+								<div class="name">${iseat.name}</div>
 							</div>
-							<a target="_blank" href="http://www.lamabang.com/zjdd/id-36.html">
+							<a target="_blank" href="<%=basePath%>iseats/iseat/${iseat.eid}">
 								<div class="talk fr">
 									<i></i>
 									<div class="titleTalk">
-										<span class="corlv"><i class="icon-yes"></i>孕妇能吃</span> <span
-											class="corhuang"><i class="icon-warn"></i>产妇慎吃</span> <span
-											class="corlv"><i class="icon-yes"></i>婴幼儿能吃</span>
+									
+									<c:choose>
+								<c:when test="${iseat.pregnantstatus=='孕妇能吃'}">
+								<span class="corlv"><i class="ico_yes" ></i>孕妇能吃</span>
+								</c:when>
+								<c:when test="${iseat.pregnantstatus=='孕妇慎吃'}">
+								<span class="corhuang"><i class="ico_tan" ></i>孕妇慎吃</span>
+								</c:when>
+								<c:when test="${iseat.pregnantstatus=='孕妇不能吃'}">
+								 <span class="corhong"><i class="ico_no" ></i>孕妇不能吃</span>
+								</c:when>
+								</c:choose>
+								
+								<c:choose>
+								<c:when test="${iseat.maternalstatus=='产妇能吃'}">
+								<span class="corlv"><i class="ico_yes" ></i>产妇能吃</span>
+								</c:when>
+								<c:when test="${iseat.maternalstatus=='产妇慎吃'}">
+								<span class="corhuang"><i class="ico_tan" ></i>产妇慎吃</span>
+								</c:when>
+								<c:when test="${iseat.maternalstatus=='产妇不能吃'}">
+								 <span class="corhong"><i class="ico_no" ></i>产妇不能吃</span>
+								</c:when>
+								</c:choose>
+								
+								<c:choose>
+								<c:when test="${iseat.babysatus=='婴幼儿能吃'}">
+								<span class="corlv"><i class="ico_yes" ></i>婴幼儿能吃</span>
+								</c:when>
+								<c:when test="${iseat.babysatus=='婴幼儿慎吃'}">
+								<span class="corhuang"><i class="ico_tan" ></i>婴幼儿慎吃</span>
+								</c:when>
+								<c:when test="${iseat.babysatus=='婴幼儿不能吃'}">
+								 <span class="corhong"><i class="ico_no" ></i>婴幼儿不能吃</span>
+								</c:when>
+								</c:choose>
+									
 									</div>
-									<p>雪莲果香甜多汁，属于低热量食品，独特之处在于其含有的低聚果糖难以被人体吸收，所以糖尿病患者也可以放心食用。另外富含钙、镁、铁等微量元素以及多种维生素和氨基酸，有清肝、解毒、消食、提高免疫力和调理血液的功效，能防治暗疮、便秘和高血压、糖尿病等疾病，也可用于治疗心脑血管疾病和肥胖症。</p>
+									<p>${iseat.profile}</p>
 
 								</div>
 							</a>
@@ -509,65 +520,33 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					<div class="cont">
 
 						<div class="hotImgShow">
-							<a target="_blank" class="img img01 fl"
-								href="http://www.lamabang.com/youer/id-7737.html"> <img
-								src="http://s03.lmbang.com/M00/DB/FD/DpgiA1dFUwmAHhtwAAAlUCB7-A8235.jpg!c200x160x100.jpg"
-								alt="宝宝太任性，妈妈该怎么做？" title="宝宝太任性，妈妈该怎么做？" />
-								<div class="text">
-									<p>宝宝太任性，妈妈该怎么做？</p>
-								</div>
-							</a> <a target="_blank" class="img img02 fr"
-								href="http://www.lamabang.com/xueqian/id-7901.html"> <img
-								src="http://s03.lmbang.com/M00/C1/C3/ecloA1dCrZyALzWeAAAdHr_2hCM856.jpg!c200x160x100.jpg"
-								alt="的宝宝有磨牙的现象吗？" title="的宝宝有磨牙的现象吗？" />
-								<div class="text">
-									<p>的宝宝有磨牙的现象吗？</p>
-								</div>
-							</a> <a target="_blank" class="img img03 fl"
-								href="http://www.lamabang.com/yinger/id-7994.html"> <img
-								src="http://s01.lmbang.com/M00/C0/81/ecloA1c-0ImADe9zAAAauQodvRo752.jpg!c200x160x100.jpg"
-								alt="宝宝喂药的8个错误做法" title="宝宝喂药的8个错误做法" />
-								<div class="text">
-									<p>宝宝喂药的8个错误做法</p>
-								</div>
-							</a> <a target="_blank" class="img img04 fr"
-								href="http://www.lmbang.com/yunqi/id-7976.html"> <img
-								src="http://s01.lmbang.com/M00/BB/21/ecloD1dCqyGANy5rAAAZFC4pzxE551.jpg!c200x160x100.jpg"
-								alt="胎梦究竟预示着什么？" title="胎梦究竟预示着什么？" />
-								<div class="text">
-									<p>胎梦究竟预示着什么？</p>
-								</div>
-							</a>
+						     <c:forEach items="${rtlist}" var="item">
+								<a target="_blank" class="img img01 fl" href="<%=basePath%>articles/article/${item.aid}">
+								<img src="${item.imgurl}" alt="${item.title}" title="${item.title}" />
+									<div class="text">
+										<p>${item.title}</p>
+									</div> 
+								</a>
+							</c:forEach>
 						</div>
 						<div class="list">
 							<ul>
-								<li><a target="_blank"
-									href="http://www.lamabang.com/todayhot/detail/id-6508.html"><i
-										class="icoF cB">&#xe600;</i>棒米全面启动智能关爱女性健康公益</a></li>
-								<li><a target="_blank"
-									href="http://www.lamabang.com/topic/id-16924966.html"><i
-										class="icoF cB">&#xe600;</i>闺蜜送我秘诀，孕期身材与营养兼得</a></li>
-								<li><a target="_blank"
-									href="http://www.lamabang.com/topic/id-16926509.html"><i
-										class="icoF cB">&#xe600;</i>1型腰一点也不难，我有神器帮忙！</a></li>
-								<li><a target="_blank"
-									href="http://www.lamabang.com/fenmian/id-7836.html"><i
-										class="icoF cB">&#xe600;</i>分娩6大禁忌孕妈千万别做</a></li>
-								<li><a target="_blank"
-									href="http://www.lamabang.com/yunqi/id-7927.html"><i
-										class="icoF cB">&#xe600;</i>警惕！先兆流产的三方面原因</a></li>
-								<li><a target="_blank"
-									href="http://www.lamabang.com/fenmian/id-7970.html"><i
-										class="icoF cB">&#xe600;</i>教你产后怎么恢复皮肤弹性</a></li>
+							
+							
+							     <c:forEach items="${rwlist}" var="item">
+							     <li>
+							     <a target="_blank"
+									href="<%=basePath%>articles/article/${item.aid}"><i
+										class="icoF cB">&#xe600;</i>${item.title}</a></li>
+							     </c:forEach>
 							</ul>
 						</div>
 						<div class="attention">
-							<a target="_blank" href="http://www.lamabang.com/product"
+							<a target="_blank" href="<%=basePath%>articles/article/${guanggao.aid}"
 								target="_blank" alt="" title=""> <img
-								src="http://s10.lmbang.com/Fgq10NBaxy19buzMBSGpMRmAcXWz.png" />
-
+								src="${guanggao.imgurl}" />
 								<div class="box">
-									<div class="aTitle">广告</div>
+									<div class="aTitle">${guanggao.title}</div>
 								</div>
 							</a>
 						</div>
@@ -583,6 +562,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<!--微日记-->
 	<!--微日记End-->
 	<!--孕育百科-->
+	<%-- 
 	<div class="gestateEncyclopedia mt40">
 		<div class="ovH w" id="bktab">
 			<div class="bigTitle">
@@ -606,232 +586,67 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			<div class="bigTabCont" id='bkalltab'>
 				<div class="box">
 					<ul>
-						<li>
-							<div class="cBlue ac-title">孕期营养</div>
+					    <c:forEach items="${catelist}" var="item">
+					    <li>
+							<div class="cBlue ac-title">${item.name}</div>
 							<dl class="list">
-								<dd>
-									<a target="_blank"
-										href="http://www.lamabang.com/baike/tag-5-id-114.html">孕妇DHA</a>
-								</dd>
-								<dd>
-									<a target="_blank"
-										href="http://www.lamabang.com/baike/tag-5-id-163.html">孕期营养误区</a>
-								</dd>
-								<dd>
-									<a target="_blank"
-										href="http://www.lamabang.com/baike/tag-5-id-166.html">孕期补锌</a>
-								</dd>
-								<dd>
-									<a target="_blank"
-										href="http://www.lamabang.com/baike/tag-5-id-112.html">叶酸</a>
-								</dd>
-								<dd>
-									<a target="_blank"
-										href="http://www.lamabang.com/baike/tag-5-id-164.html">孕期饮食营养</a>
-								</dd>
-								<dd>
-									<a target="_blank"
-										href="http://www.lamabang.com/baike/tag-5-id-115.html">孕期补钙</a>
-								</dd>
-								<dd>
-									<a target="_blank"
-										href="http://www.lamabang.com/baike/tag-67-id-162.html">孕期维生素</a>
-								</dd>
-								<dd>
-									<a target="_blank"
-										href="http://www.lamabang.com/baike/tag-5-id-166.html">孕期补铁</a>
-								</dd>
+								<c:forEach items="${baikelist}" var="baikeitem">
+									<c:choose>
+											<c:when test="${baikeitem.cid==item.cid}">
+
+												<dd>
+													<a target="_blank"
+														href="<%=basePath%>baikes/baike/${baikeitem.aid}">${baikeitem.title}</a>
+												</dd>
+
+											</c:when>
+										</c:choose>
+								</c:forEach>
 							</dl>
 						</li>
-						<li>
-							<div class="cBlue ac-title">孕期检查</div>
-							<dl class="list">
-								<dd>
-									<a target="_blank"
-										href="http://www.lamabang.com/baike/tag-3-id-170.html">孕期血常规</a>
-								</dd>
-								<dd>
-									<a target="_blank"
-										href="http://www.lamabang.com/baike/tag-3-id-169.html">孕期糖筛</a>
-								</dd>
-								<dd>
-									<a target="_blank"
-										href="http://www.lamabang.com/baike/tag-3-id-168.html">孕期四维彩超</a>
-								</dd>
-								<dd>
-									<a target="_blank"
-										href="http://www.lamabang.com/baike/tag-3-id-167.html">孕期尿常规</a>
-								</dd>
-								<dd>
-									<a target="_blank"
-										href="http://www.lamabang.com/baike/tag-3-id-30.html">胎心监护</a>
-								</dd>
-								<dd>
-									<a target="_blank"
-										href="http://www.lamabang.com/baike/tag-3-id-28.html">孕期糖耐</a>
-								</dd>
-								<dd>
-									<a target="_blank"
-										href="http://www.lamabang.com/baike/tag-3-id-24.html">唐氏筛查</a>
-								</dd>
-								<dd>
-									<a target="_blank"
-										href="http://www.lamabang.com/baike/tag-3-id-22.html">孕期B超</a>
-								</dd>
-							</dl>
-						</li>
+					</c:forEach>
 					</ul>
 					<ul>
-						<li>
-							<div class="cBlue ac-title">胎儿发育</div>
+						 <c:forEach items="${catelist2}" var="item">
+					    <li>
+							<div class="cBlue ac-title">${item.name}</div>
 							<dl class="list">
-								<dd>
-									<a target="_blank"
-										href="http://www.lamabang.com/baike/tag-1-id-177.html">孕囊</a>
-								</dd>
-								<dd>
-									<a target="_blank"
-										href="http://www.lamabang.com/baike/tag-1-id-176.html">胎心</a>
-								</dd>
-								<dd>
-									<a target="_blank"
-										href="http://www.lamabang.com/baike/tag-1-id-175.html">胎位</a>
-								</dd>
-								<dd>
-									<a target="_blank"
-										href="http://www.lamabang.com/baike/tag-1-id-174.html">胎停育</a>
-								</dd>
-								<dd>
-									<a target="_blank"
-										href="http://www.lamabang.com/baike/tag-1-id-173.html">胎盘</a>
-								</dd>
-								<dd>
-									<a target="_blank"
-										href="http://www.lamabang.com/baike/tag-1-id-172.html">胎儿大小</a>
-								</dd>
-								<dd>
-									<a target="_blank"
-										href="http://www.lamabang.com/baike/tag-1-id-171.html">脐带</a>
-								</dd>
-								<dd>
-									<a target="_blank"
-										href="http://www.lamabang.com/baike/tag-1-id-75.html">羊水</a>
-								</dd>
+								<c:forEach items="${baikelist}" var="baikeitem">
+									<c:choose>
+											<c:when test="${baikeitem.cid==item.cid}">
+
+												<dd>
+													<a target="_blank"
+														href="<%=basePath%>baikes/baike/${baikeitem.aid}">${baikeitem.title}</a>
+												</dd>
+
+											</c:when>
+										</c:choose>
+								</c:forEach>
 							</dl>
 						</li>
-						<li>
-							<div class="cBlue ac-title">待产分娩</div>
-							<dl class="list">
-								<dd>
-									<a target="_blank"
-										href="http://www.lamabang.com/baike/tag-7-id-187.html">预产期</a>
-								</dd>
-								<dd>
-									<a target="_blank"
-										href="http://www.lamabang.com/baike/tag-7-id-186.html">羊水栓塞</a>
-								</dd>
-								<dd>
-									<a target="_blank"
-										href="http://www.lamabang.com/baike/tag-7-id-185.html">顺产</a>
-								</dd>
-								<dd>
-									<a target="_blank"
-										href="http://www.lamabang.com/baike/tag-7-id-184.html">剖腹产</a>
-								</dd>
-								<dd>
-									<a target="_blank"
-										href="http://www.lamabang.com/baike/tag-7-id-138.html">坐月子</a>
-								</dd>
-								<dd>
-									<a target="_blank"
-										href="http://www.lamabang.com/baike/tag-7-id-88.html">产后恶露</a>
-								</dd>
-								<dd>
-									<a target="_blank"
-										href="http://www.lamabang.com/baike/tag-7-id-63.html">无痛分娩</a>
-								</dd>
-								<dd>
-									<a target="_blank"
-										href="http://www.lamabang.com/baike/tag-7-id-9.html">宫缩</a>
-								</dd>
-							</dl>
-						</li>
+					</c:forEach>
 					</ul>
 					<ul>
-						<li>
-							<div class="cBlue ac-title">母乳喂养</div>
+						 <c:forEach items="${catelist3}" var="item">
+					    <li>
+							<div class="cBlue ac-title">${item.name}</div>
 							<dl class="list">
-								<dd>
-									<a target="_blank"
-										href="http://www.lamabang.com/baike/tag-9-id-124.html">催乳</a>
-								</dd>
-								<dd>
-									<a target="_blank"
-										href="http://www.lamabang.com/baike/tag-9-id-123.html">产后下奶</a>
-								</dd>
-								<dd>
-									<a target="_blank"
-										href="http://www.lamabang.com/baike/tag-9-id-183.html">新生儿喂养</a>
-								</dd>
-								<dd>
-									<a target="_blank"
-										href="http://www.lamabang.com/baike/tag-9-id-181.html">母乳保存</a>
-								</dd>
-								<dd>
-									<a target="_blank"
-										href="http://www.lamabang.com/baike/tag-9-id-180.html">断奶</a>
-								</dd>
-								<dd>
-									<a target="_blank"
-										href="http://www.lamabang.com/baike/tag-9-id-179.html">初乳</a>
-								</dd>
-								<dd>
-									<a target="_blank"
-										href="http://www.lamabang.com/baike/tag-9-id-178.html">哺乳期饮食</a>
-								</dd>
-								<dd>
-									<a target="_blank"
-										href="http://www.lamabang.com/baike/tag-9-id-182.html">母乳喂养</a>
-								</dd>
+								<c:forEach items="${baikelist}" var="baikeitem">
+									<c:choose>
+											<c:when test="${baikeitem.cid==item.cid}">
+
+												<dd>
+													<a target="_blank"
+														href="<%=basePath%>baikes/baike/${baikeitem.aid}">${baikeitem.title}</a>
+												</dd>
+
+											</c:when>
+										</c:choose>
+								</c:forEach>
 							</dl>
 						</li>
-						<li>
-							<div class="cBlue ac-title">宝宝护理</div>
-							<dl class="list">
-								<dd>
-									<a target="_blank"
-										href="http://www.lamabang.com/baike/tag-11-id-61.html">早产儿</a>
-								</dd>
-								<dd>
-									<a target="_blank"
-										href="http://www.lamabang.com/baike/tag-11-id-191.html">新生儿护理</a>
-								</dd>
-								<dd>
-									<a target="_blank"
-										href="http://www.lamabang.com/baike/tag-11-id-104.html">婴儿湿巾</a>
-								</dd>
-								<dd>
-									<a target="_blank"
-										href="http://www.lamabang.com/baike/tag-11-id-105.html">抚触</a>
-								</dd>
-								<dd>
-									<a target="_blank"
-										href="http://www.lamabang.com/baike/tag-11-id-106.html">囟门</a>
-								</dd>
-								<dd>
-									<a target="_blank"
-										href="http://www.lamabang.com/baike/tag-11-id-107.html">拍嗝</a>
-								</dd>
-								<dd>
-									<a target="_blank"
-										href="http://www.lamabang.com/baike/tag-11-id-108.html">臀部护理</a>
-								</dd>
-								<dd>
-									<a target="_blank"
-										href="http://www.lamabang.com/baike/tag-11-id-109.html">脐部护理</a>
-								</dd>
-							</dl>
-						</li>
+					</c:forEach>
 					</ul>
 				</div>
 			</div>
@@ -2571,7 +2386,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					</ul>
 				</div>
 			</div>
-		</div>
+		</div> --%>
 		<!--孕育百科End-->
 		<div class="copyright">
 			<div class="info">

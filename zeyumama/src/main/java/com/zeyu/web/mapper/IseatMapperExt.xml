@@ -39,6 +39,15 @@
     limit #{start,jdbcType=INTEGER},#{pagesize,jdbcType=INTEGER}
   </select>
   
+  <select id="getIseatByName" resultMap="ResultMapWithBLOBs">
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from iseat
+    where name ='${name}'
+  </select>
+  
   <select id="getCountByCid" parameterType="java.lang.Long"  resultType="Int">
        select Count(*) from iseat
        where ccid = #{ccid,jdbcType=BIGINT}

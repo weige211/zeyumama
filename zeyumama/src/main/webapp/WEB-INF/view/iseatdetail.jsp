@@ -13,9 +13,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		<meta charset="UTF-8">
 		<meta name="rennder" content="webkit">
 		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-		<title>孕妇能吃雪莲果吗?怀孕可以吃雪莲果吗?产妇能不能吃雪莲果? – 摇篮网</title>
+		<title>孕妇能吃${iseat.name}吗?怀孕可以吃${iseat.name}吗?产妇能不能吃${iseat.name}? – 泽雨妈妈网</title>
 		<meta name="keywords" content="孕妇能吃雪莲果吗? 怀孕可以吃雪莲果吗? 产妇能不能吃雪莲果? " />
 		<meta name="description" content="关于：孕妇能吃雪莲果吗?怀孕可以吃雪莲果吗?产妇能不能吃雪莲果?摇篮网为您提供雪莲果的营养成分和建议观点，供您参考。" />
+		<link rel="shortcut icon" type="image/x-icon" href="<%=basePath%>img/ico.ico">
 		<link rel="stylesheet" href="http://g.yaolanimage.cn/assets/seo/css/global.css?v=1.2">
 		<link rel="stylesheet" href="http://g.yaolanimage.cn/assets/seo/css/style.css?v=1.2">
 		<script src="http://g.yaolanimage.cn/assets/js/html5.js"></script>
@@ -33,39 +34,29 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				
 
 				<ul class="pcyl-nav">
-					<li class="pcyl-first" id="jquery-toolnava-0"><em><a href="http://www.yaolan.com/" >首页</a></em></li>
-					<li id="jquery-toolnava-1"><em><a href="http://www.yaolan.com/index/" >知识</a></em>
-						<div class="pcyl-navmore pcyl-edu">
-							<a href="http://www.yaolan.com/edu/">早教</a>
-							<a href="http://www.yaolan.com/nutrition/">营养</a>
-							<a href="http://www.yaolan.com/zhishi/">百科</a>
-							<a href="http://www.yaolan.com/health/">健康</a>
-							<a href="http://www.yaolan.com/parenting/">辣妈</a>
-							<a href="http://www.yaolan.com/topic/">专题</a>
-							<a href="http://www.yaolan.com/edm/">周刊</a>
-						</div>
-					</li>
-					<li id="jquery-toolnava-2" class="pcyl-two"><em><a href="http://ask.yaolan.com/" >问答</a></em>
-						<div class="pcyl-navmore pcyl-ask">
-							<a href="http://expert.yaolan.com/">专家</a>
-							<a href="http://chat.yaolan.com/">访谈</a>
-						</div>
-					</li>
-					<li class="pcyl-three" id="jquery-toolnava-3"><em><a href="http://bbs.yaolan.com/" >论坛</a></em>
-						<div class="pcyl-navmore pcyl-bbs">
-							<a href="http://bbs.yaolan.com/forum.php?gid=203">同龄</a>
-							<a href="http://bbs.yaolan.com/city/">同城</a>
-							<a href="http://space.yaolan.com/">社区</a>
-						</div>
-					</li>
-					<li class="pcyl-four " id="jquery-toolnava-4"><em><a href="http://www.yaolan.com/huodong/welfare/" >福利</a></em>
-						<div class="pcyl-navmore pcyl-try">
-							<a href="http://try.yaolan.com/">试用</a>
-							<a href="http://event.yaolan.com/BeiJing">活动</a>
-							<a href="http://jifen.yaolan.com/">兑换商城</a>
-						</div>
-					</li>
-					<li class="pcyl-last" id="jquery-toolnava-6"><em><a href="http://abc.yaolan.com/">成长阶梯</a></em></li>
+					<li class="pcyl-first" id="jquery-toolnava-0"><em><a
+						href="<%=basePath%>">首页</a></em></li>
+				<li class="pcyl-first" id="jquery-toolnava-0"><em><a
+						href="<%=basePath%>articles/page/4/1">资讯</a></em></li>
+				<%-- <li id="jquery-toolnava-1"><em><a
+						href="<%=basePath%>articles/page/4/1">资讯</a></em></li> --%>
+				<li id="jquery-toolnava-2" class="pcyl-two"><em><a
+						href="<%=basePath%>weeklys/1">周刊</a></em>
+					<div class="pcyl-navmore pcyl-ask">
+						<a href="<%=basePath%>weeklys/1">怀孕中周刊</a>
+					</div></li>
+					<li class="pcyl-first" id="jquery-toolnava-0"><em><a
+						href="<%=basePath%>baikes/page">百科</a></em></li>
+				<%-- <li class="pcyl-three" id="jquery-toolnava-3"><em><a
+						href="<%=basePath%>baikes/page">百科</a></em>
+					</li> --%>
+				<li class="pcyl-four " id="jquery-toolnava-4"><em><a
+						href="<%=basePath%>cookbooks/page/3/1">食谱</a></em>
+					<div class="pcyl-navmore pcyl-try">
+						<a href="<%=basePath%>cookbooks/page/3/1">备孕食谱</a>
+						<a href="<%=basePath%>cookbooks/page/4/1">孕期食谱</a> 
+						<a href="<%=basePath%>iseats/page/5/1">能不能吃</a> 
+					</div></li>
 				</ul>
 			</div>
 		</div>
@@ -74,15 +65,16 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			<div class="header">
 
 				<div class="search">
-					<span class="input-box">
-			<input type="text" id="foodname" name="search" placeholder="亲，在这儿输入食物名" value="亲，在这儿输入食物名" onfocus="if (value =='亲，在这儿输入食物名'){value =''}" onblur="if (value ==''){value='亲，在这儿输入食物名'}">
-			</span>
-					<span class="submit-box"><input id="mysubmit" onclick=" submitData()"   type="submit" name="submit" value="能不能吃"></span>
-				</div>
-				<form method="post" id="jquery-form" action="http://www.yaolan.com/zhishi/eat/search">
-					<input type="hidden" id="jquery-foodname" name="keyword" />
-
+				<form action="<%=basePath%>iseats/iseat/search" method="get">
+					<span class="input-box"> <input type="text" id="foodname"
+						name="name" placeholder="亲，在这儿输入食物名" value="亲，在这儿输入食物名"
+						onfocus="if (value =='亲，在这儿输入食物名'){value =''}"
+						onblur="if (value ==''){value='亲，在这儿输入食物名'}">
+					</span> <span class="submit-box"><input type="submit" name="submit"
+						value="能不能吃"></span>
 				</form>
+			</div>
+				
 			</div>
 			<div class="main">
 				<div class="wrapper clearfix">
@@ -232,6 +224,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
         泽雨妈妈 Ltd.2009-2017 All Rights Reserved 　　版权所有 　©泽雨妈妈 　 粤ICP备13070153号-3<br/>增值电信业务经营许可证：粤B2-20170474
 				<br/>未经授权禁止转载、摘编、复制或建立镜像，如有违反，追究法律责任。
         </div>
+        <script type="text/javascript" src="http://f.yaolanimage.cn/assets/js/globalinc/header.check.js?v=2260"></script>
 		<link href="http://g.yaolanimage.cn/global/head/css/footer_black_new.css?ver=2013080102" rel="stylesheet" />
 		<link href="http://g.yaolanimage.cn/global/head/css/global.pop.css?ver=20140627" rel="stylesheet" />
 		

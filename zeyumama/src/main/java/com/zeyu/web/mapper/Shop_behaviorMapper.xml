@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zeyu.web.mapper.Shop_behaviorMapper" >
+  <resultMap id="BaseResultMap" type="com.zeyu.web.model.Shop_behavior" >
+    <result column="user_id" property="userId" jdbcType="VARCHAR" />
+    <result column="act_obj" property="actObj" jdbcType="VARCHAR" />
+    <result column="obj_type" property="objType" jdbcType="VARCHAR" />
+    <result column="bhv_type" property="bhvType" jdbcType="VARCHAR" />
+    <result column="bhv_amt" property="bhvAmt" jdbcType="BIGINT" />
+    <result column="bhv_cnt" property="bhvCnt" jdbcType="BIGINT" />
+    <result column="bhv_datetime" property="bhvDatetime" jdbcType="TIMESTAMP" />
+    <result column="content" property="content" jdbcType="VARCHAR" />
+    <result column="pos_type" property="posType" jdbcType="VARCHAR" />
+    <result column="position" property="position" jdbcType="VARCHAR" />
+    <result column="trace_id" property="traceId" jdbcType="VARCHAR" />
+    <result column="appcode" property="appcode" jdbcType="VARCHAR" />
+    <result column="opentype" property="opentype" jdbcType="VARCHAR" />
+    <result column="openid" property="openid" jdbcType="VARCHAR" />
+    <result column="diviceid" property="diviceid" jdbcType="VARCHAR" />
+    <result column="divicetype" property="divicetype" jdbcType="VARCHAR" />
+    <result column="phone" property="phone" jdbcType="VARCHAR" />
+    <result column="latitude" property="latitude" jdbcType="VARCHAR" />
+    <result column="longitude" property="longitude" jdbcType="VARCHAR" />
+    <result column="country" property="country" jdbcType="VARCHAR" />
+    <result column="province" property="province" jdbcType="VARCHAR" />
+    <result column="city" property="city" jdbcType="VARCHAR" />
+    <result column="area" property="area" jdbcType="VARCHAR" />
+    <result column="address" property="address" jdbcType="VARCHAR" />
+    <result column="Column_01" property="column01" jdbcType="VARCHAR" />
+    <result column="Column_02" property="column02" jdbcType="VARCHAR" />
+    <result column="Column_03" property="column03" jdbcType="VARCHAR" />
+    <result column="Column_04" property="column04" jdbcType="VARCHAR" />
+    <result column="Column_05" property="column05" jdbcType="VARCHAR" />
+    <result column="platName" property="platname" jdbcType="VARCHAR" />
+    <result column="downloadPlat" property="downloadplat" jdbcType="VARCHAR" />
+    <result column="versionNam" property="versionnam" jdbcType="VARCHAR" />
+    <result column="phone_type" property="phoneType" jdbcType="VARCHAR" />
+  </resultMap>
+  <resultMap id="ResultMapWithBLOBs" type="com.zeyu.web.model.Shop_behaviorWithBLOBs" extends="BaseResultMap" >
+    <result column="env" property="env" jdbcType="LONGVARCHAR" />
+    <result column="extend" property="extend" jdbcType="LONGVARCHAR" />
+  </resultMap>
+  <sql id="Blob_Column_List" >
+    env, extend
+  </sql>
+  <insert id="insert" parameterType="com.zeyu.web.model.Shop_behaviorWithBLOBs" >
+    insert into shop_behavior (user_id, act_obj, obj_type, 
+      bhv_type, bhv_amt, bhv_cnt, 
+      bhv_datetime, content, pos_type, 
+      position, trace_id, appcode, 
+      opentype, openid, diviceid, 
+      divicetype, phone, latitude, 
+      longitude, country, province, 
+      city, area, address, 
+      Column_01, Column_02, Column_03, 
+      Column_04, Column_05, platName, 
+      downloadPlat, versionNam, phone_type, 
+      env, extend)
+    values (#{userId,jdbcType=VARCHAR}, #{actObj,jdbcType=VARCHAR}, #{objType,jdbcType=VARCHAR}, 
+      #{bhvType,jdbcType=VARCHAR}, #{bhvAmt,jdbcType=BIGINT}, #{bhvCnt,jdbcType=BIGINT}, 
+      #{bhvDatetime,jdbcType=TIMESTAMP}, #{content,jdbcType=VARCHAR}, #{posType,jdbcType=VARCHAR}, 
+      #{position,jdbcType=VARCHAR}, #{traceId,jdbcType=VARCHAR}, #{appcode,jdbcType=VARCHAR}, 
+      #{opentype,jdbcType=VARCHAR}, #{openid,jdbcType=VARCHAR}, #{diviceid,jdbcType=VARCHAR}, 
+      #{divicetype,jdbcType=VARCHAR}, #{phone,jdbcType=VARCHAR}, #{latitude,jdbcType=VARCHAR}, 
+      #{longitude,jdbcType=VARCHAR}, #{country,jdbcType=VARCHAR}, #{province,jdbcType=VARCHAR}, 
+      #{city,jdbcType=VARCHAR}, #{area,jdbcType=VARCHAR}, #{address,jdbcType=VARCHAR}, 
+      #{column01,jdbcType=VARCHAR}, #{column02,jdbcType=VARCHAR}, #{column03,jdbcType=VARCHAR}, 
+      #{column04,jdbcType=VARCHAR}, #{column05,jdbcType=VARCHAR}, #{platname,jdbcType=VARCHAR}, 
+      #{downloadplat,jdbcType=VARCHAR}, #{versionnam,jdbcType=VARCHAR}, #{phoneType,jdbcType=VARCHAR}, 
+      #{env,jdbcType=LONGVARCHAR}, #{extend,jdbcType=LONGVARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.zeyu.web.model.Shop_behaviorWithBLOBs" >
+    insert into shop_behavior
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="userId != null" >
+        user_id,
+      </if>
+      <if test="actObj != null" >
+        act_obj,
+      </if>
+      <if test="objType != null" >
+        obj_type,
+      </if>
+      <if test="bhvType != null" >
+        bhv_type,
+      </if>
+      <if test="bhvAmt != null" >
+        bhv_amt,
+      </if>
+      <if test="bhvCnt != null" >
+        bhv_cnt,
+      </if>
+      <if test="bhvDatetime != null" >
+        bhv_datetime,
+      </if>
+      <if test="content != null" >
+        content,
+      </if>
+      <if test="posType != null" >
+        pos_type,
+      </if>
+      <if test="position != null" >
+        position,
+      </if>
+      <if test="traceId != null" >
+        trace_id,
+      </if>
+      <if test="appcode != null" >
+        appcode,
+      </if>
+      <if test="opentype != null" >
+        opentype,
+      </if>
+      <if test="openid != null" >
+        openid,
+      </if>
+      <if test="diviceid != null" >
+        diviceid,
+      </if>
+      <if test="divicetype != null" >
+        divicetype,
+      </if>
+      <if test="phone != null" >
+        phone,
+      </if>
+      <if test="latitude != null" >
+        latitude,
+      </if>
+      <if test="longitude != null" >
+        longitude,
+      </if>
+      <if test="country != null" >
+        country,
+      </if>
+      <if test="province != null" >
+        province,
+      </if>
+      <if test="city != null" >
+        city,
+      </if>
+      <if test="area != null" >
+        area,
+      </if>
+      <if test="address != null" >
+        address,
+      </if>
+      <if test="column01 != null" >
+        Column_01,
+      </if>
+      <if test="column02 != null" >
+        Column_02,
+      </if>
+      <if test="column03 != null" >
+        Column_03,
+      </if>
+      <if test="column04 != null" >
+        Column_04,
+      </if>
+      <if test="column05 != null" >
+        Column_05,
+      </if>
+      <if test="platname != null" >
+        platName,
+      </if>
+      <if test="downloadplat != null" >
+        downloadPlat,
+      </if>
+      <if test="versionnam != null" >
+        versionNam,
+      </if>
+      <if test="phoneType != null" >
+        phone_type,
+      </if>
+      <if test="env != null" >
+        env,
+      </if>
+      <if test="extend != null" >
+        extend,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="userId != null" >
+        #{userId,jdbcType=VARCHAR},
+      </if>
+      <if test="actObj != null" >
+        #{actObj,jdbcType=VARCHAR},
+      </if>
+      <if test="objType != null" >
+        #{objType,jdbcType=VARCHAR},
+      </if>
+      <if test="bhvType != null" >
+        #{bhvType,jdbcType=VARCHAR},
+      </if>
+      <if test="bhvAmt != null" >
+        #{bhvAmt,jdbcType=BIGINT},
+      </if>
+      <if test="bhvCnt != null" >
+        #{bhvCnt,jdbcType=BIGINT},
+      </if>
+      <if test="bhvDatetime != null" >
+        #{bhvDatetime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="content != null" >
+        #{content,jdbcType=VARCHAR},
+      </if>
+      <if test="posType != null" >
+        #{posType,jdbcType=VARCHAR},
+      </if>
+      <if test="position != null" >
+        #{position,jdbcType=VARCHAR},
+      </if>
+      <if test="traceId != null" >
+        #{traceId,jdbcType=VARCHAR},
+      </if>
+      <if test="appcode != null" >
+        #{appcode,jdbcType=VARCHAR},
+      </if>
+      <if test="opentype != null" >
+        #{opentype,jdbcType=VARCHAR},
+      </if>
+      <if test="openid != null" >
+        #{openid,jdbcType=VARCHAR},
+      </if>
+      <if test="diviceid != null" >
+        #{diviceid,jdbcType=VARCHAR},
+      </if>
+      <if test="divicetype != null" >
+        #{divicetype,jdbcType=VARCHAR},
+      </if>
+      <if test="phone != null" >
+        #{phone,jdbcType=VARCHAR},
+      </if>
+      <if test="latitude != null" >
+        #{latitude,jdbcType=VARCHAR},
+      </if>
+      <if test="longitude != null" >
+        #{longitude,jdbcType=VARCHAR},
+      </if>
+      <if test="country != null" >
+        #{country,jdbcType=VARCHAR},
+      </if>
+      <if test="province != null" >
+        #{province,jdbcType=VARCHAR},
+      </if>
+      <if test="city != null" >
+        #{city,jdbcType=VARCHAR},
+      </if>
+      <if test="area != null" >
+        #{area,jdbcType=VARCHAR},
+      </if>
+      <if test="address != null" >
+        #{address,jdbcType=VARCHAR},
+      </if>
+      <if test="column01 != null" >
+        #{column01,jdbcType=VARCHAR},
+      </if>
+      <if test="column02 != null" >
+        #{column02,jdbcType=VARCHAR},
+      </if>
+      <if test="column03 != null" >
+        #{column03,jdbcType=VARCHAR},
+      </if>
+      <if test="column04 != null" >
+        #{column04,jdbcType=VARCHAR},
+      </if>
+      <if test="column05 != null" >
+        #{column05,jdbcType=VARCHAR},
+      </if>
+      <if test="platname != null" >
+        #{platname,jdbcType=VARCHAR},
+      </if>
+      <if test="downloadplat != null" >
+        #{downloadplat,jdbcType=VARCHAR},
+      </if>
+      <if test="versionnam != null" >
+        #{versionnam,jdbcType=VARCHAR},
+      </if>
+      <if test="phoneType != null" >
+        #{phoneType,jdbcType=VARCHAR},
+      </if>
+      <if test="env != null" >
+        #{env,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="extend != null" >
+        #{extend,jdbcType=LONGVARCHAR},
+      </if>
+    </trim>
+  </insert>
+</mapper>

@@ -66,6 +66,10 @@ public class CookbookController {
 		
 	    try {
 	    	CookbookWithBLOBs c=this.cookbookservice.getCookbookById(cid);
+	    	
+	    	List<Cookbook> rlist=this.cookbookservice.getPageCookbookByCcid(c.getCcid(), 0, 5);
+	    	
+	    	model.addAttribute("rlist", rlist);
 	    	model.addAttribute("cookbook",c);
 	    	
 	    	return "cookbookdetail";

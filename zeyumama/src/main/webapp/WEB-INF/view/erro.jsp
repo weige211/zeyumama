@@ -5,30 +5,28 @@
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
 %>
-
 <!DOCTYPE html>
 
-<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="applicable-device" content="pc,mobile">
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta http-equiv="Cache-Control" content="no-transform" />
+<title>泽雨妈妈_官方网站_千万宝妈的交流学习平台</title>
+<link rel="canonical" href="http://www.lamabang.com" />
+<meta name="Description"
+	content="泽雨妈妈官方网站，是国内大型的宝妈社交平台，用户可通过手机、ipad，Web等，随时随地以图片、文字、语音多种方式分享交流育儿、瘦身、美妆、情感、美食等话题。还可以结交来自全国各地、五湖四海志同道合的姐妹。" />
+<meta name="Keywords" content="泽雨妈妈,泽雨妈妈官网,宝妈女性社区,宝妈论坛,泽雨妈妈APP下载" />
+<link rel="shortcut icon" type="image/x-icon" href="<%=basePath%>img/ico.ico">
+<link type="text/css" rel="stylesheet" href="<%=basePath%>css/index.html.css" />
+</head>
 
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<meta name="applicable-device" content="pc,mobile">
-		<meta http-equiv="Cache-Control" content="no-siteapp" />
-		<meta http-equiv="Cache-Control" content="no-transform" />
-		<title>
-			${article.title}_育儿知识_泽雨妈妈</title>
-		<meta name="Description" content="${article.summary}" />
-		<meta name="Keywords" content="母乳喂养,准备工作" />
-		<link rel="shortcut icon" type="image/x-icon" href="<%=basePath%>img/ico.ico">
-		<link type="text/css" rel="stylesheet" href="<%=basePath%>css/orationCont.html.css" />
-	</head>
-
-	<body class="LMB_main LMB_orationCont">
-		<!--头部-->
-		<div class="header">
-			<!--LOGO搜索APP-->.
-			<div class="logoAndSearchApp">
+<body class="LMB_main LMB_index">
+	<!--头部-->
+	<div class="header">
+		<!--LOGO搜索APP-->
+		<div class="logoAndSearchApp">
 			<div class="w">
 				<div class="LOGO fl">
 					<a href="<%=basePath%>"> <img src="<%=basePath%>img/logo.png"
@@ -48,21 +46,21 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				</div>
 			</div>
 		</div>
-			<!--LOGO搜索End-->
-			<!--菜单-->
-			<div class="menuBox">
+		<!--LOGO搜索End-->
+		<!--菜单-->
+		<div class="menuBox">
 			<div class="menu">
 				<div class="box">
 					<div class="w">
 						<ul class="tabList">
-							<li class="noIndex">
+							<li class="on">
 								<div class="menuCont">
 									<a href="<%=basePath%>"><i
 										class="common-icon home"></i><span class="text">首页</span></a><span
 										class="pipe"></span>
 								</div>
 							</li>
-							<li class="on">
+							<li class="noIndex">
 								<div class="menuCont">
 									<a href="<%=basePath%>articles/page/4/1"><i
 										class="common-icon communicate"></i><span class="text">资讯</span></a><span
@@ -117,70 +115,23 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				</div>
 			</div>
 		</div>
-			<!--菜单End-->
-		</div>
+		<!--菜单End-->
+	</div>
 
-		<!--头部End-->
-		<div class="mapNavArea">
-			<div class="webMapNav">
-				<a href="<%=basePath%>" title="泽雨妈妈首页">泽雨妈妈首页</a><span class="arrows">&gt;</span>
-				<a title="育儿知识" href="<%=basePath%>articles/page/4/1">育儿知识
-				</a><span class="arrows">&gt;</span>${article.title}</div>
-		</div>
-		<div class="orationContBox mb20">
-			<div class="w clearfix">
-				<div class="contL fl">
-					<!--文章内容-->
-					<div class="orationPost mr20">
-						<h1>${article.title}</h1>
+<div>
+${erro}
+</div>
 
-						<div class="author">
-							<span class="time">${article.createtime}</span>&nbsp;&nbsp;
-							<span class="source">来源：${article.source}</span>&nbsp;&nbsp;
-							<span class="source">责任编辑：${article.editor}</span>
-						</div>
-						<p class="summary">
-							${article.summary}</p>
-						<div class="maintext text">
-			                     ${article.content}
-						</div>
-					</div>
-					<!--文章内容END-->
-				</div>
-				<div class="contR fr">
-					<!--更多今日热门-->
-					<div class="more">
-						<h2 class="barTitle"><span class="bar"></span>相关内容</h2>
-						<ul class="moreList mt20">
-						
-						<c:forEach items="${list}" var="item">
-							<li>
-								<div class="img fl"><img src="${item.imgurl}" height="50" width="80"></div>
-								<div class="title fr">
 
-									<a title="${item.title}" href="<%=basePath%>articles/article/${item.aid}">${item.title}</a>
-								</div>
-								<div class="clear"></div>
-							</li>
-						</c:forEach>
-							
-						</ul>
-					</div>
-
-				</div>
+		<div class="copyright">
+			<div class="info">
+				泽雨妈妈 Ltd.2009-2017 All Rights Reserved 版权所有 ©泽雨妈妈 粤ICP备13070153号-3<br />增值电信业务经营许可证：粤B2-20170474
+				<br />未经授权禁止转载、摘编、复制或建立镜像，如有违反，追究法律责任。
 			</div>
+
 		</div>
-		<div class="footer">
-
-			<div class="copyright">
-				<div class="info">
-					泽雨妈妈 Ltd.2009-2017 All Rights Reserved 　　版权所有 　©泽雨妈妈 　 粤ICP备13070153号-3<br/>增值电信业务经营许可证：粤B2-20170474
-					<br/>未经授权禁止转载、摘编、复制或建立镜像，如有违反，追究法律责任。
-				</div>
-
-			</div>
-		</div>
-
-	</body>
+	<!--底部End-->
+<script type="text/javascript" src="js/zeyu.index.js"></script>
+</body>
 
 </html>

@@ -16,10 +16,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <meta name="applicable-device" content="pc,mobile">
 <meta http-equiv="Cache-Control" content="no-siteapp" />
 <meta http-equiv="Cache-Control" content="no-transform" />
-<title>母乳喂养_育儿知识_泽雨妈妈</title>
+<title>${cname}_育儿知识_泽雨妈妈</title>
 <meta name="Description"
-	content="泽雨妈妈育儿知识母乳喂养频道，为您提供母乳喂养，母乳喂养多久最好，母乳喂养注意事项，母乳喂养的好处，母乳喂养视频等相关知识。" />
-<meta name="Keywords" content="母乳喂养,母乳喂养多久最好,母乳喂养注意事项,母乳喂养的好处,母乳喂养视频" />
+	content="泽雨妈妈育儿知识${cname}频道，为您提供${cname}，${cname}多久最好，${cname}注意事项，${cname}的好处，${cname}视频等相关知识。" />
+<meta name="Keywords" content="${cname},${cname}多久最好,${cname}注意事项,${cname}的好处,${cname}视频" />
 <link rel="shortcut icon" type="image/x-icon"
 	href="<%=basePath%>img/ico.ico">
 <link type="text/css" rel="stylesheet"
@@ -42,20 +42,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<div class="searchAppBox fr">
 					<div class="searchBox fl">
 						<div class="search fl">
-							<input class="text" type="text" id="keyword"
-								placeholder="请输入要搜索的关键词" /> <input class="btn" type="button"
+						<form action="<%=basePath%>articles/search/page/1" method="get">
+							<input class="text" type="text" name="keyword"
+								placeholder="请输入要搜索的关键词" /> <input class="btn" type="submit"
 								value="搜索" id="searchBtn" />
+						</form>
 						</div>
 					</div>
-					<!--<div class="appBox fr">
-                    <a href="http://www.lamabang.com/product" target="_blank"> 
-                        <i class="appIco icoF"></i>
-
-                        <p>APP下载</p>
-                    </a>
-
-                    <div class="appQRCode"><img src="/static/v1/images/vcode/lmb.png"></div>
-                </div>-->
 				</div>
 			</div>
 		</div>
@@ -66,23 +59,23 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<div class="box">
 					<div class="w">
 						<ul class="tabList">
-							<li class="on">
+							<li class="noIndex">
 								<div class="menuCont">
-									<a href="<%=basePath%>"><i>
+									<a href="<%=basePath%>"><i
 										class="common-icon home"></i><span class="text">首页</span></a><span
 										class="pipe"></span>
 								</div>
 							</li>
 							<li class="on">
 								<div class="menuCont">
-									<a href="<%=basePath%>"><i
+									<a href="<%=basePath%>articles/page/4/1"><i
 										class="common-icon communicate"></i><span class="text">资讯</span></a><span
 										class="pipe"></span>
 								</div>
 							</li>
 							<li class="noIndex">
 								<div class="menuCont">
-									<a> <!-- <i class="common-icon knowledgeIco"></i>--> <span
+									<a > <!-- <i class="common-icon knowledgeIco"></i>--> <span
 										class="text">周刊</span><b class="downToggle"></b>
 									</a> <span class="pipe"></span>
 
@@ -90,9 +83,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 										<ul class="menuList">
 											<!--                                    <li ><a href="http://www.lamabang.com/video">视频</a>
                                     </li>-->
-											<li><a href="http://www.lamabang.com/yunyu">怀孕中周刊</a></li>
-											<li><a href="http://www.lamabang.com/baike">宝宝已出生周刊</a>
-											</li>
+											<li><a href="<%=basePath%>weeklys/1">怀孕中周刊</a></li>
+											<!-- <li><a href="http://www.lamabang.com/baike">宝宝已出生周刊</a>
+											</li> -->
 
 										</ul>
 										<em class="arrow"></em> <em class="arrow arrowTop"></em>
@@ -102,38 +95,21 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 							</li>
 							<li class="noIndex">
 								<div class="menuCont">
-									<a href="http://www.lamabang.com/parenting"><i
-										class="common-icon knowledgeIco"></i><span class="text">百科</span><b
-										class="downToggle"></b></a><span class="pipe"></span>
-
-									<div class="sec-menu">
-										<ul class="menuList">
-											<!--                                    <li ><a href="http://www.lamabang.com/video">视频</a>
-                                    </li>-->
-											<li><a href="http://www.lamabang.com/yunyu">备孕</a></li>
-											<li><a href="http://www.lamabang.com/baike">孕期</a></li>
-											<li><a href="http://www.lamabang.com/zjdd">分娩</a></li>
-											<li><a href="http://www.lamabang.com/ask">0-1岁</a></li>
-											<li><a href="http://www.lamabang.com/special">1-3岁</a></li>
-											<li><a href="http://www.lamabang.com/special">3-6岁</a></li>
-										</ul>
-										<em class="arrow"></em> <em class="arrow arrowTop"></em>
-									</div>
-								</div>
-								<div class="secMenuBt"></div>
+								 <a href="<%=basePath%>baikes/page"><i
+										class="common-icon knowledgeIco"></i><span class="text">百科</span></a><span class="pipe"></span>
 							</li>
 							<li class="noIndex">
 								<div class="menuCont">
-									<a href="http://www.lamabang.com/live"> <!--<i class="common-icon live"></i>-->
+									<a href="<%=basePath%>cookbooks/page/3/1"> <!--<i class="common-icon live"></i>-->
 										<span class="text">食谱</span><b class="downToggle"></b></a><span
 										class="pipe"></span>
 									<div class="sec-menu">
 										<ul class="menuList">
 											<!--                                    <li ><a href="http://www.lamabang.com/video">视频</a>
                                     </li>-->
-											<li><a href="http://www.lamabang.com/yunyu">备孕食谱</a></li>
-											<li><a href="http://www.lamabang.com/baike">孕期食谱</a></li>
-											<li><a href="http://www.lamabang.com/zjdd">能不能吃</a></li>
+											<li><a href="<%=basePath%>cookbooks/page/3/1">备孕食谱</a></li>
+											<li><a href="<%=basePath%>cookbooks/page/4/1">孕期食谱</a></li>
+											<li><a href="<%=basePath%>iseats/page/5/1">能不能吃</a></li>
 										</ul>
 										<em class="arrow"></em> <em class="arrow arrowTop"></em>
 									</div>
@@ -141,24 +117,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 								<div class="secMenuBt"></div>
 							</li>
 						</ul>
-						<!--                    <div class="inline-block stageBox">
-                        <div class="tagList">
-                            <a  href="http://www.lamabang.com/beiyun">备孕</a>
-                            <a  href="http://www.lamabang.com/yunqi">孕期</a>
-                            <a  href="http://www.lamabang.com/fenmian">分娩</a>
-                            <a  href="http://www.lamabang.com/yinger">0-1岁</a>
-                            <a  href="http://www.lamabang.com/youer">1-3岁</a>
-                            <a  href="http://www.lamabang.com/xueqian">3-6岁</a>
-                        </div>
-                        <span class="dotLeft"></span><span class="dotRight"></span>
-                    </div>-->
-						<!--<div class="loginBox fr">
-							<div class="login">
-								<a class="loginBtn" href="javascript:void(0);">登录</a>
-								<a href="https://api.weibo.com/oauth2/authorize?client_id=1454287934&response_type=code&with_offical_account=1&redirect_uri=http://www.lmbang.com/signin/sina" class="icoF">&#xe601;</a>
-								<a href="https://graph.qq.com/oauth2.0/authorize?client_id=100317189&response_type=code&scope=get_user_info,get_info,get_other_info,get_fanslist,get_idolist&redirect_uri=http://www.lmbang.com/signin/qq" class="icoF">&#xe603;</a>
-							</div>
-						</div>-->
 					</div>
 				</div>
 			</div>
@@ -251,7 +209,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<div class="ranking mt30">
 					<div class="publicTitle">
 						<h3>相关精华帖子</h3>
-						<a href="http://www.lamabang.com/topic/list" class="more">&gt;</a>
+						<a href="<%=basePath%>articles/page/4/1" class="more">&gt;</a>
 					</div>
 					<div class="list">
 						<ul>
@@ -261,7 +219,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 									<div class="img">
 										<img src="${item.imgurl}" width="80" height="80"
 											alt="${item.title}" title="${item.title}">
-									</div> <a href="http://www.lamabang.com/topic/id-21660041.html"
+									</div> <a href="<%=basePath%>articles/article/${item.aid}"
 									class="name">${item.title}</a>
 									<%-- <div class="info ovH">
 										<div class="time fl">${item.createtime}</div>

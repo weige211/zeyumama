@@ -41,6 +41,13 @@ public String getPageArticlesByCid(Model model) {
 		
 		
         List<Category> catelist=this.categoryservice.getCategoryByparid(31);
+        List<Category> catelist2=this.categoryservice.getCategoryByparid(32);
+        List<Category> catelist3=this.categoryservice.getCategoryByparid(33);
+        List<Category> catelist4=this.categoryservice.getCategoryByparid(34);
+        List<Category> catelist5=this.categoryservice.getCategoryByparid(35);
+        List<Category> catelist6=this.categoryservice.getCategoryByparid(36);
+        
+        
 		
 
 		//获取精华文章列表，取相关类别数据
@@ -50,6 +57,12 @@ public String getPageArticlesByCid(Model model) {
 		
 	
 		model.addAttribute("catelist",catelist);
+		model.addAttribute("catelist2",catelist2);
+		model.addAttribute("catelist3",catelist3);
+		model.addAttribute("catelist4",catelist4);
+		model.addAttribute("catelist5",catelist5);
+		model.addAttribute("catelist6",catelist6);
+		
 		model.addAttribute("baikelist",baikelist);
 		
 		

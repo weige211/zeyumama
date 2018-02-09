@@ -34,4 +34,9 @@ public class IseatServiceImpl implements IIseatService{
 		return this.iseatDtoExt.getCountByCid(ccid);
 	}
 
+	public List<Iseat> getIseatByName(String name) {
+		// TODO Auto-generated method stub
+		return this.iseatDtoExt.getIseatByName(name);
+	}
+
 }

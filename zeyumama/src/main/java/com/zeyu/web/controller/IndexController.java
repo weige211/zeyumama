@@ -10,12 +10,15 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import com.zeyu.web.dto.IseatDto;
 import com.zeyu.web.model.Article;
 import com.zeyu.web.model.Category;
 import com.zeyu.web.model.Cookbook;
+import com.zeyu.web.model.Iseat;
 import com.zeyu.web.service.IArticleService;
 import com.zeyu.web.service.ICategoryService;
 import com.zeyu.web.service.ICookbookService;
+import com.zeyu.web.service.IIseatService;
 
 @Controller 
 public class IndexController {
@@ -30,6 +33,9 @@ public class IndexController {
 	@Resource
 	private ICookbookService cookbookservice;
 	
+	@Resource
+	private IIseatService iseatservice;
+	
 	
 	public IndexController() {
 		super();
@@ -38,6 +44,15 @@ public class IndexController {
 	
 	@RequestMapping(value="/",method=RequestMethod.GET)
 	public String Index(Model model) {
+		
+		List<Article> gglist=this.articleservice.getPageArticleByCid(5,0, 3);
+        Article tu1=gglist.get(0);
+        Article tu2=gglist.get(1);
+        Article tu3=gglist.get(2);
+        
+        model.addAttribute("tu1",tu1);
+        model.addAttribute("tu2",tu2);
+        model.addAttribute("tu3",tu3);
         //分类
 		List<Category> clist=this.categoryservice.getCategoryByparid(2);
 		
@@ -78,7 +93,37 @@ public class IndexController {
 		model.addAttribute("list6",list6);
 		model.addAttribute("l6",l6);
 		
+		//能不能吃
+	    Iseat item=this.iseatservice.getIseatById(113);
+	    
+	    IseatDto m=new IseatDto();
+        m.setCcid(item.getCcid());
+        m.setEid(item.getEid());
+        m.setImg(item.getImg());
+        m.setName(item.getName());
+        m.setProfile(item.getProfile());
+        m.setPregnantstatus(item.getPregnantstatus());
+        m.setMaternalstatus(item.getMaternalstatus());
+        m.setBabysatus(item.getBabysatus());
+        
+        m.setBaby(item.getBaby());
+        m.setPregnan(item.getPregnan());
+        m.setMaternal(item.getMaternal());
 		
+        
+        //咨询
+        List<Article> rtlist=this.articleservice.getPageArticleByCid(4,0, 4);
+        List<Article> rwlist=this.articleservice.getPageArticleByCid(4,4, 5);
+        Article guanggao=rwlist.get(0);
+        
+        //百科 暂时不放
+       
+        
+        model.addAttribute("rtlist", rtlist);
+        model.addAttribute("rwlist", rwlist);
+        model.addAttribute("guanggao", guanggao);
+	    
+	    model.addAttribute("iseat",m);
 		model.addAttribute("bycooklist",bycooklist);
 		model.addAttribute("yqcooklist",yqcooklist);
 		

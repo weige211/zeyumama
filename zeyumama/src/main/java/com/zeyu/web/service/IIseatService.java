@@ -10,4 +10,6 @@ public interface IIseatService {
 	public List<Iseat> getPageIseatByCid(long ccid,int start,int pagesize);
 	public int getCountByCid(Long ccid);
 	
+	public List<Iseat> getIseatByName(String name);
+	
 }

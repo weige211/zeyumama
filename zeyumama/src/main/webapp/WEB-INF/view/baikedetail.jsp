@@ -16,9 +16,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<meta http-equiv="Cache-Control" content="no-siteapp" />
 	<meta http-equiv="Cache-Control" content="no-transform" />
 	<title>
-		染色体是什么_什么是染色体异常_孕育百科 </title>
-	<meta name="Description" content="染色体就是由N个DNA、RNA、蛋白质构成的遗传物质，爸妈给的、起遗传作用，决定你是单眼皮还是双眼皮等等。 正常人有23对染色体，多一个少一个都不正常！" />
-	<meta name="Keywords" content="染色体是什么" />
+		${baike.title}_孕育百科 </title>
+	<meta name="Description" content="${baike.summary}" />
+	<meta name="Keywords" content="${baike.title}" />
 	<link rel="shortcut icon" type="image/x-icon" href="<%=basePath%>img/ico.ico">
 	<link type="text/css" rel="stylesheet" href="<%=basePath%>css/encyclopediaCont.html.css" />
 </head>
@@ -30,26 +30,20 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		<div class="logoAndSearchApp">
 			<div class="w">
 				<div class="LOGO fl">
-					<a href="<%=basePath%>">
-						<img src="img/logo.png" title="泽雨妈妈" alt="泽雨妈妈" />
+					<a href="<%=basePath%>"> <img src="<%=basePath%>img/logo.png"
+						title="泽雨妈妈" alt="泽雨妈妈" />
 					</a>
 				</div>
 				<div class="searchAppBox fr">
 					<div class="searchBox fl">
 						<div class="search fl">
-							<input class="text" type="text" id="keyword" placeholder="请输入要搜索的关键词" />
-							<input class="btn" type="button" value="搜索" id="searchBtn" />
+						<form action="<%=basePath%>articles/search/page/1" method="get">
+							<input class="text" type="text" name="keyword"
+								placeholder="请输入要搜索的关键词" /> <input class="btn" type="submit"
+								value="搜索" id="searchBtn" />
+						</form>
 						</div>
 					</div>
-					<!--<div class="appBox fr">
-                    <a href="http://www.lamabang.com/product" target="_blank"> 
-                        <i class="appIco icoF"></i>
-
-                        <p>APP下载</p>
-                    </a>
-
-                    <div class="appQRCode"><img src="/static/v1/images/vcode/lmb.png"></div>
-                </div>-->
 				</div>
 			</div>
 		</div>
@@ -60,117 +54,64 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<div class="box">
 					<div class="w">
 						<ul class="tabList">
-							<li class="on">
+							<li class="noIndex">
 								<div class="menuCont">
-									<a href="http://www.lamabang.com/"><i class="common-icon home"></i><span class="text">首页</span></a><span class="pipe"></span></div>
-							</li>
-							<li class="on">
-								<div class="menuCont">
-									<a href="http://www.lamabang.com/"><i class="common-icon communicate"></i><span class="text">资讯</span></a><span class="pipe"></span></div>
+									<a href="<%=basePath%>"><i
+										class="common-icon home"></i><span class="text">首页</span></a><span
+										class="pipe"></span>
+								</div>
 							</li>
 							<li class="noIndex">
 								<div class="menuCont">
-									<a>
-										<!-- <i class="common-icon knowledgeIco"></i>-->
-										<span class="text">周刊</span><b class="downToggle"></b>
-									</a>
-									<span class="pipe"></span>
+									<a href="<%=basePath%>articles/page/4/1"><i
+										class="common-icon communicate"></i><span class="text">资讯</span></a><span
+										class="pipe"></span>
+								</div>
+							</li>
+							<li class="noIndex">
+								<div class="menuCont">
+									<a > <!-- <i class="common-icon knowledgeIco"></i>--> <span
+										class="text">周刊</span><b class="downToggle"></b>
+									</a> <span class="pipe"></span>
 
 									<div class="sec-menu">
 										<ul class="menuList">
 											<!--                                    <li ><a href="http://www.lamabang.com/video">视频</a>
                                     </li>-->
-											<li>
-												<a href="http://www.lamabang.com/yunyu">怀孕中周刊</a>
-											</li>
-											<li>
-												<a href="http://www.lamabang.com/baike">宝宝已出生周刊</a>
-											</li>
+											<li><a href="<%=basePath%>weeklys/1">怀孕中周刊</a></li>
+											<!-- <li><a href="http://www.lamabang.com/baike">宝宝已出生周刊</a>
+											</li> -->
 
 										</ul>
-										<em class="arrow"></em>
-										<em class="arrow arrowTop"></em>
+										<em class="arrow"></em> <em class="arrow arrowTop"></em>
 									</div>
 								</div>
 								<div class="secMenuBt"></div>
 							</li>
-							<li class="noIndex">
+							<li class="on">
 								<div class="menuCont">
-									<a href="http://www.lamabang.com/parenting"><i class="common-icon knowledgeIco"></i><span class="text">百科</span><b class="downToggle"></b></a><span class="pipe"></span>
-
-									<div class="sec-menu">
-										<ul class="menuList">
-											<!--                                    <li ><a href="http://www.lamabang.com/video">视频</a>
-                                    </li>-->
-											<li>
-												<a href="http://www.lamabang.com/yunyu">备孕</a>
-											</li>
-											<li>
-												<a href="http://www.lamabang.com/baike">孕期</a>
-											</li>
-											<li>
-												<a href="http://www.lamabang.com/zjdd">分娩</a>
-											</li>
-											<li>
-												<a href="http://www.lamabang.com/ask">0-1岁</a>
-											</li>
-											<li>
-												<a href="http://www.lamabang.com/special">1-3岁</a>
-											</li>
-											<li>
-												<a href="http://www.lamabang.com/special">3-6岁</a>
-											</li>
-										</ul>
-										<em class="arrow"></em>
-										<em class="arrow arrowTop"></em>
-									</div>
-								</div>
-								<div class="secMenuBt"></div>
+								 <a href="<%=basePath%>baikes/page"><i
+										class="common-icon knowledgeIco"></i><span class="text">百科</span></a><span class="pipe"></span>
 							</li>
 							<li class="noIndex">
 								<div class="menuCont">
-									<a href="http://www.lamabang.com/live">
-										<!--<i class="common-icon live"></i>-->
-										<span class="text">食谱</span><b class="downToggle"></b></a><span class="pipe"></span>
+									<a href="<%=basePath%>cookbooks/page/3/1"> <!--<i class="common-icon live"></i>-->
+										<span class="text">食谱</span><b class="downToggle"></b></a><span
+										class="pipe"></span>
 									<div class="sec-menu">
 										<ul class="menuList">
 											<!--                                    <li ><a href="http://www.lamabang.com/video">视频</a>
                                     </li>-->
-											<li>
-												<a href="http://www.lamabang.com/yunyu">备孕食谱</a>
-											</li>
-											<li>
-												<a href="http://www.lamabang.com/baike">孕期食谱</a>
-											</li>
-											<li>
-												<a href="http://www.lamabang.com/zjdd">能不能吃</a>
-											</li>
+											<li><a href="<%=basePath%>cookbooks/page/3/1">备孕食谱</a></li>
+											<li><a href="<%=basePath%>cookbooks/page/4/1">孕期食谱</a></li>
+											<li><a href="<%=basePath%>iseats/page/5/1">能不能吃</a></li>
 										</ul>
-										<em class="arrow"></em>
-										<em class="arrow arrowTop"></em>
+										<em class="arrow"></em> <em class="arrow arrowTop"></em>
 									</div>
 								</div>
 								<div class="secMenuBt"></div>
 							</li>
 						</ul>
-						<!--                    <div class="inline-block stageBox">
-                        <div class="tagList">
-                            <a  href="http://www.lamabang.com/beiyun">备孕</a>
-                            <a  href="http://www.lamabang.com/yunqi">孕期</a>
-                            <a  href="http://www.lamabang.com/fenmian">分娩</a>
-                            <a  href="http://www.lamabang.com/yinger">0-1岁</a>
-                            <a  href="http://www.lamabang.com/youer">1-3岁</a>
-                            <a  href="http://www.lamabang.com/xueqian">3-6岁</a>
-                        </div>
-                        <span class="dotLeft"></span><span class="dotRight"></span>
-                    </div>-->
-						<!--<div class="loginBox fr">
-							<div class="login">
-								<a class="loginBtn" href="javascript:void(0);">登录</a>
-								<a href="https://api.weibo.com/oauth2/authorize?client_id=1454287934&response_type=code&with_offical_account=1&redirect_uri=http://www.lmbang.com/signin/sina" class="icoF">&#xe601;</a>
-								<a href="https://graph.qq.com/oauth2.0/authorize?client_id=100317189&response_type=code&scope=get_user_info,get_info,get_other_info,get_fanslist,get_idolist&redirect_uri=http://www.lmbang.com/signin/qq" class="icoF">&#xe603;</a>
-							</div>
-						</div>-->
 					</div>
 				</div>
 			</div>
@@ -185,7 +126,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		<div class="w clearfix">
 			<div class="webMapNav">
 				<a href="http://www.lamabang.com" title="辣妈帮首页">辣妈帮首页</a><span class="arrows">&gt;</span>
-				<a title="孕育百科" href="http://www.lamabang.com/baike">孕育百科</a> <span class="arrows">&gt;</span>染色体是什么 </div>
+				<a title="孕育百科" href="http://www.lamabang.com/baike">孕育百科</a> <span class="arrows">&gt;</span>${baike.title} </div>
 			<div class="contL fl">
 				<!--百科内容-->
 				<div class="encyclopediaCont">

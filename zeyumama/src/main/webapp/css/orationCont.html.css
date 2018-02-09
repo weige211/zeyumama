@@ -338,7 +338,7 @@ a.btn {
 	display: block;
 	width: 24px;
 	height: 24px;
-	background: url(/static/v2/images/closeIco.png) center no-repeat;
+	background: url(http://www.lamabang.com/static/v2/images//closeIco.png) center no-repeat;
 	position: absolute;
 	top: 5px;
 	right: 10px
@@ -379,7 +379,7 @@ a.btn {
 	width: 48px;
 	height: 48px;
 	margin-right: -48px;
-	background: url(/static/v2/images/bindPhone_close.jpg) center no-repeat;
+	background: url(http://www.lamabang.com/static/v2/images//bindPhone_close.jpg) center no-repeat;
 	cursor: pointer
 }
 
@@ -755,7 +755,7 @@ a.btn {
 	background-color: #fb7191;
 	border-radius: 6px;
 	font-family: 宋体;
-	background-image: url(/static/v2/images/searchBtnBg.png);
+	background-image: url(http://www.lamabang.com/static/v2/images//searchBtnBg.png);
 	background-repeat: no-repeat
 }
 
@@ -1022,12 +1022,12 @@ a.btn {
 
 .LMB_main .header .menuBox .menu .box ul.tabList>li.on .common-icon.headCart,
 .LMB_main .header .menuBox .menu .box ul.tabList>li:hover .common-icon.headCart {
-	background-image: url(/static/v2/images/icons/head-cart-hover.png)
+	background-image: url(http://www.lamabang.com/static/v2/images//icons/head-cart-hover.png)
 }
 
 .LMB_main .header .menuBox .menu .box ul.tabList>li.on .common-icon.home,
 .LMB_main .header .menuBox .menu .box ul.tabList>li:hover .common-icon.home {
-	background-image: url(/static/v2/images/icons/head-home-hover.png)
+	background-image: url(http://www.lamabang.com/static/v2/images//icons/head-home-hover.png)
 }
 
 .LMB_main .header .menuBox .menu .box ul.tabList>li.on .common-icon.live,
@@ -1037,12 +1037,12 @@ a.btn {
 
 .LMB_main .header .menuBox .menu .box ul.tabList>li.on .common-icon.communicate,
 .LMB_main .header .menuBox .menu .box ul.tabList>li:hover .common-icon.communicate {
-	background-image: url(/static/v2/images/icons/head-comunity-hover.png)
+	background-image: url(http://www.lamabang.com/static/v2/images//icons/head-comunity-hover.png)
 }
 
 .LMB_main .header .menuBox .menu .box ul.tabList>li.on .common-icon.knowledgeIco,
 .LMB_main .header .menuBox .menu .box ul.tabList>li:hover .common-icon.knowledgeIco {
-	background-image: url(/static/v2/images/icons/head-knowledge-hover.png)
+	background-image: url(http://www.lamabang.com/static/v2/images//icons/head-knowledge-hover.png)
 }
 
 .LMB_main .header .menuBox .menu .box ul.tabList>li:hover .secMenuBt {
@@ -1272,7 +1272,7 @@ a.btn {
 .LMB_main .topBanner .topLogo {
 	width: 491px;
 	height: 80px;
-	background: url(/static/v2/images/topBanner.jpg) center no-repeat;
+	background: url(http://www.lamabang.com/static/v2/images//topBanner.jpg) center no-repeat;
 	margin: 0 auto
 }
 
@@ -2036,7 +2036,7 @@ a.btn {
 	right: 10px;
 	top: 13px;
 	font-size: 0;
-	background-image: url(/static/v2/images/lmbMainImg.png);
+	background-image: url(http://www.lamabang.com/static/v2/images//lmbMainImg.png);
 	background-repeat: no-repeat;
 	background-position: -199px -73px
 }
@@ -2528,7 +2528,7 @@ a.btn {
 .LMB_main button:hover>.common-icon.join-red,
 .LMB_main .btn:hover>.common-icon.join-red,
 .LMB_main a:hover>.common-icon.join-red {
-	background-image: url(/static/v2/images/icons/join.png)
+	background-image: url(http://www.lamabang.com/static/v2/images//icons/join.png)
 }
 
 .LMB_main .common-icon {
@@ -2541,59 +2541,59 @@ a.btn {
 }
 
 .LMB_main .common-icon.post {
-	background-image: url(/static/v2/images/icons/post-icon.png)
+	background-image: url(http://www.lamabang.com/static/v2/images//icons/post-icon.png)
 }
 
 .LMB_main .common-icon.join {
-	background-image: url(/static/v2/images/icons/join.png)
+	background-image: url(http://www.lamabang.com/static/v2/images//icons/join.png)
 }
 
 .LMB_main .common-icon.join-red {
-	background-image: url(/static/v2/images/icons/join-red.png)
+	background-image: url(http://www.lamabang.com/static/v2/images//icons/join-red.png)
 }
 
 .LMB_main .common-icon.members {
-	background-image: url(/static/v2/images/icons/members.png)
+	background-image: url(http://www.lamabang.com/static/v2/images//icons/members.png)
 }
 
 .LMB_main .common-icon.comments {
-	background-image: url(/static/v2/images/icons/comments.png)
+	background-image: url(http://www.lamabang.com/static/v2/images//icons/comments.png)
 }
 
 .LMB_main .common-icon.aljoin {
-	background-image: url(/static/v2/images/icons/aljoin.png)
+	background-image: url(http://www.lamabang.com/static/v2/images//icons/aljoin.png)
 }
 
 .LMB_main .common-icon.abort {
-	background-image: url(/static/v2/images/icons/abort.png)
+	background-image: url(http://www.lamabang.com/static/v2/images//icons/abort.png)
 }
 
 .LMB_main .common-icon.star {
-	background-image: url(/static/v2/images/icons/star.png)
+	background-image: url(http://www.lamabang.com/static/v2/images//icons/star.png)
 }
 
 .LMB_main .common-icon.share {
-	background-image: url(/static/v2/images/icons/share.png)
+	background-image: url(http://www.lamabang.com/static/v2/images//icons/share.png)
 }
 
 .LMB_main .common-icon.mark {
-	background-image: url(/static/v2/images/icons/favourite.png)
+	background-image: url(http://www.lamabang.com/static/v2/images//icons/favourite.png)
 }
 
 .LMB_main .common-icon.userFollow {
-	background-image: url(/static/v2/images/icons/user-check.png)
+	background-image: url(http://www.lamabang.com/static/v2/images//icons/user-check.png)
 }
 
 .LMB_main .common-icon.headCart {
 	width: 22px;
 	height: 18px;
-	background-image: url(/static/v2/images/icons/head-cart.png)
+	background-image: url(http://www.lamabang.com/static/v2/images//icons/head-cart.png)
 }
 
 .LMB_main .common-icon.home {
 	width: 22px;
 	height: 18px;
-	background-image: url(/static/v2/images/icons/head-home.png)
+	background-image: url(http://www.lamabang.com/static/v2/images//icons/head-home.png)
 }
 
 .LMB_main .common-icon.live {
@@ -2605,38 +2605,38 @@ a.btn {
 .LMB_main .common-icon.communicate {
 	width: 22px;
 	height: 18px;
-	background-image: url(/static/v2/images/icons/head-comunity.png)
+	background-image: url(http://www.lamabang.com/static/v2/images//icons/head-comunity.png)
 }
 
 .LMB_main .common-icon.knowledgeIco {
 	width: 22px;
 	height: 18px;
-	background-image: url(/static/v2/images/icons/head-knowledge.png)
+	background-image: url(http://www.lamabang.com/static/v2/images//icons/head-knowledge.png)
 }
 
 .LMB_main .common-icon.diary {
-	background-image: url(/static/v2/images/icons/diary.png)
+	background-image: url(http://www.lamabang.com/static/v2/images//icons/diary.png)
 }
 
 .LMB_main .common-icon.mail {
-	background-image: url(/static/v2/images/icons/mail.png)
+	background-image: url(http://www.lamabang.com/static/v2/images//icons/mail.png)
 }
 
 .LMB_main .common-icon.searchIcon {
-	background-image: url(/static/v2/images/icons/search.png)
+	background-image: url(http://www.lamabang.com/static/v2/images//icons/search.png)
 }
 
 .LMB_main i.icon-weibo {
-	background: url(/static/v2/images/sina.png) center no-repeat
+	background: url(http://www.lamabang.com/static/v2/images//sina.png) center no-repeat
 }
 
 .LMB_main i.icon-lmb {
 	display: inline-block;
-	background: url(/static/v2/images/lmbIcon.png) center no-repeat
+	background: url(http://www.lamabang.com/static/v2/images//lmbIcon.png) center no-repeat
 }
 
 .LMB_main i.icon-yunqi {
-	background: url(/static/v2/images/yunqi.png) center no-repeat
+	background: url(http://www.lamabang.com/static/v2/images//yunqi.png) center no-repeat
 }
 
 .LMB_main b.downToggle {
@@ -2795,7 +2795,7 @@ a.btn {
 	display: block;
 	width: 24px;
 	height: 24px;
-	background: url(/static/v2/images/closeIco.png) center no-repeat;
+	background: url(http://www.lamabang.com/static/v2/images//closeIco.png) center no-repeat;
 	position: absolute;
 	top: 5px;
 	right: 10px

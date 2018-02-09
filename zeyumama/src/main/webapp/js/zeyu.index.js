@@ -41,5 +41,16 @@
  function showyqcooktab(){
 	 	//
 	 	document.getElementById("beiyuncook").style.display="none";
+	 	document.getElementById("beiyunmenu").className="";
 	 	document.getElementById("yunqicook").style.display="block";
+	 	document.getElementById("yunqimenu").className="curr";
+	 }
+ 
+ function showbycooktab(){
+	 	//
+	    document.getElementById("yunqicook").style.display="none";
+	 	document.getElementById("yunqimenu").className="";
+	 	document.getElementById("beiyuncook").style.display="block";
+	 	document.getElementById("beiyunmenu").className="curr";
+	 	
 	 }

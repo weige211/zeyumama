@@ -11,7 +11,9 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import com.zeyu.web.model.Article;
 import com.zeyu.web.model.Weekly;
+import com.zeyu.web.service.IArticleService;
 import com.zeyu.web.service.IWeeklyService;
 
 @Controller 
@@ -22,6 +24,8 @@ public class WeeklyController {
 	
 	@Resource
 	private IWeeklyService weeklyservice;
+	@Resource
+	private IArticleService articleservice;
 	
 	@RequestMapping(value="/{wid}",method=RequestMethod.GET)
 	public String getWeeklyPage(@PathVariable(value="wid") long wid,Model model) {
@@ -32,6 +36,11 @@ public class WeeklyController {
 			
 			Weekly weekly=this.weeklyservice.getWeeklyById(wid);
 			
+			
+			//百科
+			List<Article> baike=this.articleservice.getPageBaikeAll();
+			
+			model.addAttribute("baike", baike);
 			model.addAttribute("list", list);
 			model.addAttribute("weekly", weekly);
 			

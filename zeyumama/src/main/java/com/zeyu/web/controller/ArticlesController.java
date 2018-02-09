@@ -98,6 +98,9 @@ public String getPageArticlesByCid(@PathVariable(value="cid") long cid,@PathVari
 		
 		List<Category> ylist=this.categoryservice.getCategoryByparid(3);
 		
+		String cname=this.categoryservice.getCategoryById(cid).getName();
+		model.addAttribute("cname",cname);
+		
 		//获取精华文章列表，取相关类别数据
 		List<Article> jlist=this.articleservice.getPageArticleByCid(cid,start+this.pageSize, this.pageSize);
 		
@@ -105,6 +108,7 @@ public String getPageArticlesByCid(@PathVariable(value="cid") long cid,@PathVari
 		model.addAttribute("ylist",ylist);
 		model.addAttribute("jlist",jlist);
 		model.addAttribute("cid",cid);
+		
 		return "articles";
 	} catch (Exception e) {
 		// TODO: handle exception

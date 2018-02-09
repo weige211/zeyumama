@@ -18,6 +18,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <meta name="description"
 	content="泽雨妈妈孕育食谱给您提供了宝宝食谱大全、备孕食谱以及孕期食谱、孕妇菜谱等。最大最丰富详细的母婴食谱频道，由专家悉心精选，从备孕期、怀孕期到婴幼儿食谱，以图文详细做法介绍，科学规划成长饮食。" />
 <meta content="all" name="robots" />
+<link rel="shortcut icon" type="image/x-icon" href="<%=basePath%>img/ico.ico">
 <link
 	href="http://h.yaolanimage.cn/assets/rev/pc/diet/css/yl.diet.2015.css?v=8"
 	rel="stylesheet" type="text/css">
@@ -41,36 +42,26 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			<ul class="pcyl-nav">
 				<li class="pcyl-first" id="jquery-toolnava-0"><em><a
 						href="<%=basePath%>">首页</a></em></li>
-				<li id="jquery-toolnava-1"><em><a
-						href="http://www.yaolan.com/index/">咨询</a></em> <!-- <div class="pcyl-navmore pcyl-edu">
-							<a href="http://www.yaolan.com/edu/">早教</a>
-							<a href="http://www.yaolan.com/nutrition/">营养</a>
-							<a href="http://www.yaolan.com/zhishi/">百科</a>
-							<a href="http://www.yaolan.com/health/">健康</a>
-							<a href="http://www.yaolan.com/parenting/">辣妈</a>
-							<a href="http://www.yaolan.com/topic/">专题</a>
-							<a href="http://www.yaolan.com/edm/">周刊</a>
-						</div> --></li>
+				<li class="pcyl-first" id="jquery-toolnava-0"><em><a
+						href="<%=basePath%>articles/page/4/1">资讯</a></em></li>
+				<%-- <li id="jquery-toolnava-1"><em><a
+						href="<%=basePath%>articles/page/4/1">资讯</a></em></li> --%>
 				<li id="jquery-toolnava-2" class="pcyl-two"><em><a
-						href="http://ask.yaolan.com/">周刊</a></em>
+						href="<%=basePath%>weeklys/1">周刊</a></em>
 					<div class="pcyl-navmore pcyl-ask">
-						<a href="http://expert.yaolan.com/">专家</a> <a
-							href="http://chat.yaolan.com/">访谈</a>
+						<a href="<%=basePath%>weeklys/1">怀孕中周刊</a>
 					</div></li>
-				<li class="pcyl-three" id="jquery-toolnava-3"><em><a
-						href="http://bbs.yaolan.com/">百科</a></em>
-					<div class="pcyl-navmore pcyl-bbs">
-						<a href="http://bbs.yaolan.com/forum.php?gid=203">同龄</a> <a
-							href="http://bbs.yaolan.com/city/">同城</a> <a
-							href="http://space.yaolan.com/">社区</a> <a
-							href="http://bbs.yaolan.com/zhuanti/">精选</a>
-					</div></li>
+					<li class="pcyl-first" id="jquery-toolnava-0"><em><a
+						href="<%=basePath%>baikes/page">百科</a></em></li>
+				<%-- <li class="pcyl-three" id="jquery-toolnava-3"><em><a
+						href="<%=basePath%>baikes/page">百科</a></em>
+					</li> --%>
 				<li class="pcyl-four " id="jquery-toolnava-4"><em><a
-						href="http://www.yaolan.com/huodong/welfare/">食谱</a></em>
+						href="<%=basePath%>cookbooks/page/3/1">食谱</a></em>
 					<div class="pcyl-navmore pcyl-try">
-						<a href="http://try.yaolan.com/">试用</a> <a
-							href="http://event.yaolan.com/BeiJing">活动</a> <a
-							href="http://jifen.yaolan.com/">兑换商城</a>
+						<a href="<%=basePath%>cookbooks/page/3/1">备孕食谱</a>
+						<a href="<%=basePath%>cookbooks/page/4/1">孕期食谱</a> 
+						<a href="<%=basePath%>iseats/page/5/1">能不能吃</a> 
 					</div></li>
 			</ul>
 		</div>
@@ -85,7 +76,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 								class="shipu"></em>
 								<p>食谱</p>
 								<span></span></a></li>
-						<li><a href="http://www.yaolan.com/zhishi/eat/"><em
+						<li><a href="<%=basePath%>iseats/page/5/1"><em
 								class="no"></em>
 								<p>能不能吃</p>
 								<span></span></a></li>
