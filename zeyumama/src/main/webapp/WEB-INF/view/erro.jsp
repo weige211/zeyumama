@@ -14,7 +14,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <meta http-equiv="Cache-Control" content="no-siteapp" />
 <meta http-equiv="Cache-Control" content="no-transform" />
 <title>泽雨妈妈_官方网站_千万宝妈的交流学习平台</title>
-<link rel="canonical" href="http://www.lamabang.com" />
 <meta name="Description"
 	content="泽雨妈妈官方网站，是国内大型的宝妈社交平台，用户可通过手机、ipad，Web等，随时随地以图片、文字、语音多种方式分享交流育儿、瘦身、美妆、情感、美食等话题。还可以结交来自全国各地、五湖四海志同道合的姐妹。" />
 <meta name="Keywords" content="泽雨妈妈,泽雨妈妈官网,宝妈女性社区,宝妈论坛,泽雨妈妈APP下载" />
@@ -125,8 +124,7 @@ ${erro}
 
 		<div class="copyright">
 			<div class="info">
-				泽雨妈妈 Ltd.2009-2017 All Rights Reserved 版权所有 ©泽雨妈妈 粤ICP备13070153号-3<br />增值电信业务经营许可证：粤B2-20170474
-				<br />未经授权禁止转载、摘编、复制或建立镜像，如有违反，追究法律责任。
+				泽雨妈妈 Ltd.2009-2018 All Rights Reserved 　　版权所有 　©泽雨妈妈 　津ICP备18001475号 <br/>未经授权禁止转载、摘编、复制或建立镜像，如有违反，追究法律责任。	
 			</div>
 
 		</div>

@@ -171,8 +171,7 @@ var jiathis_config={
 		</div>
 	</div>
 	<div id="new_footer" class="cf">
-		泽雨妈妈 Ltd.2009-2017 All Rights Reserved 版权所有 ©泽雨妈妈 粤ICP备13070153号-3<br />增值电信业务经营许可证：粤B2-20170474
-		<br />未经授权禁止转载、摘编、复制或建立镜像，如有违反，追究法律责任。
+		泽雨妈妈 Ltd.2009-2018 All Rights Reserved 　　版权所有 　©泽雨妈妈 　津ICP备18001475号 <br/>未经授权禁止转载、摘编、复制或建立镜像，如有违反，追究法律责任。	
 	</div>
 
 		<script type="text/javascript" src="http://f.yaolanimage.cn/assets/js/globalinc/header.check.js?v=2260"></script>
