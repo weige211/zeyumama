@@ -23,6 +23,17 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 </head>
 
 <body class="LMB_main LMB_index">
+<!-- JiaThis Button BEGIN -->
+<script type="text/javascript" >
+var jiathis_config={
+	summary:"",
+	showClose:true,
+	shortUrl:false,
+	hideMore:false
+}
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jiathis_r.js?btn=r.gif&move=0" charset="utf-8"></script>
+<!-- JiaThis Button END -->
 
 	<div hook="adBanner" args="id:145;type:drop;height:400"></div>
 	<!--头部-->

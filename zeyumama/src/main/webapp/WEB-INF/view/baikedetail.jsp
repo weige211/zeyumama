@@ -24,6 +24,20 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 </head>
 
 <body class="LMB_main LMB_encyclopediaCont">
+
+<!-- JiaThis Button BEGIN -->
+<script type="text/javascript" >
+var jiathis_config={
+	summary:"",
+	showClose:true,
+	shortUrl:false,
+	hideMore:false
+}
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jiathis_r.js?btn=r.gif&move=0" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+
 	<!--头部-->
 	<div class="header">
 		<!--LOGO搜索APP-->
@@ -124,6 +138,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<!--孕育周刊-->
 	<div class="weeklyBox mb20">
 		<div class="w clearfix">
+
 			<div class="webMapNav">
 				<a href="http://www.lamabang.com" title="辣妈帮首页">辣妈帮首页</a><span class="arrows">&gt;</span>
 				<a title="孕育百科" href="http://www.lamabang.com/baike">孕育百科</a> <span class="arrows">&gt;</span>${baike.title} </div>

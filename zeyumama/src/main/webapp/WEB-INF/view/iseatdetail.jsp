@@ -26,6 +26,17 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<body>
 		<link href="http://g.yaolanimage.cn/assets/css/global/head_foot.css?v=352" rel="stylesheet" />
 		<script type="text/javascript" scr="http://g.yaolanimage.cn/assets/js/html5.js"></script>
+<!-- JiaThis Button BEGIN -->
+<script type="text/javascript" >
+var jiathis_config={
+	summary:"",
+	showClose:true,
+	shortUrl:false,
+	hideMore:false
+}
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jiathis_r.js?btn=r.gif&move=0" charset="utf-8"></script>
+<!-- JiaThis Button END -->
 
 		<div class="pcyl-head"></div>
 
@@ -98,7 +109,21 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					<!--end sidebar-->
 
 					<div class="container food-baike">
-						<h2 class="food-name">${iseat.name}</h2>
+
+					<!-- JiaThis Button BEGIN -->
+					<div class="jiathis_style_24x24">
+						<a class="jiathis_button_qzone"></a> <a
+							class="jiathis_button_tsina"></a> <a class="jiathis_button_tqq"></a>
+						<a class="jiathis_button_weixin"></a> <a
+							class="jiathis_button_renren"></a> <a
+							href="http://www.jiathis.com/share"
+							class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+						<a class="jiathis_counter_style"></a>
+					</div>
+					<script type="text/javascript"
+						src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+					<!-- JiaThis Button END -->
+					<h2 class="food-name">${iseat.name}</h2>
 
 						<div class="catalog">
 							<div class="clearfix">

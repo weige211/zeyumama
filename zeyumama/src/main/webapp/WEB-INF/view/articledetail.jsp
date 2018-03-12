@@ -25,6 +25,18 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	</head>
 
 	<body class="LMB_main LMB_orationCont">
+	<!-- JiaThis Button BEGIN -->
+<script type="text/javascript" >
+var jiathis_config={
+	summary:"",
+	showClose:true,
+	shortUrl:false,
+	hideMore:false
+}
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jiathis_r.js?btn=r.gif&move=0" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+	
 		<!--头部-->
 		<div class="header">
 			<!--LOGO搜索APP-->.
@@ -130,7 +142,21 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		<div class="orationContBox mb20">
 			<div class="w clearfix">
 				<div class="contL fl">
-					<!--文章内容-->
+
+				<!-- JiaThis Button BEGIN -->
+				<div class="jiathis_style_24x24">
+					<a class="jiathis_button_qzone"></a> <a
+						class="jiathis_button_tsina"></a> <a class="jiathis_button_tqq"></a>
+					<a class="jiathis_button_weixin"></a> <a
+						class="jiathis_button_renren"></a> <a
+						href="http://www.jiathis.com/share"
+						class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+					<a class="jiathis_counter_style"></a>
+				</div>
+				<script type="text/javascript"
+					src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+				<!-- JiaThis Button END -->
+				<!--文章内容-->
 					<div class="orationPost mr20">
 						<h1>${article.title}</h1>
 

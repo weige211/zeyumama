@@ -27,6 +27,17 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <body>
 <link href="http://g.yaolanimage.cn/assets/css/global/head_foot.css?v=352" rel="stylesheet" />
 <script type="text/javascript" scr="http://g.yaolanimage.cn/assets/js/html5.js"></script>
+<!-- JiaThis Button BEGIN -->
+<script type="text/javascript" >
+var jiathis_config={
+	summary:"",
+	showClose:true,
+	shortUrl:false,
+	hideMore:false
+}
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jiathis_r.js?btn=r.gif&move=0" charset="utf-8"></script>
+<!-- JiaThis Button END -->
 
 <div class="pcyl-head"></div>
 
