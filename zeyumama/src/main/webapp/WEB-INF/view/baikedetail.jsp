@@ -192,6 +192,7 @@ var jiathis_config={
 							
 						</dl>
 					</div>
+					<a data-type="2" biz-keyword="宝妈" data-tmpl="350x270" data-tmplid="13" data-rd="2" data-style="2" data-border="1" href="#">宝妈</a>
 				</div>
 				<!--热门百科End-->
 			</div>
@@ -207,6 +208,26 @@ var jiathis_config={
 		</div>
 	</div>
 	<!--底部End-->
+	</div>
+<script type="text/javascript">
+    (function(win,doc){
+        var s = doc.createElement("script"), h = doc.getElementsByTagName("head")[0];
+        if (!win.alimamatk_show) {
+            s.charset = "gbk";
+            s.async = true;
+            s.src = "https://alimama.alicdn.com/tkapi.js";
+            h.insertBefore(s, h.firstChild);
+        };
+        var o = {
+            pid: "mm_131747573_43306482_319230873",/*推广单元ID，用于区分不同的推广渠道*/
+            appkey: "24818972",/*通过TOP平台申请的appkey，设置后引导成交会关联appkey*/
+            unid: "ADBaikeDetail",/*自定义统计字段*/
+            type: "click" /* click 组件的入口标志 （使用click组件必设）*/
+        };
+        win.alimamatk_onload = win.alimamatk_onload || [];
+        win.alimamatk_onload.push(o);
+    })(window,document);
+</script>
 	
 </body>
 

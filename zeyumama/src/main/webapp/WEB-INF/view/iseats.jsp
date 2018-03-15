@@ -123,7 +123,9 @@ var jiathis_config={
 					<dd><em class="icon-milk"></em><a href="<%=basePath%>iseats/page/14/1" >乳制品</a></dd> --%>
 				
 				</dl>
+				
 			</div>
+			<a data-type="2" biz-keyword="备孕" data-tmpl="220x290" data-tmplid="9" data-rd="2" data-style="2" data-border="1" href="#">备孕</a>
             
         <div class="container">
            
@@ -224,5 +226,26 @@ var jiathis_config={
 <script type="text/javascript" src="http://f.yaolanimage.cn/assets/js/globalinc/header.check.js?v=2260"></script>
 <link href="http://g.yaolanimage.cn/global/head/css/footer_black_new.css?ver=2013080102" rel="stylesheet"/>
 <link href="http://g.yaolanimage.cn/global/head/css/global.pop.css?ver=20140627" rel="stylesheet"/>
+</div>
+<script type="text/javascript">
+    (function(win,doc){
+        var s = doc.createElement("script"), h = doc.getElementsByTagName("head")[0];
+        if (!win.alimamatk_show) {
+            s.charset = "gbk";
+            s.async = true;
+            s.src = "https://alimama.alicdn.com/tkapi.js";
+            h.insertBefore(s, h.firstChild);
+        };
+        var o = {
+            pid: "mm_131747573_43306482_319266362",/*推广单元ID，用于区分不同的推广渠道*/
+            appkey: "24818972",/*通过TOP平台申请的appkey，设置后引导成交会关联appkey*/
+            unid: "ADIeat",/*自定义统计字段*/
+            type: "click" /* click 组件的入口标志 （使用click组件必设）*/
+        };
+        win.alimamatk_onload = win.alimamatk_onload || [];
+        win.alimamatk_onload.push(o);
+    })(window,document);
+</script>
+
 </body>
 </html>

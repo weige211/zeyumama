@@ -405,7 +405,7 @@ var jiathis_config={
 						</div>
 					</div>
 					<div class="attention">
-						<a target="_blank"
+						<%-- <a target="_blank"
 							href="<%=basePath%>baikes/baike/${l6.aid}"
 							alt="" title=""> <img
 							src="${l6.imgurl}">
@@ -413,7 +413,8 @@ var jiathis_config={
 							<!--<div class="box">
 								<div class="aTitle"><i class="icoF cG"></i>广告图片</div>
 							</div>-->
-						</a>
+						</a> --%>
+						<a data-type="2" biz-keyword="母婴" data-tmpl="350x270" data-tmplid="13" data-rd="2" data-style="2" data-border="1" href="#">母婴</a>
 					</div>
 				</div>
 				<div class="fl answers">
@@ -552,13 +553,15 @@ var jiathis_config={
 							</ul>
 						</div>
 						<div class="attention">
-							<a target="_blank" href="<%=basePath%>articles/article/${guanggao.aid}"
+							<%-- <a target="_blank" href="<%=basePath%>articles/article/${guanggao.aid}"
 								target="_blank" alt="" title=""> <img
 								src="${guanggao.imgurl}" />
 								<div class="box">
 									<div class="aTitle">${guanggao.title}</div>
 								</div>
-							</a>
+							</a> --%>
+							
+						 <a data-type="2" biz-keyword="母乳喂养" data-tmpl="220x290" data-tmplid="9" data-rd="2" data-style="2" data-border="1" href="#">母乳喂养</a>
 						</div>
 					</div>
 				</div>
@@ -2406,6 +2409,29 @@ var jiathis_config={
 		</div>
 	</div>
 	<!--底部End-->
+	
+	</div>
+<script type="text/javascript">
+    (function(win,doc){
+        var s = doc.createElement("script"), h = doc.getElementsByTagName("head")[0];
+        if (!win.alimamatk_show) {
+            s.charset = "gbk";
+            s.async = true;
+            s.src = "https://alimama.alicdn.com/tkapi.js";
+            h.insertBefore(s, h.firstChild);
+        };
+        var o = {
+            pid: "mm_131747573_43306482_311636043",/*推广单元ID，用于区分不同的推广渠道*/
+            appkey: "24818972",/*通过TOP平台申请的appkey，设置后引导成交会关联appkey*/
+            unid: "Adyuerxia",/*自定义统计字段*/
+            type: "click" /* click 组件的入口标志 （使用click组件必设）*/
+        };
+        win.alimamatk_onload = win.alimamatk_onload || [];
+        win.alimamatk_onload.push(o);
+    })(window,document);
+</script>
+	
+	
 	<script type="text/javascript" src="js/zeyu.index.js"></script>
 </body>
 
